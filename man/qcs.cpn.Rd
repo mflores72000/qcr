@@ -2,7 +2,7 @@
 % Please edit documentation in R/qcs.cpn.r
 \name{qcs.cpn}
 \alias{qcs.cpn}
-\title{##' Process capability indices (Nonparametric)}
+\title{Process capability indices (Nonparametric)}
 \usage{
 qcs.cpn(
   object,
@@ -58,7 +58,7 @@ qcs.cpn(object = xbar,parameters = c(1,1), limits = c(LSL,USL))
 \references{
 Montgomery, D.C. (1991) \emph{Introduction to Statistical Quality Control}, 2nd
 ed, New York, John Wiley & Sons. \cr
-Tong, L.I. and Chen, J.P. (1998), \emph{Lower con???dence limits of process capability 
+Tong, L.I. and Chen, J.P. (1998), \emph{Lower confidence limits of process capability 
 indices for nonnormal process distributions.} International Journal of Quality & Reliability Management, 
 Vol. 15 No. 8/9, pp. 907-19.\cr
 }

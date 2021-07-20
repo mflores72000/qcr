@@ -88,9 +88,17 @@ the rules of a process under control" />
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/mflores72000/qcr/">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -105,7 +113,7 @@ the rules of a process under control" />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Multivariate process state</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/mflores72000/qcr/blob/master/R/mqcs.R'><code>R/mqcs.R</code></a></small>
     <div class="hidden name"><code>mstate.control.Rd</code></div>
     </div>
 
@@ -135,7 +143,7 @@ the rules of a process under control</p>
 <span class='co'>##</span>
 <span class='co'>##  Continuous data </span>
 <span class='co'>##</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>qcr</span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/mflores72000/qcr'>qcr</a></span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>356</span><span class='op'>)</span>
 <span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>matrix</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span><span class='op'>(</span><span class='fl'>66</span><span class='op'>)</span>,ncol<span class='op'>=</span><span class='fl'>3</span><span class='op'>)</span>
 <span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>rbind</a></span><span class='op'>(</span><span class='va'>x</span>,<span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>matrix</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Exponential.html'>rexp</a></span><span class='op'>(</span><span class='fl'>66</span>,<span class='fl'>100</span><span class='op'>)</span>,ncol<span class='op'>=</span><span class='fl'>3</span><span class='op'>)</span><span class='op'>)</span>
@@ -159,10 +167,10 @@ the rules of a process under control</p>
 #&gt;   ..- attr(*, "names")= chr [1:2] "lcl" "ucl"
 #&gt;  $ data.name : chr " DATA"
 #&gt;  $ violations: int [1:5] 1 2 4 5 19
-#&gt;  - attr(*, "class")= chr [1:2] "mqcs.mewma" "mqcs"</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>
+#&gt;  - attr(*, "class")= chr [1:2] "mqcs.mewma" "mqcs"</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>
 </div><div class='img'><img src='mstate.control-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='va'>data.mqcs</span> <span class='op'>&lt;-</span> <span class='fu'>mstate.control</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>
 <span class='va'>x</span> <span class='op'>&lt;-</span><span class='fu'><a href='mqcs.mewma.html'>mqcs.mewma</a></span><span class='op'>(</span><span class='va'>data.mqcs</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>
 </div><div class='img'><img src='mstate.control-2.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

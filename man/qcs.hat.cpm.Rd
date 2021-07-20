@@ -2,7 +2,7 @@
 % Please edit documentation in R/qcs.hat.cpm.r
 \name{qcs.hat.cpm}
 \alias{qcs.hat.cpm}
-\title{Process capability indice (estimate cpm)}
+\title{Process capability index (estimate cpm)}
 \usage{
 qcs.hat.cpm(
   object,

@@ -90,9 +90,17 @@ control'." />
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/mflores72000/qcr/">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -107,7 +115,7 @@ control'." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Piston rings data</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/mflores72000/qcr/blob/master/R/qcr.R'><code>R/qcr.R</code></a></small>
     <div class="hidden name"><code>pistonrings.Rd</code></div>
     </div>
 
@@ -148,7 +156,7 @@ Quality Control</em>, 2nd ed, New York, John Wiley &amp; Sons, pp. 206--213</p>
 #&gt;  Mean   :74.00   Mean   :20.50                  
 #&gt;  3rd Qu.:74.01   3rd Qu.:30.25                  
 #&gt;  Max.   :74.04   Max.   :40.00                  </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/boxplot.html'>boxplot</a></span><span class='op'>(</span><span class='va'>diameter</span> <span class='op'>~</span> <span class='va'>sample</span><span class='op'>)</span>
-</div><div class='img'><img src='pistonrings-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>sample</span>, <span class='va'>diameter</span>, cex<span class='op'>=</span><span class='fl'>0.7</span><span class='op'>)</span>
+</div><div class='img'><img src='pistonrings-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.html'>plot</a></span><span class='op'>(</span><span class='va'>sample</span>, <span class='va'>diameter</span>, cex<span class='op'>=</span><span class='fl'>0.7</span><span class='op'>)</span>
 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/lines.html'>lines</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/tapply.html'>tapply</a></span><span class='op'>(</span><span class='va'>diameter</span>,<span class='va'>sample</span>,<span class='va'>mean</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='pistonrings-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='kw'><a href='https://rdrr.io/r/base/detach.html'>detach</a></span><span class='op'>(</span><span class='va'>pistonrings</span><span class='op'>)</span>
 </div></pre>

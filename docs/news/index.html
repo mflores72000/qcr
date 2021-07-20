@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Quality Control Review — qcr • qcr</title>
+<title>Changelog • qcr</title>
 
 
 <!-- jquery -->
@@ -39,19 +39,7 @@
 
 
 
-<meta property="og:title" content="Quality Control Review — qcr" />
-<meta property="og:description" content="Quality Control Review
-Univariate and multivariate SQC tools that completes and increases
-the SQC techniques available in R. Apart from integrating different R packages devoted to SQC
-('qcc','MSQC'), provides nonparametric tools that are highly useful when Gaussian assumption is not
-met. This package computes standard univariate control charts for individual measurements, X-bar,
-S, R, p, np, c, u, EWMA and CUSUM. In addition, it includes functions to perform multivariate
-control charts such as Hotelling T2, MEWMA and MCUSUM. As representative feature, multivariate
-nonparametric alternatives based on data depth are implemented in this package: r, Q and S control
-charts. In addition, Phase I and II control charts for functional data are included. This package also allows 
-the estimation of the most complete set of capability indices from first to fourth generation, covering the
-nonparametric alternatives, and performing the corresponding capability analysis graphical outputs,
-including the process capability plots." />
+<meta property="og:title" content="Changelog" />
 
 
 
@@ -70,7 +58,7 @@ including the process capability plots." />
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-topic">
+    <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -122,35 +110,62 @@ including the process capability plots." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Quality Control Review</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mflores72000/qcr/blob/master/R/qcr.R'><code>R/qcr.R</code></a></small>
-    <div class="hidden name"><code>qcr.Rd</code></div>
+      <h1 data-toc-skip>Changelog <small></small></h1>
+      <small>Source: <a href='https://github.com/mflores72000/qcr/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div class="ref-description">
-    <p>Quality Control Review
-Univariate and multivariate SQC tools that completes and increases
-the SQC techniques available in R. Apart from integrating different R packages devoted to SQC
-('qcc','MSQC'), provides nonparametric tools that are highly useful when Gaussian assumption is not
-met. This package computes standard univariate control charts for individual measurements, X-bar,
-S, R, p, np, c, u, EWMA and CUSUM. In addition, it includes functions to perform multivariate
-control charts such as Hotelling T2, MEWMA and MCUSUM. As representative feature, multivariate
-nonparametric alternatives based on data depth are implemented in this package: r, Q and S control
-charts. In addition, Phase I and II control charts for functional data are included. This package also allows 
-the estimation of the most complete set of capability indices from first to fourth generation, covering the
-nonparametric alternatives, and performing the corresponding capability analysis graphical outputs,
-including the process capability plots.</p>
-    </div>
-
-
-
-
+    <div id="qcr-14" class="section level1">
+<h1 class="page-header" data-toc-text="1.4">
+<a href="#qcr-14" class="anchor"></a>qcr 1.4<small> Unreleased </small>
+</h1>
+<ul>
+<li><p>Added a website for the package (with pkgdown).</p></li>
+<li><p>Added ‘README.md’, ‘NEWS.md’ and ’_pkgdown.yml’.</p></li>
+<li><p>Added some vignettes (pkgdown articles):</p></li>
+</ul>
+</div>
+    <div id="qcr-13" class="section level1">
+<h1 class="page-header" data-toc-text="1.3">
+<a href="#qcr-13" class="anchor"></a>qcr 1.3<small> 2021-05-14 </small>
+</h1>
+<ul>
+<li>Avoided dependence on <code>qualityTools</code> package as it was removed from CRAN (dependencies were included as internal functions in ‘qualityTools.R’).</li>
+</ul>
+</div>
+    <div id="qcr-12" class="section level1">
+<h1 class="page-header" data-toc-text="1.2">
+<a href="#qcr-12" class="anchor"></a>qcr 1.2<small> 2020-04-21 </small>
+</h1>
+<ul>
+<li>Added utilities for Functional Data Quality Control: <code><a href="../reference/fdqcd.html">fdqcd()</a></code>, <code><a href="../reference/fdqcs.depth.html">fdqcs.depth()</a></code>,<br><code><a href="../reference/fdqcs.rank.html">fdqcs.rank()</a></code>, and plot methods <code><a href="../reference/plot.fdqcd.html">plot.fdqcd()</a></code>, <code><a href="../reference/plot.fdqcs.depth.html">plot.fdqcs.depth()</a></code>, <code><a href="../reference/plot.fdqcs.depth.html">plot.fdqcs.rank()</a></code>
+</li>
+</ul>
+</div>
+    <div id="qcr-10" class="section level1">
+<h1 class="page-header" data-toc-text="1.0">
+<a href="#qcr-10" class="anchor"></a>qcr 1.0<small> 2016-07-20 </small>
+</h1>
+<ul>
+<li><p>Added utilities for nonparametric Quality Control: <code><a href="../reference/npqcd.html">npqcd()</a></code>, <code><a href="../reference/npqcs.html">npqcs()</a></code>, <code><a href="../reference/npqcs.add.html">npqcs.add()</a></code>, <code><a href="../reference/npqcs.Q.html">npqcs.Q()</a></code>, <code><a href="../reference/npqcs.r.html">npqcs.r()</a></code>, <code><a href="../reference/npqcs.S.html">npqcs.S()</a></code>, <code><a href="../reference/npstate.control.html">npstate.control()</a></code>, and plot methods <code><a href="../reference/plot.npqcs.html">plot.npqcs()</a></code>, <code><a href="../reference/plot.npqcs.html">plot.npqcs.Q()</a></code>, <code><a href="../reference/plot.npqcs.html">plot.npqcs.r()</a></code>, <code><a href="../reference/plot.npqcs.html">plot.npqcs.S()</a></code>.</p></li>
+<li><p>Added utilities for parametric and nonparametric Capability Analysis: <code><a href="../reference/qcs.ca.html">qcs.ca()</a></code>, <code><a href="../reference/qcs.cp.html">qcs.cp()</a></code>, <code><a href="../reference/qcs.cpn.html">qcs.cpn()</a></code>, <code><a href="../reference/qcs.hat.cpm.html">qcs.hat.cpm()</a></code>, <code><a href="../reference/qcs.pcr.html">qcs.pcr()</a></code>.</p></li>
+</ul>
+</div>
+    <div id="qcr-01-18" class="section level1">
+<h1 class="page-header" data-toc-text="0.1-18">
+<a href="#qcr-01-18" class="anchor"></a>qcr 0.1-18<small> 2014-05-30 </small>
+</h1>
+<ul>
+<li>Initial version in package form.</li>
+</ul>
+</div>
   </div>
+
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
+
 </div>
 
 

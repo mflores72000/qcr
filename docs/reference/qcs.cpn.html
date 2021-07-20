@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>##' Process capability indices (Nonparametric) — qcs.cpn • qcr</title>
+<title>Process capability indices (Nonparametric) — qcs.cpn • qcr</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,7 @@
 
 
 
-<meta property="og:title" content="##' Process capability indices (Nonparametric) — qcs.cpn" />
+<meta property="og:title" content="Process capability indices (Nonparametric) — qcs.cpn" />
 <meta property="og:description" content="Calculates \(CNp\), \(CNpm\) using the formulation described by Tong and Chen (1998)." />
 
 
@@ -87,9 +87,17 @@
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/mflores72000/qcr/">
+    <span class="fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -103,8 +111,8 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>##' Process capability indices (Nonparametric)</h1>
-    
+    <h1>Process capability indices (Nonparametric)</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mflores72000/qcr/blob/master/R/qcs.cpn.r'><code>R/qcs.cpn.r</code></a></small>
     <div class="hidden name"><code>qcs.cpn.Rd</code></div>
     </div>
 
@@ -168,12 +176,12 @@ This values is used only when object values is provided. The default value is 0.
 
     <p>Montgomery, D.C. (1991) <em>Introduction to Statistical Quality Control</em>, 2nd
 ed, New York, John Wiley &amp; Sons. <br />
-Tong, L.I. and Chen, J.P. (1998), <em>Lower con???dence limits of process capability 
+Tong, L.I. and Chen, J.P. (1998), <em>Lower confidence limits of process capability 
 indices for nonnormal process distributions.</em> International Journal of Quality &amp; Reliability Management, 
 Vol. 15 No. 8/9, pp. 907-19.<br /></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>qcr</span><span class='op'>)</span>
+    <pre class="examples"><div class='input'><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/mflores72000/qcr'>qcr</a></span><span class='op'>)</span>
 <span class='co'>##' data(pistonrings) </span>
 <span class='va'>xbar</span> <span class='op'>&lt;-</span> <span class='fu'><a href='qcs.xbar.html'>qcs.xbar</a></span><span class='op'>(</span><span class='va'>pistonrings</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>125</span>,<span class='op'>]</span>,plot <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
 </div><div class='img'><img src='qcs.cpn-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='va'>x</span><span class='op'>&lt;-</span><span class='va'>xbar</span><span class='op'>$</span><span class='va'>statistics</span><span class='op'>[[</span><span class='fl'>1</span><span class='op'>]</span><span class='op'>]</span>
