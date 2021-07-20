@@ -13,7 +13,7 @@
 #-----------------------------------------------------------------------------#
 # Main function to create a 'qcs.cpn' object
 #-----------------------------------------------------------------------------#
-##' ##' Process capability indices (Nonparametric)
+##' Process capability indices (Nonparametric)
 ##' 
 ##' Calculates \eqn{CNp}{CNpk}, \eqn{CNpm}{CNpmk} using the formulation described by Tong and Chen (1998).
 ##' @aliases qcs.cpn 
@@ -33,7 +33,7 @@
 ##' @references 
 ##' Montgomery, D.C. (1991) \emph{Introduction to Statistical Quality Control}, 2nd
 ##' ed, New York, John Wiley & Sons. \cr
-##' Tong, L.I. and Chen, J.P. (1998), \emph{Lower con???dence limits of process capability 
+##' Tong, L.I. and Chen, J.P. (1998), \emph{Lower confidence limits of process capability 
 ##' indices for nonnormal process distributions.} International Journal of Quality & Reliability Management, 
 ##' Vol. 15 No. 8/9, pp. 907-19.\cr
 ##' @examples

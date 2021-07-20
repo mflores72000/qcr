@@ -13,7 +13,7 @@
 #-----------------------------------------------------------------------------#
 # Main function to create a 'qcs.hat.cpm' object
 #-----------------------------------------------------------------------------#
-##' Process capability indice (estimate cpm)
+##' Process capability index (estimate cpm)
 ##' 
 ##' Estimate  \code{"cpm"} using the method described by Kerstin Vannman(2001).
 ##' @aliases qcs.hat.cpm 
