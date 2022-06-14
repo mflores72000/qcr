@@ -1,5 +1,5 @@
 ##' Quality Control Review
-##' Revision
+##' 
 ##' Univariate and multivariate SQC tools that completes and increases
 ##' the SQC techniques available in R. Apart from integrating different R packages devoted to SQC
 ##' ('qcc','MSQC'), provides nonparametric tools that are highly useful when Gaussian assumption is not
