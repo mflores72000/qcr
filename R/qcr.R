@@ -81,12 +81,14 @@ NULL
 NULL
 
 ##' @title The performance of the counters data
-##' @description A water company from A Corunia wants to control the performance 
-##' of the counters installed throughout the city.
-##' 60 subsamples are taken each one composed by 3 measurements made 
-##' by the counters of the same antiquity (10 years) and caliber, 
-##' in a period of 5 years. Taking into account that there are two brands 
-##' or providers of counters
+##' @description A water supply company wants to control the performance of 
+##' the water counters installed throughout a city. For this purpose, 
+##' 60 rational samples have been taken, each one composed by 3 measurements, 
+##' from the same age (10 years) and caliber water counters corresponding to 
+##' two different brands, and during a period of 5 years. This dataset is
+##' based on a study case of A Coruña’s water supply company, Empresa 
+##' Municipal de Aguas de La Coruña (Emalcsa).
+##'  
 ##'
 ##' @name counters
 ##' @docType data
@@ -108,11 +110,11 @@ NULL
 
 
 ##' @title Level of employment data
-##' @description A Spaniard-Argentinian hotel company wants to control 
-##' the level of employment in their establishments. 
-##' For this it is going to make a continuous control 
-##' that measures the amount of occupants in terms of percentage. 
-##' 48 sub samples are taken of six hotels belonging to two countries
+##' @description A Spaniard-Argentinian hotel company wants to control the 
+##' level of occupancy (measured in %) in their establishments through the
+##' application of a continuous control. For this purpose, 48 subsamples have
+##' been taken from six hotels corresponding to two different countries.
+##' 
 ##'
 ##' @name employment
 ##' @docType data
@@ -300,7 +302,7 @@ NULL
 
 
 ##' @title Dowel pin dataset
-##' @description Diameter and length of a manufacturing process of a dowel pin 
+##' @description Diameter and length of a manufacturing process of a dowel pin. 
 ##' 
 ##' @name dowel1
 ##' @docType data

@@ -22,14 +22,14 @@
 ##' 
 ##' @aliases qcs summary.qcs print.qcs
 ##' 
-##' @param x  a vector containing observed data
-##' @param sample.index a scalar with the column number corresponding to the index 
+##' @param x  A vector containing observed data.
+##' @param sample.index A scalar with the column number corresponding to the index 
 ##' of each group (sample).
-##' @param sizes a value or a vector of values specifying the sample sizes
+##' @param sizes A value or a vector of values specifying the sample sizes
 ##' associated with each group. For continuous data the sample sizes are obtained counting the non-\code{NA} elements of
 ##' the sample.index vector. For \code{"p"}, \code{"np"} and \code{"u"} charts the argument
 ##' \code{sizes} is required.
-##' @param type a character string specifying the group statistics to compute:
+##' @param type A character string specifying the group statistics to compute:
 ##' 
 ##' \tabular{lll}{ \tab Statistic charted \tab Chart description \cr
 ##' \code{"xbar"} \tab mean \tab means of a continuous process variable \cr
@@ -49,11 +49,11 @@
 ##' @param conf.nsigma  a numeric value used to compute control limits, specifying the
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
-##' @param limits a two-value vector specifying control limits.
-##' @param type.data  a string specifying el type de data.
-##' @param lambda the smoothing parameter \eqn{0 \le \lambda \le 1}{0 <= lambda
+##' @param limits A two-value vector specifying control limits.
+##' @param type.data  A string specifying el type de data.
+##' @param lambda The smoothing parameter \eqn{0 \le \lambda \le 1}{0 <= lambda
 ##' <= 1}
-##' @param nsigma  a numeric value used to compute control limits, specifying the
+##' @param nsigma  A numeric value used to compute control limits, specifying the
 ##' number of standard deviations.
 ##' @param decision.interval A numeric value specifying the number of standard
 ##' errors of the summary statistics at which the cumulative sum is out of

@@ -5,7 +5,7 @@
 #  An R package for statistical in-line quality control.                      #
 #                                                                             #
 #  Written by: Miguel A. Flores Sanchez                                       #
-#              Professor of the Mathematics Department                             #
+#              Professor of the Mathematics Department                        #
 #              Escuela Politecnica Nacional, Ecuador                          #
 #              miguel.flores@epn.edu.ec                                       #
 #                                                                             #
@@ -17,8 +17,8 @@
 ##'
 ##' This function is used to compute statistics required by the xbar chart.
 ##'
-##' @param x   Object qcd (Quality Control Data)
-##' @param ... arguments passed to or from methods.
+##' @param x   Object qcd (Quality Control Data).
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Montgomery, D.C. (2000)
 ##' @examples
@@ -71,16 +71,16 @@ qcs.xbar <- function(x, ...) {
 ##' @rdname qcs.xbar
 ##' @method qcs.xbar default
 ##' @inheritParams qcd
-##' @param center a value specifying the center of group statistics or the
+##' @param center A value specifying the center of group statistics or the
 ##' ''target'' value of the process.
-##' @param std.dev  a value or an available method specifying the within-group standard
+##' @param std.dev  A value or an available method specifying the within-group standard
 ##' deviation(s) of the process. Several methods are available for estimating the
 ##' standard deviation in case of a continuous process variable.
-##' @param conf.nsigma  a numeric value used to compute control limits, specifying the
+##' @param conf.nsigma  A numeric value used to compute control limits, specifying the
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
-##' @param limits a two-value vector specifying control limits.
-##' @param plot a logical value indicating should be plotted.
+##' @param limits A two-value vector specifying control limits.
+##' @param plot Logical value. If TRUE a xbar chart should be plotted.
 ##' @export
 ##' 
 qcs.xbar.default <- function(x, var.index  =  1, sample.index  =  2,

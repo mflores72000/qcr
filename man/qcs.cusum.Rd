@@ -35,35 +35,35 @@ qcs.cusum(x, ...)
 )
 }
 \arguments{
-\item{x}{Object qcd (Quality Control Data)}
+\item{x}{Object qcd (Quality Control Data).}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 
-\item{var.index}{a scalar with the column number corresponding to the observed data for
+\item{var.index}{A scalar with the column number corresponding to the observed data for
 the variable (the variable quality).  Alternativelly can be a string with the
 name of the quality variable.}
 
-\item{sample.index}{a scalar with the column number corresponding to the index each
+\item{sample.index}{A scalar with the column number corresponding to the index each
 group (sample).}
 
-\item{covar.index}{optional. A scalar or numeric vector with the column number(s)
+\item{covar.index}{Optional. A scalar or numeric vector with the column number(s)
 corresponding to the covariate(s). Alternativelly it can be a character vector with
 the names of the covariates.}
 
-\item{covar.names}{optional. A string or vector of strings with names for the
+\item{covar.names}{Optional. A string or vector of strings with names for the
 covariate columns.  Only valid if there is more than one column of data. By
 default, takes the names from the original object.}
 
-\item{data.name}{a string specifying the name of the variable which appears on the
+\item{data.name}{A string specifying the name of the variable which appears on the
 plots. If not provided it is taken from the object given as data.}
 
-\item{sizes}{a value or a vector of values specifying the sample sizes
+\item{sizes}{A value or a vector of values specifying the sample sizes
 associated with each group.}
 
-\item{center}{a value specifying the center of group statistics or the
+\item{center}{A value specifying the center of group statistics or the
 ''target'' value of the process.}
 
-\item{std.dev}{a value or an available method specifying the within-group
+\item{std.dev}{A value or an available method specifying the within-group
 standard deviation(s) of the process. \cr Several methods are available for
 estimating the standard deviation.}
 
@@ -74,7 +74,7 @@ control.}
 \item{se.shift}{The amount of shift to detect in the process, measured in
 standard errors of the summary statistics.}
 
-\item{plot}{a logical value indicating it should be plotted.}
+\item{plot}{Logical value. If TRUE a cusum chart should be plotted.}
 }
 \description{
 This function is used to compute statistics required by the cusum chart.

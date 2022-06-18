@@ -1,0 +1,203 @@
+---
+title: "Non parametric Quality Control Charts"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Non parametric Quality Control Charts}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  dev = "png",
+  dpi = 150,
+  fig.asp = 0.618,
+  fig.width = 5,
+  out.width = "60%",
+  fig.align = "center",
+  comment = NA,
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(qcr)
+```
+
+# Gráficos de control de la calidad no paramétricos
+
+Los gráficos de control que se presenta en esta sección son propuestas por Regina Liu (Liu, 1995). La idea principal bajo sus gráficos de control es reducir cada medida multivariante a un índice univariado, o mejor dicho a su ordenamiento relativo del centro hacia afuera inducido por profundidad de datos. Este planteo  es completamente no paramétrico, y así las cartas resultantes son válidas sin suposiciones paramétricas en el modelo del proceso. Estos gráficos permiten detectar simultáneamente el cambio en localización (desplazamiento de la media) y el incremento de escala (cambio en variabilidad) en un proceso.
+
+Liu desarrolló los gráficos de control  r, Q y S los cuales pueden ser vistos como generalizaciones multivariadas basadas en profundidad de datos de los gráficos univariadas X, $\bar{x}$ y Cusum respectivamente.
+
+## Profundidad de datos
+
+En el análisis multivariante, el término profundidad se refiere al grado de centralidad de un punto con respecto a una nube de puntos o una distribución de probabilidad. Por tanto, es posible definir un orden en el espacio euclídeo multidimensional a través de la profunidad de un dato. 
+
+Según Dyckerhoff ,(Dyckerhoff, 2004) y expuestas por Cascos (Cascos, 2011) la definición de la función de profundidad es:
+
+Si se fija una distribución $P$ en $R^{d}$, una función de profundidad es una función acotada  $D_{p}:R^{d} \longrightarrow R$  que asigna a cada punto de $R^{d}$ su grado de centralidad respecto de P.
+
+Las funciones de profundidad con las que se pueden realizar los gráficos de control son:  
+
++ Profundidad Simplicial (Liu, 1990) 
++ Profundidad de Mahalanobis (Mahalanobis 1936) 
++ Profundidad Semiespacial (Half-Space) o de Tukey (Hodges, 1955, Tukey, 1975)
++ Profundidad de Verosimilitud (Likelihood Depth), (Fraiman y Meloche, 1996), (Liu, 1999) 
++ Profundidad de las Proyecciones (Random Projection Depth) (Zuo y Serfling, 2000)
+
+Para el cálculo de las profundidades se utiliza el paquete fda.qcr.
+
+### Estadísticos derivados de la profundidad de datos
+
+Sea $G$ la distribución $k-$dimensional y $Y_1,Y_2,\ldots,Y_m$; m observaciones aleatorias de  $G$. La mencionada muestra es una muestra de referencia en el contexto de control de calidad y se considera como medidas de los productos producidos en un proceso bajo control. Sean $X_1,X_2,\ldots,X_n$ las nuevas observaciones provenientes del proceso de manufactura, se asume que siguen una distribución $F$, si la calidad del producto se ha deteriorado o si el proceso está fuera de control, caso contrario siguen una distribución $G$.
+
+Si se ordenan todas las profundidades $D_{G}\left(Y_{i}\right)$ en orden ascendente y se usa $Y_{\left[ j\right] }$ para denominar al punto de la muestra asociado con el $j-$ésimo valor de profundidad más pequeño, entonces $Y_{\left[ 1\right]},\ldots,Y_{\left[ m\right]}$ siendo $Y_{\left[ m\right]}$ el punto más central. Mientras más pequeño el índice (o rango) de un
+punto, más externo será ese punto respecto de la distribución subyacente $G\left( .\right)$.
+
+Liu (Liu, 1995) define el rango (Rank):
+
+$r_{G}\left( y\right)= P\left\lbrace D_{G}\left( Y\right) \leq D_{G}\left( y\right) \mid Y\sim G \right\rbrace$ 
+
+
+$Y\sim G$ indica que la variable aleatoria $Y$ sigue la distribución $G$.
+
+Para el caso en que $G$ es desconocida y sólo se conoce la muestra $\left\lbrace  Y_{1},\ldots,Y_{m} \right\rbrace$:
+
+$r_{G_{m}}\left( y\right)= \frac{ \sharp \left\lbrace D_{G_{m}}\left( Y_j\right) \leq D_{G_{m}}\left( y\right), j = 1,\ldots,m \right\rbrace}{m}$
+
+Si $F_{n}\left( .\right)$ representa la distribución empírica de la muestra $X_1,X_2, ...,X_n$ entonces en el mismo trabajo, Liu define, (Liu, 1995). índice $Q$:
+
+$Q\left( G,F\right)= P\left\lbrace D_{G}\left( Y\right) \leq D_{G}\left( X\right) \mid Y\sim G, X\sim F \right\rbrace=E_{F}\left[ r_{G}\left( X\right) \right]$
+
+$Q\left( G,F_{n}\right)= \frac{1}{n} \sum _{i=1}^{n} r_{G}\left( X_i\right)$
+
+$Q\left( G_{m},F_{n}\right)= \frac{1}{n} \sum _{i=1}^{n} r_{G_{m}}\left( X_i\right)$
+
+## Gráfico de control r
+	
+Se calcula 	$\left\lbrace r_{G}\left( X_1\right),r_{G}\left( X_2\right),\ldots,r_{G}\left( X_n\right)\right\rbrace$ ó $\left\lbrace r_{G_{m}}\left( X_1\right),r_{G_{m}}\left( X_2\right),\ldots,r_{G_{m}}\left( X_n\right)\right\rbrace$ si sólo está disponible $Y_1,\ldots,Y_m$ pero no $G$.
+
+El gráfico de control r, consiste en graficar el estadístico rank versus el tiempo. Cuyo límite de control central $LC = 0.5$ y límite inferior es $LCI = \alpha$, donde $\alpha$ es la tasa de falsa alarma. El proceso es declarado fuera de control si al menos uno de los estadísticos rank cae bajo $LCI$. Un valor pequeño del estadístico rank $r_{G_{m}}\left( X\right)$ significa que sólo una muy pequeña proporción de $Y_i~^{'}$ son más externos que $X$. Entonces, si se asume que $X \sim F$  entonces un valor pequeño de $r_{G_{m}}\left( X\right)$  sugiere una posible desviación desde  $G$ a $F$. Esta puede ser por un desplazamiento en la localización y/o un incremento en escala de la variable de calidad.
+
+Aunque el gráfico r no dispone de la línea UCL para hacer de CL la línea central de la región bajo control, la línea CL sirve como punto de referencia que permite observar si aparece o se está gestando un patrón o tendencia en una secuencia de muestras. Sí  $r_{G_{m}}\left( X\right)$ es mayor que $0.5$; hay indicios de una disminución en escala con quizás un despreciable desplazamiento de localización. Esto es visto como una mejora en calidad dada una ganancia en la precisión, y así el proceso no se vería como fuera de control.
+
+```{r chartr}
+set.seed(356)
+mu<-c(0,0)
+Sigma<- matrix(c(1,0,0,1),nrow = 2,ncol = 2)
+u <- c(2,2)
+S <- matrix(c(4,0,0,4),nrow = 2,ncol = 2)
+G <- rmvnorm(540, mean = mu, sigma = Sigma)
+x<- rmvnorm(40,mean=u,sigma = S)
+x <- rbind(G[501:540,],x)
+M <- G[1:500,]
+data.npqcd <- npqcd(x,M)
+str(data.npqcd)
+res.npqcs <- npqcs.r(data.npqcd,method = "Liu", alpha=0.025)
+str(res.npqcs)
+summary(res.npqcs)
+plot(res.npqcs,title =" r Control Chart")
+```
+
+
+	
+## Gráfico de control Q
+	
+La idea detrás del gráfico Q es similar a la del gráfico $\bar{X}$. Si $X_1,X_2,\ldots$  son univariadas y $G$ es normal, el gráfico $\bar{X}$  dibuja los promedios de subconjuntos consecutivos de tamaño.   Una característica de este gráfico, es que puede prevenir una falsa alarma cuando el proceso en realidad está en control pero algún punto de la muestra individual cayó fuera de los límites de control debido sólo a fluctuaciones aleatorias. Esta es una ventaja del gráfico  $\bar{X}$  sobre el gráfico $X$.
+
+
+Para el caso del  gráfico Q, se dibuja los promedios de subconjuntos consecutivos de tama\~o n, del estadístico rank ($r_{G}\left( X_i\right)$ ó $r_{G_{m}}\left( X_i\right)$) que se denota por $Q\left( G,F_{n}^j\right)$ ó $Q\left( G_{m},F_{n}^j\right)$, aquí $F_n^j$ es la distribución empírica de los $X_i$. 
+
+El gráfico Q dibuja los siguientes conjuntos de puntos: $\left\lbrace Q\left( G_{m},F_{n}^j\right),Q\left( G_{m},F_{n}^j\right),.\ldots\right\rbrace$, si sólo se dispone de $\left\lbrace Y_1, Y_2,\ldots, Y_m \right\rbrace$.
+
+Los límites de control son los siguientes:
+
+$n \geq 5$
+
+$CL = 0.5; LCL = 0.5-Z_{\alpha}\left( 12n\right)^{\frac{1}{2}} \quad para \quad dibujar \quad Q\left( G,F_{n}^j\right)$
+
+$CL = 0.5; LCL = 0.5-Z_{\alpha}\sqrt{\frac{1}{12•}\left(\frac{1}{m}+\frac{1}{n}\right) } \quad para \quad dibujar \quad Q\left( G_m,F_{n}^j\right)$
+
+$n < 5$
+
+$CL = 0.5; LCL = \frac{\left( n!\alpha\right)^{\frac{1}{n}}}{n}$
+
+```{r chartQ}
+set.seed(12345)
+mu<-c(0,0)
+Sigma<- matrix(c(1,0,0,1),nrow = 2,ncol = 2)
+u <- c(2,2)
+S <- matrix(c(4,0,0,4),nrow = 2,ncol = 2)
+G <- rmvnorm(540, mean = mu, sigma = Sigma)
+x<- rmvnorm(40,mean=u,sigma = S)
+x <- rbind(G[501:540,],x)
+n <- 4 # samples
+m <- 20  # measurements
+k <- 2  # number of variables
+x.a <- array(,dim=c(n,k,m))
+for (i in 1:m){
+  x.a[,,i] <- x[(1+(i-1)*n):(i*n),] }
+M <- G[1:500,]
+data.npqcd <- npqcd(x.a,M)
+str(data.npqcd)
+res.npqcs <- npqcs.Q(data.npqcd,method = "Liu", alpha=0.025)
+str(res.npqcs)
+summary(res.npqcs)
+plot(res.npqcs,title =" Q Control Chart")
+```
+
+
+## Gráfico de control S
+
+El gráfico de control S se inspira en el gráfico de control univariado CUSUM. Esta dibuja $\sum_{i=1}^{n}\left( X - \mu \right)$ lo cual refleja el patrón de la desviación total del valor esperado. Este gráfico de control es más efectivo que los gráficos $X$ o $\bar{X}$ en detectar pequeños cambios del proceso.
+
+En el gráfico de control S se dibujan los puntos correspondientes a las expresiones siguientes:
+
+En el caso de contar con $G$:
+
+$S_n\left( G\right) = \sum_{i=1}^{n}\left( r_G\left( X_i\right)  - \frac{1}{2} \right)$
+
+
+Los límites de control son los siguientes:
+
+$CL = 0; LCL = -Z_{\alpha}\left(\frac{n}{12}\right)^{\frac{1}{2}}$
+
+En el caso de contar con $Y_1,\ldots,Y_m$:
+
+$S_n\left( G_m\right) = \sum_{i=1}^{n}\left( r_{G_{m}}\left( X_i\right)  - \frac{1}{2} \right)$
+
+Los Límites de Control son los siguientes:
+
+$CL = 0; LCL = -Z_{\alpha}\sqrt{n^2\frac{\left(\frac{1}{m}+\frac{1}{n}\right)}{12}}$
+
+
+Los límites de control LCL en ambos casos constituyen una curva en vez de una recta; si n es grande el gráfico de control S fácilmente excedería el tamaño del papel, por lo que se estandariza de la siguiente manera respectivamente:
+
+$S_n^{*}\left( G\right) = \frac{S_n^{*}\left(G\right)}{\sqrt{\frac{n}{12}}}$
+
+$S_n^{*}\left( G_m\right) = \frac{S_n\left(G_m\right)}{\sqrt{n^2\frac{\left(\frac{1}{m}+\frac{1}{n}\right)}{12}}}$
+
+Los límites de control en los dos casos son los siguientes:
+
+$CL = 0; LCL = -Z_{\alpha}$
+
+```{r chartS}
+set.seed(12345)
+mu<-c(0,0)
+Sigma<- matrix(c(1,0,0,1),nrow = 2,ncol = 2)
+u <- c(2,2)
+S <- matrix(c(4,0,0,4),nrow = 2,ncol = 2)
+G <- rmvnorm(540, mean = mu, sigma = Sigma)
+x<- rmvnorm(40,mean=u,sigma = S)
+x.a <- rbind(G[501:540,],x)
+M <- G[1:500,]
+data.npqcd <- npqcd(x.a,M)
+str(data.npqcd)
+res.npqcs <- npqcs.S(data.npqcd,method = "Liu", alpha=0.05)
+str(res.npqcs)
+summary(res.npqcs)
+plot(res.npqcs,title =" S Control Chart")
+```
+

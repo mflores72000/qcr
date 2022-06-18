@@ -17,8 +17,8 @@
 ##'
 ##' This function is used to compute statistics required by the cusum chart.
 ##'
-##' @param x   Object qcd (Quality Control Data)
-##' @param ... arguments passed to or from methods.
+##' @param x   Object qcd (Quality Control Data).
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @examples
 ##' 
@@ -37,11 +37,11 @@ qcs.cusum <- function(x, ...) {
 ##' @rdname qcs.cusum
 ##' @method qcs.cusum default
 ##' @inheritParams qcd
-##' @param sizes a value or a vector of values specifying the sample sizes
+##' @param sizes A value or a vector of values specifying the sample sizes
 ##' associated with each group.
-##' @param center a value specifying the center of group statistics or the
+##' @param center A value specifying the center of group statistics or the
 ##' ''target'' value of the process.
-##' @param std.dev a value or an available method specifying the within-group
+##' @param std.dev A value or an available method specifying the within-group
 ##' standard deviation(s) of the process. \cr Several methods are available for
 ##' estimating the standard deviation.
 ##' @param decision.interval A numeric value specifying the number of standard
@@ -49,7 +49,7 @@ qcs.cusum <- function(x, ...) {
 ##' control.
 ##' @param se.shift The amount of shift to detect in the process, measured in
 ##' standard errors of the summary statistics.
-##' @param plot a logical value indicating it should be plotted.
+##' @param plot Logical value. If TRUE a cusum chart should be plotted.
 ##' @export
 ##' 
 qcs.cusum.default <- function(x, var.index  =  1, sample.index  =  2,

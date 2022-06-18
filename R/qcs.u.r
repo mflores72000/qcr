@@ -17,8 +17,8 @@
 ##'
 ##' This function is used to compute statistics required by the u chart.
 ##'
-##' @param x   an R object (used to select the method). See details.
-##' @param ... arguments passed to or from methods.
+##' @param x   An R object (used to select the method). See details.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @examples
 ##' 
@@ -44,13 +44,13 @@ qcs.u <- function(x, ...) {
 ##' @rdname qcs.u
 ##' @method qcs.u default
 ##' @inheritParams qcd
-##' @param center a value specifying the center of group statistics or the
+##' @param center A value specifying the center of group statistics or the
 ##' ''target'' value of the process.
-##' @param conf.nsigma  a numeric value used to compute control limits, specifying the
+##' @param conf.nsigma  A numeric value used to compute control limits, specifying the
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
-##' @param limits a two-values vector specifying control limits.
-##' @param plot a logical value indicating should be plotted.
+##' @param limits A two-values vector specifying control limits.
+##' @param plot Logical value. If TRUE a u chart should be plotted.
 ##' @export
 ##' 
 qcs.u.default <- function(x, var.index  =  1, sample.index  =  2,

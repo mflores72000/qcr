@@ -13,12 +13,13 @@ A data frame with 180 observations on the following 3 variables:
 }
 }
 \description{
-A water company from A Corunia wants to control the performance 
-of the counters installed throughout the city.
-60 subsamples are taken each one composed by 3 measurements made 
-by the counters of the same antiquity (10 years) and caliber, 
-in a period of 5 years. Taking into account that there are two brands 
-or providers of counters
+A water supply company wants to control the performance of 
+the water counters installed throughout a city. For this purpose, 
+60 rational samples have been taken, each one composed by 3 measurements, 
+from the same age (10 years) and caliber water counters corresponding to 
+two different brands, and during a period of 5 years. This dataset is
+based on a study case of A Coruña’s water supply company, Empresa 
+Municipal de Aguas de La Coruña (Emalcsa).
 }
 \examples{
 

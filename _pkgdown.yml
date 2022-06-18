@@ -1,1 +1,77 @@
 url: https://mflores72000.github.io/qcr/
+template:
+  bootstrap: 5
+  bootswatch: cosmo
+  
+reference:
+  - title: "Quality Control Review"
+    contents:
+      - qcr
+  - title: "Control Charts"
+    desc: "In this section we present all functions for univariate, multivariate, functional Quality Control Charts in the sense of independence, dependence; parametric and non-parametric." 
+  - title: "Independence univariate parametric"
+    contents:
+      - qcd
+      - qcs
+      - qcs.xbar
+      - qcs.R
+      - qcs.S
+      - qcs.one
+      - qcs.p
+      - qcs.np
+      - qcs.c
+      - qcs.u
+      - qcs.cusum
+      - qcs.ewma
+      - plot.qcs
+  - title: "Independence univariate non parametric"
+    contents:    
+      - npqcd
+      - npqcs
+      - npqcs.Q
+      - npqcs.r
+      - npqcs.S
+      - plot.npqcs
+  - title: "Independence multivariate parametric"
+    contents:  
+      - mqcd
+      - mqcs
+      - mqcs.mcusum
+      - mqcs.mewma
+      - mqcs.t2
+      - plot.mqcs
+  - title: "Independence functional parametric"
+    contents:  
+      - fdqcd
+      - fdqcs.depth
+      - fdqcs.rank
+      - plot.fdqcd
+      - plot.fdqcs
+  - title: "Index capability parametric "
+    subtitle: 
+    contents:
+      - qcs.cp
+      - qcs.pcr
+      - qcs.hat.cpm
+      - qcs.cpn
+      - qcs.ca
+      - mstate.control
+      - npstate.control
+      - state.control
+      - mqcs.add
+      - npqcs.add
+      - qcs.add
+  - title: "Datasets"
+    desc: "Databases used in the package"
+    contents:
+      - archery1
+      - circuit
+      - counters
+      - dowel1
+      - employment
+      - orangejuice
+      - oxidation
+      - pcmanufact
+      - pistonrings
+      - plates
+      - presion

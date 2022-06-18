@@ -35,3 +35,4 @@ NeedsCompilation: no
 Packaged: 2021-05-14 14:47:05 UTC; MFlores
 Repository: CRAN
 Date/Publication: 2021-05-14 22:00:02 UTC
+VignetteBuilder: knitr

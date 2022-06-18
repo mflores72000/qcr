@@ -12,7 +12,7 @@
 \alias{plot.qcs.u}
 \alias{plot.qcs.ewma}
 \alias{plot.qcs.cusum}
-\title{function to create a plotting 'qcs' object}
+\title{Function to create a plotting 'qcs' object}
 \usage{
 \method{plot}{qcs}(
   x,
@@ -153,37 +153,37 @@
 )
 }
 \arguments{
-\item{x}{Object qcs (Quality Control Statical)}
+\item{x}{Object qcs (Quality Control Statical).}
 
-\item{title}{an overall title for the plot}
+\item{title}{An overall title for the plot.}
 
-\item{subtitle}{a sub title for the plot}
+\item{subtitle}{A sub title for the plot.}
 
-\item{xlab}{a title for the x axis}
+\item{xlab}{A title for the x axis.}
 
-\item{ylab}{a title for the y axis}
+\item{ylab}{A title for the y axis.}
 
-\item{ylim}{the y limits of the plot}
+\item{ylim}{The y limits of the plot.}
 
-\item{center.nominal}{a value specifying the 
+\item{center.nominal}{A value specifying the 
 center of group statistics or the "target" value 
-of the process}
+of the process.}
 
-\item{limits.specification}{a two-value vector 
+\item{limits.specification}{A two-value vector 
 specifying control limits.}
 
-\item{limits.alert}{a two-value vector 
+\item{limits.alert}{A two-value vector 
 specifying control alert limits.}
 
-\item{type.data}{a string specifying the type of data.}
+\item{type.data}{A string specifying the type of data.}
 
-\item{...}{arguments to be passed to or from methods.}
+\item{...}{Arguments to be passed to or from methods.}
 
-\item{conf.nsigma.alert}{a numeric value used to compute control limits, specifying the
+\item{conf.nsigma.alert}{A numeric value used to compute control limits, specifying the
 number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 < \code{conf.nsigma} < 1).}
 
-\item{conf.nsigma}{a numeric value used to compute control limits, specifying the
+\item{conf.nsigma}{A numeric value used to compute control limits, specifying the
 number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 < \code{conf.nsigma} < 1).}
 }

@@ -17,8 +17,8 @@
 ##'
 ##' This function is used to compute statistics required by the ewma chart.
 ##'
-##' @param x   Object qcd (Quality Control Data)
-##' @param ... arguments passed to or from methods.
+##' @param x   Object qcd (Quality Control Data).
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @examples 
 ##' library(qcr)
@@ -40,16 +40,16 @@ qcs.ewma <- function(x, ...) {
 ##' @rdname qcs.ewma
 ##' @method qcs.ewma default
 ##' @inheritParams qcd
-##' @param center a value specifying the center of group statistics or the
+##' @param center A value specifying the center of group statistics or the
 ##' ''target'' value of the process.
-##' @param std.dev  a value or an available method specifying the within-group standard
+##' @param std.dev  A value or an available method specifying the within-group standard
 ##' deviation(s) of the process. Several methods are available for estimating the
 ##' standard deviation in case of a continuous process variable.
-##' @param nsigma  a numeric value used to compute control limits, specifying the
+##' @param nsigma  A numeric value used to compute control limits, specifying the
 ##' number of standard deviations.
-##' @param lambda the smoothing parameter \eqn{0 \le \lambda \le 1}{0 <= lambda
+##' @param lambda The smoothing parameter \eqn{0 \le \lambda \le 1}{0 <= lambda
 ##' <= 1}
-##' @param plot a logical value indicating it should be plotted.
+##' @param plot Logical value. If TRUE a ewma chart should be plotted.
 ##' @export
 qcs.ewma.default <- function(x, var.index  =  1, sample.index  =  2,
                           covar.index  =  NULL, covar.names  =  NULL,

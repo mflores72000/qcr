@@ -5,7 +5,7 @@
 #  An R package for statistical in-line quality control.                      #
 #                                                                             #
 #  Written by: Miguel A. Flores Sanchez                                       #
-#              Professor of the Mathematics Department                             #
+#              Professor of the Mathematics Department                        #
 #              Escuela Politecnica Nacional, Ecuador                          #
 #              miguel.flores@epn.edu.ec                                       #
 #                                                                             #
@@ -21,8 +21,8 @@
   # In the default method \code{qcs.one.default} parameter \code{x} is a matrix 
   # or data-frame which should contain data, index sample and, optionally, covariate(s).  
   ##'   
-  ##' @param x   Object qcd (Quality Control Data)
-  ##' @param ... arguments passed to or from methods.
+  ##' @param x   Object qcd (Quality Control Data).
+  ##' @param ... Arguments passed to or from methods.
   ##' @export
   ##' @examples
   ##' 
@@ -50,22 +50,22 @@
   ##' @rdname  qcs.one
   ##' @method qcs.one default
   ##' @inheritParams qcd
-  ##' @param sizes  optional. A value or a vector of values specifying the sample sizes
+  ##' @param sizes  Optional. A value or a vector of values specifying the sample sizes
   ##' associated with each group. For continuous data the sample sizes are obtained counting the non-\code{NA} elements of
-  ##' the sample.index vector. For attribute
+  ##' the \code{sample.index} vector. For attribute
   ##' variable the argument sizes is required.
-  ##' @param center a value specifying the center of group statistics or the
+  ##' @param center A value specifying the center of group statistics or the
   ##' ''target'' value of the process.
-  ##' @param std.dev  a value or an available method specifying the within-group standard
+  ##' @param std.dev  A value or an available method specifying the within-group standard
   ##' deviation(s) of the process. Several methods are available for estimating the
   ##' standard deviation in case of a continuous process variable.
-  ##' @param k number of successive pairs of observations for computing the
+  ##' @param k Number of successive pairs of observations for computing the
   ##' standard deviation based on moving ranges of k points.
-  ##' @param conf.nsigma  a numeric value used to compute control limits, specifying the
+  ##' @param conf.nsigma  A numeric value used to compute control limits, specifying the
   ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
   ##' < \code{conf.nsigma} < 1).
-  ##' @param limits a two-value vector specifying control limits.
-  ##' @param plot a logical value indicating should be plotted.
+  ##' @param limits A two-value vector specifying control limits.
+  ##' @param plot Logical value. If TRUE a xbar.one chart should be plotted.
   ##' @export
 qcs.one.default <- function(x, var.index  =  1, sample.index  =  2, 
                                    covar.index  =  NULL, covar.names  =  NULL,

@@ -18,8 +18,8 @@
   ##'
   ##' This function is used to compute statistics required by the S chart.
   ##'
-  ##' @param x   an R object (used to select the method). See details.
-  ##' @param ... arguments passed to or from methods.
+  ##' @param x   An R object (used to select the method). See details.
+  ##' @param ... Arguments passed to or from methods.
   ##' @export
   ##' @examples
   ##' 
@@ -45,16 +45,16 @@
   ##' @rdname qcs.S
   ##' @method qcs.S default
   ##' @inheritParams qcd
-  ##' @param center a value specifying the center of group statistics or the
+  ##' @param center A value specifying the center of group statistics or the
   ##' ''target'' value of the process.
-  ##' @param std.dev  a value or an available method specifying the within-group standard
+  ##' @param std.dev  A value or an available method specifying the within-group standard
   ##' deviation(s) of the process. Several methods are available for estimating the
   ##' standard deviation in case of a continuous process variable.
-  ##' @param conf.nsigma  a numeric value used to compute control limits, specifying the
+  ##' @param conf.nsigma  A numeric value used to compute control limits, specifying the
   ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
   ##' < \code{conf.nsigma} < 1).
-  ##' @param limits a two-values vector specifying control limits.
-  ##' @param plot a logical value indicating should be plotted.
+  ##' @param limits A two-values vector specifying control limits.
+  ##' @param plot Logical value. If TRUE a S chart should be plotted.
   ##' @details
   ##' In the default method \code{qcs.S.default} parameter \code{x} is a matrix
   ##' or data-frame where it should contain data, index sample and, optionally, covariate(s).

@@ -12,7 +12,7 @@ A data frame with 40 observations on the following 2 variables.
 }
 }
 \description{
-Diameter and length of a manufacturing process of a dowel pin
+Diameter and length of a manufacturing process of a dowel pin.
 }
 \examples{
 

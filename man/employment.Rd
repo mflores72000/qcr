@@ -13,11 +13,10 @@ A data frame with 288 observations on the following 3 variables:
 }
 }
 \description{
-A Spaniard-Argentinian hotel company wants to control 
-the level of employment in their establishments. 
-For this it is going to make a continuous control 
-that measures the amount of occupants in terms of percentage. 
-48 sub samples are taken of six hotels belonging to two countries
+A Spaniard-Argentinian hotel company wants to control the 
+level of occupancy (measured in %) in their establishments through the
+application of a continuous control. For this purpose, 48 subsamples have
+been taken from six hotels corresponding to two different countries.
 }
 \examples{
 

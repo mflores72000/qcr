@@ -13,33 +13,33 @@
 #-------------------------------------------------------------------------
 # plot.qcs
 #-------------------------------------------------------------------------
-##' function to create a plotting 'qcs' object
+##' Function to create a plotting 'qcs' object
 ##' 
 ##' Generic function for plotting Shewhart charts of object of class 'qcs' to perform statistical 
 ##' quality control.
 ##' 
 ##' @method plot qcs
-##' @param x  Object qcs (Quality Control Statical)
-##' @param title an overall title for the plot
-##' @param subtitle a sub title for the plot
-##' @param xlab a title for the x axis
-##' @param ylab a title for the y axis
-##' @param ylim the y limits of the plot
-##' @param center.nominal a value specifying the 
+##' @param x  Object qcs (Quality Control Statical).
+##' @param title An overall title for the plot.
+##' @param subtitle A sub title for the plot.
+##' @param xlab A title for the x axis.
+##' @param ylab A title for the y axis.
+##' @param ylim The y limits of the plot.
+##' @param center.nominal A value specifying the 
 ##' center of group statistics or the "target" value 
-##' of the process
-##' @param limits.specification a two-value vector 
+##' of the process.
+##' @param limits.specification A two-value vector 
 ##' specifying control limits.
-##' @param limits.alert a two-value vector 
+##' @param limits.alert A two-value vector 
 ##' specifying control alert limits.
-##' @param type.data  a string specifying the type of data.
-##' @param conf.nsigma  a numeric value used to compute control limits, specifying the
+##' @param type.data  A string specifying the type of data.
+##' @param conf.nsigma  A numeric value used to compute control limits, specifying the
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
-##' @param conf.nsigma.alert  a numeric value used to compute control limits, specifying the
+##' @param conf.nsigma.alert  A numeric value used to compute control limits, specifying the
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
-##' @param ...  arguments to be passed to or from methods.
+##' @param ...  Arguments to be passed to or from methods.
 ##' @export
 ##' 
 

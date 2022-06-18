@@ -19,3 +19,5 @@ This package also allows the estimation of the most complete set of capability i
 Flores, M., Naya, S., Fernández-Casal, R., Zaragoza, S., Raña, P., and Tarrío-Saavedra, J. (2020). Constructing a control chart using functional data. *Mathematics*, **8**, 58,
 [DOI](https://doi.org/10.3390/math8010058).
 
+Flores, M., Fernández-Casal, R., Naya, S., & Tarrío-Saavedra, J. (2021). Statistical Quality Control with the qcr Package. *R Journal*, **13**, 194-217. [DOI](http://doi.org/10.32614/rj-2021-034).
+

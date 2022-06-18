@@ -16,31 +16,32 @@ qcd(
 )
 }
 \arguments{
-\item{data}{a matrix or data-frame which should contain data, index sample and,
+\item{data}{A matrix or data-frame which should contain data, index sample and,
 optionally, covariate(s).}
 
-\item{var.index}{a scalar with the column number corresponding to the observed data for
+\item{var.index}{A scalar with the column number corresponding to the observed data for
 the variable (the variable quality).  Alternativelly can be a string with the
 name of the quality variable.}
 
-\item{sample.index}{a scalar with the column number corresponding to the index each
+\item{sample.index}{A scalar with the column number corresponding to the index each
 group (sample).}
 
-\item{covar.index}{optional. A scalar or numeric vector with the column number(s)
+\item{covar.index}{Optional. A scalar or numeric vector with the column number(s)
 corresponding to the covariate(s). Alternativelly it can be a character vector with
 the names of the covariates.}
 
-\item{covar.names}{optional. A string or vector of strings with names for the
+\item{covar.names}{Optional. A string or vector of strings with names for the
 covariate columns.  Only valid if there is more than one column of data. By
 default, takes the names from the original object.}
 
-\item{data.name}{a string specifying the name of the variable which appears on the
+\item{data.name}{A string specifying the name of the variable which appears on the
 plots. If not provided it is taken from the object given as data.}
 
-\item{type.data}{a string specifying the type of data.}
+\item{type.data}{A string specifying the type of data.}
 
-\item{sizes}{optional. A value or a vector of values specifying the sample sizes
-associated with each group. For continuous data the sample sizes are obtained counting the non-\code{NA} elements##' of the sample.index vector. For attribute variable the argument sizes is required.}
+\item{sizes}{Optional. A value or a vector of values specifying the sample sizes
+associated with each group. For continuous data, the sample sizes are obtained counting the non-\code{NA} elements
+of the sample.index vector. For attribute variable the argument sizes is required.}
 }
 \description{
 Create an object of class 'qcd' to perform statistical quality control.

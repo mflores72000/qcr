@@ -59,17 +59,17 @@ qcs.dependence(
 )
 }
 \arguments{
-\item{x}{a vector containing observed data}
+\item{x}{A vector containing observed data.}
 
-\item{sample.index}{a scalar with the column number corresponding to the index 
+\item{sample.index}{A scalar with the column number corresponding to the index 
 of each group (sample).}
 
-\item{sizes}{a value or a vector of values specifying the sample sizes
+\item{sizes}{A value or a vector of values specifying the sample sizes
 associated with each group. For continuous data the sample sizes are obtained counting the non-\code{NA} elements of
 the sample.index vector. For \code{"p"}, \code{"np"} and \code{"u"} charts the argument
 \code{sizes} is required.}
 
-\item{type}{a character string specifying the group statistics to compute:
+\item{type}{A character string specifying the group statistics to compute:
 
 \tabular{lll}{ \tab Statistic charted \tab Chart description \cr
 \code{"xbar"} \tab mean \tab means of a continuous process variable \cr
@@ -93,11 +93,11 @@ standard deviation in case of a continuous process variable.}
 number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 < \code{conf.nsigma} < 1).}
 
-\item{limits}{a two-value vector specifying control limits.}
+\item{limits}{A two-value vector specifying control limits.}
 
-\item{type.data}{a string specifying el type de data.}
+\item{type.data}{A string specifying el type de data.}
 
-\item{lambda}{the smoothing parameter \eqn{0 \le \lambda \le 1}{0 <= lambda
+\item{lambda}{The smoothing parameter \eqn{0 \le \lambda \le 1}{0 <= lambda
 <= 1}}
 
 \item{decision.interval}{A numeric value specifying the number of standard
@@ -107,7 +107,7 @@ control.}
 \item{se.shift}{The amount of shift to detect in the process, measured in
 standard errors of the summary statistics.}
 
-\item{nsigma}{a numeric value used to compute control limits, specifying the
+\item{nsigma}{A numeric value used to compute control limits, specifying the
 number of standard deviations.}
 }
 \value{

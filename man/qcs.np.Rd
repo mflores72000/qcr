@@ -26,44 +26,49 @@ qcs.np(x, ...)
 \method{qcs.np}{qcd}(x, center = NULL, conf.nsigma = 3, limits = NULL, plot = FALSE, ...)
 }
 \arguments{
-\item{x}{an R object (used to select the method). See details.}
+\item{x}{An R object (used to select the method). See details.}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 
-\item{var.index}{a scalar with the column number corresponding to the observed data for
+\item{var.index}{A scalar with the column number corresponding to the observed data for
 the variable (the variable quality).  Alternativelly can be a string with the
 name of the quality variable.}
 
-\item{sample.index}{a scalar with the column number corresponding to the index each
+\item{sample.index}{A scalar with the column number corresponding to the index each
 group (sample).}
 
-\item{covar.index}{optional. A scalar or numeric vector with the column number(s)
+\item{covar.index}{Optional. A scalar or numeric vector with the column number(s)
 corresponding to the covariate(s). Alternativelly it can be a character vector with
 the names of the covariates.}
 
-\item{covar.names}{optional. A string or vector of strings with names for the
+\item{covar.names}{Optional. A string or vector of strings with names for the
 covariate columns.  Only valid if there is more than one column of data. By
 default, takes the names from the original object.}
 
-\item{data.name}{a string specifying the name of the variable which appears on the
+\item{data.name}{A string specifying the name of the variable which appears on the
 plots. If not provided it is taken from the object given as data.}
 
-\item{sizes}{optional. A value or a vector of values specifying the sample sizes
-associated with each group. For continuous data the sample sizes are obtained counting the non-\code{NA} elements##' of the sample.index vector. For attribute variable the argument sizes is required.}
+\item{sizes}{Optional. A value or a vector of values specifying the sample sizes
+associated with each group. For continuous data, the sample sizes are obtained counting the non-\code{NA} elements
+of the sample.index vector. For attribute variable the argument sizes is required.}
 
-\item{center}{a value specifying the center of group statistics or the
+\item{center}{A value specifying the center of group statistics or the
 ''target'' value of the process.}
 
-\item{conf.nsigma}{a numeric value used to compute control limits, specifying the
+\item{conf.nsigma}{A numeric value used to compute control limits, specifying the
 number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 < \code{conf.nsigma} < 1).}
 
-\item{limits}{a two-values vector specifying control limits.}
+\item{limits}{A two-values vector specifying control limits.}
 
-\item{plot}{a logical value indicating should be plotted.}
+\item{plot}{Logical value. If TRUE a np chart should be plotted.}
 }
 \description{
 This function is used to compute statistics required by the np chart.
+}
+\details{
+In the default method \code{qcs.np.default} parameter \code{x} is a matrix
+or data-frame where it should contain data, index sample and, optionally, covariate(s).
 }
 \examples{
 library(qcr)
