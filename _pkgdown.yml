@@ -47,7 +47,7 @@ reference:
       - fdqcs.depth
       - fdqcs.rank
       - plot.fdqcd
-      - plot.fdqcs
+      #- plot.fdqcs
   - title: "Index capability parametric "
     subtitle: 
     contents:

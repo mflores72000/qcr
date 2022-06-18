@@ -102,19 +102,18 @@ plot.fdqcs.depth <- function(x, title.fdata=NULL, title.depth=NULL,xlab=NULL, yl
 # plot.fdqcs.depth
 #-------------------------------------------------------------------------
 
-## Plot method for 'fdqcs.depth' objects
+##' Plot method for 'fdqcs.depth' objects
 ## 
-##' @rdname plot.fdqcs.depth
-##' @description Generic function for plotting charts of object of class 'fdqcs.rank' to perform statistical 
-## quality control.
+##' Generic function for plotting charts of object of class 
+##' 'fdqcs.rank' to perform statistical quality control. 
 ##' @method plot fdqcs.rank
-## @param x  Object fdqcs.depth
-## @param title.fdata an overall title for the fdata plot
+##' @param x  Object fdqcs.depth
+##' @param title.fdata an overall title for the fdata plot
 ##' @param title.rank an overall title for the depth plot 
-## @param xlab a title for the x axis
-## @param ylab a title for the y axis
-## @param draw.control ist that it specifies the col, lty and lwd for objects: fdataobj, statistic, IN and OUT.
-## @param ...  arguments to be passed to or from methods.
+##' @param xlab a title for the x axis
+##' @param ylab a title for the y axis
+##' @param draw.control ist that it specifies the col, lty and lwd for objects: fdataobj, statistic, IN and OUT.
+##' @param ...  arguments to be passed to or from methods.
 ##' @export
 ##' 
 plot.fdqcs.rank <- function(x, title.fdata=NULL, title.rank=NULL,xlab=NULL, ylab=NULL, col=NULL,
