@@ -1,8 +1,8 @@
 ---
-title: "Non parametric Quality Control Charts"
+title: "Gráficos de control de la calidad no paramétricos"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Non parametric Quality Control Charts}
+  %\VignetteIndexEntry{Gráficos de control de la calidad no paramétricos}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

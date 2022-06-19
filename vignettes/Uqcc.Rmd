@@ -1,8 +1,8 @@
 ---
-title: "Univariate Quality Control Charts"
+title: "Gráficos de control de la calidad univariantes"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Univariate Quality Control Charts}
+  %\VignetteIndexEntry{Gráficos de control de la calidad univariantes}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

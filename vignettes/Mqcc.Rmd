@@ -1,8 +1,8 @@
 ---
-title: "Multivariate Quality Control Charts"
+title: "Gráficos de Control de la calidad Multivariante"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Multivariate Quality Control Charts}
+  %\VignetteIndexEntry{Gráficos de Control de la calidad Multivariante}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

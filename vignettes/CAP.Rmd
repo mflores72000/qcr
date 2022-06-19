@@ -1,8 +1,8 @@
 ---
-title: "Capability analysis of a process"
+title: "Análisis de capacidad de un proceso"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Capability analysis of a process}
+  %\VignetteIndexEntry{Análisis de capacidad de un proceso}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

@@ -9,7 +9,6 @@ reference:
     contents:
       - qcr
   - title: "Control Charts"
-    desc: "In this section we present all functions for univariate, multivariate, functional Quality Control Charts in the sense of independence, dependence; parametric and non-parametric." 
   - title: "Independence univariate parametric"
     contents:
       - qcd
@@ -77,3 +76,21 @@ reference:
       - pistonrings
       - plates
       - presion
+
+navbar:
+  title: ~
+  left:
+    - text: Functions and Data
+      href: reference/index.html
+    - text: Material (Es)
+      menu:
+      - text: Gráficos de control de la calidad univariantes
+        href: articles/Uqcc.html
+      - text: Gráficos de control de la calidad no-paramétricos
+        href: articles/Npqcc.html
+      - text: Gráficos de Control de la calidad Multivariante
+        href: articles/Mqcc.html
+      - text: Análisis de capacidad de un proceso
+        href: articles/CAP.html
+    - text: Changelog
+      href: news/index.html
