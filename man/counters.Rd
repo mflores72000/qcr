@@ -7,9 +7,9 @@
 \format{
 A data frame with 180 observations on the following 3 variables:
 \describe{
-  \item{error}{the measurement error of the counters (Error:  (Real Volume - Measured Volume)/Real Volume)}
-  \item{sample}{sample id}
-  \item{brand}{brands of providers of counters}
+  \item{error}{The measurement error of the counters (Error:  (Real Volume - Measured Volume)/Real Volume)}
+  \item{sample}{Sample ID}
+  \item{brand}{Brands of providers of counters}
 }
 }
 \description{

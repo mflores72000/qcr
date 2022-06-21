@@ -94,9 +94,9 @@ NULL
 ##' @docType data
 ##' @format A data frame with 180 observations on the following 3 variables:
 ##' \describe{
-##'   \item{error}{the measurement error of the counters (Error:  (Real Volume - Measured Volume)/Real Volume)}
-##'   \item{sample}{sample id}
-##'   \item{brand}{brands of providers of counters}
+##'   \item{error}{The measurement error of the counters (Error:  (Real Volume - Measured Volume)/Real Volume)}
+##'   \item{sample}{Sample ID}
+##'   \item{brand}{Brands of providers of counters}
 ##' }
 ##' @keywords datasets
 ##' @examples
@@ -120,8 +120,8 @@ NULL
 ##' @docType data
 ##' @format A data frame with 288 observations on the following 3 variables:
 ##' \describe{
-##'   \item{occupantion}{the amount of occupants in terms of percentage}
-##'   \item{sample}{sample id}
+##'   \item{occupantion}{The amount of occupants in terms of percentage}
+##'   \item{sample}{Sample ID}
 ##'   \item{hemisphere}{Hemisphere}
 ##' }
 ##' @keywords datasets
@@ -173,10 +173,10 @@ NULL
 ##' @docType data
 ##' @format A data frame with 46 observations on the following 4 variables:
 ##' \describe{
-##'   \item{x}{number of defectives in 100 printed circuit boards (inspection unit)}
-##'   \item{sample}{sample ID}
-##'   \item{size}{sample size}
-##'   \item{trial}{trial sample indicator (TRUE/FALSE)}
+##'   \item{x}{Number of defectives in 100 printed circuit boards (inspection unit)}
+##'   \item{sample}{Sample ID}
+##'   \item{size}{Sample size}
+##'   \item{trial}{Trial sample indicator (TRUE/FALSE)}
 ##' }
 ##' @references Montgomery, D.C. (1991) \emph{Introduction to Statistical
 ##' Quality Control}, 2nd ed, New York, John Wiley & Sons, pp. 173--175
@@ -210,10 +210,10 @@ NULL
 ##' @docType data
 ##' @format A data frame with 54 observations on the following 4 variables:
 ##' \describe{ 
-##' \item{sample}{sample id}
-##' \item{D}{number of defectives}
-##' \item{size}{sample sizes} 
-##' \item{trial}{trial samples (TRUE/FALSE)}
+##' \item{sample}{Sample ID}
+##' \item{D}{Number of defectives}
+##' \item{size}{Sample sizes} 
+##' \item{trial}{Trial samples (TRUE/FALSE)}
 ##'  }
 ##' @references Montgomery, D.C. (1991) \emph{Introduction to Statistical
 ##' Quality Control}, 2nd ed, New York, John Wiley & Sons, pp. 152--155.
@@ -308,8 +308,8 @@ NULL
 ##' @docType data
 ##' @format A data frame with 40 observations on the following 2 variables.
 ##' \describe{ 
-##' \item{diameter}{a numeric vector}
-##' \item{length}{a numeric vector}
+##' \item{diameter}{A numeric vector}
+##' \item{length}{A numeric vector}
 ##' }
 ##' @keywords datasets
 ##' @examples

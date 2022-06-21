@@ -7,10 +7,10 @@
 \format{
 A data frame with 46 observations on the following 4 variables:
 \describe{
-  \item{x}{number of defectives in 100 printed circuit boards (inspection unit)}
-  \item{sample}{sample ID}
-  \item{size}{sample size}
-  \item{trial}{trial sample indicator (TRUE/FALSE)}
+  \item{x}{Number of defectives in 100 printed circuit boards (inspection unit)}
+  \item{sample}{Sample ID}
+  \item{size}{Sample size}
+  \item{trial}{Trial sample indicator (TRUE/FALSE)}
 }
 }
 \description{

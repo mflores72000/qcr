@@ -7,8 +7,8 @@
 \format{
 A data frame with 288 observations on the following 3 variables:
 \describe{
-  \item{occupantion}{the amount of occupants in terms of percentage}
-  \item{sample}{sample id}
+  \item{occupantion}{The amount of occupants in terms of percentage}
+  \item{sample}{Sample ID}
   \item{hemisphere}{Hemisphere}
 }
 }

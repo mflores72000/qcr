@@ -7,8 +7,8 @@
 \format{
 A data frame with 40 observations on the following 2 variables.
 \describe{ 
-\item{diameter}{a numeric vector}
-\item{length}{a numeric vector}
+\item{diameter}{A numeric vector}
+\item{length}{A numeric vector}
 }
 }
 \description{

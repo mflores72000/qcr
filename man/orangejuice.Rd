@@ -7,10 +7,10 @@
 \format{
 A data frame with 54 observations on the following 4 variables:
 \describe{ 
-\item{sample}{sample id}
-\item{D}{number of defectives}
-\item{size}{sample sizes} 
-\item{trial}{trial samples (TRUE/FALSE)}
+\item{sample}{Sample ID}
+\item{D}{Number of defectives}
+\item{size}{Sample sizes} 
+\item{trial}{Trial samples (TRUE/FALSE)}
  }
 }
 \description{
