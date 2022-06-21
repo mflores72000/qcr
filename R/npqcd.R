@@ -20,9 +20,11 @@
 ##' 
 
 ##' @aliases npqcd 
-##' @param x a matrix or data-frame or array which it should contain data. Dimension has to be the same as that of the observations.
-##' @param G  The x as a matrix, data frame or list. If it is a matrix or data frame, then each row is viewed as one multivariate observation.
-##' @param data.name  a string that specifies the title displayed on the plots. 
+##' @param x A matrix or data-frame or array which it should contain data. 
+##' Dimension has to be the same as that of the observations.
+##' @param G  The x as a matrix, data frame or list. If it is a matrix or data frame,
+##' then each row is viewed as one multivariate observation.
+##' @param data.name  A string that specifies the title displayed on the plots. 
 ##' If not provided it is taken from the name of the object x.
 ##' @export
 ##' @examples

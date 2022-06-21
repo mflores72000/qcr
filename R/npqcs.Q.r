@@ -5,7 +5,7 @@
 #  An R package for statistical in-line quality control.                      #
 #                                                                             #
 #  Written by: Miguel A. Flores Sanchez                                       #
-#              Professor of the Mathematics Department                             #
+#              Professor of the Mathematics Department                        #
 #              Escuela Politecnica Nacional, Ecuador                          #
 #              miguel.flores@epn.edu.ec                                       #
 #                                                                             #
@@ -18,7 +18,7 @@
 ##' This function is used to compute statistics required by the Q chart.
 ##' 
 ##' @param x  An object npqcd (Non parametric Quality Control Data)
-##' @param ... arguments passed to or from methods.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Regina Liu (1995)
 ##' @examples
@@ -56,11 +56,11 @@ npqcs.Q <- function(x, ...) {
 ##' @rdname npqcs.Q
 ##' @method npqcs.Q default
 ##' @inheritParams npqcd
-##' @param limits a two-value vector specifying the control limits lower and central.
+##' @param limits A two-value vector specifying the control limits lower and central.
 ##' @param method Character string which determines the depth function used. 
-##' method can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
-##' @param alpha it is the the significance level (0.01 for default)
-##' @param plot a logical value indicating it should be plotted. 
+##' \code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
+##' @param alpha It is the significance level (0.01 for default)
+##' @param plot Logical value. If TRUE a Q chart should be plotted. 
 ##' @export
  
 npqcs.Q.default <- function(x, G, data.name = NULL, limits = NULL,

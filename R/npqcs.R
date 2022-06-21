@@ -17,13 +17,13 @@
 ##' 
 ##' Create an object of class 'npqcs' to perform statistical quality control.
 ##' This function is used to compute statistics required to plot 
-##' Non Parametric Multivariate Control Charts
+##' Non Parametric Multivariate Control Charts.
 ##' 
 ##' @aliases npqcs summary.npqcs print.npqcs
 ##' @param x  Object npqcd (Non Parametric Multivariante Quality Control Data)
 ##' @param method Character string which determines the depth function used. 
-##' method can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
-##' @param ... arguments passed to or from methods.
+##' \code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 
 npqcs <- function(x, method = c("Tukey","Liu","Mahalanobis", "RP", "LD"), ...)

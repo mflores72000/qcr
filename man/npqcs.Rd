@@ -12,12 +12,12 @@ npqcs(x, method = c("Tukey", "Liu", "Mahalanobis", "RP", "LD"), ...)
 \item{x}{Object npqcd (Non Parametric Multivariante Quality Control Data)}
 
 \item{method}{Character string which determines the depth function used. 
-method can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.}
+\code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 }
 \description{
 Create an object of class 'npqcs' to perform statistical quality control.
 This function is used to compute statistics required to plot 
-Non Parametric Multivariate Control Charts
+Non Parametric Multivariate Control Charts.
 }

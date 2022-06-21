@@ -18,7 +18,7 @@
 ##' This function is used to compute statistics required by the S chart.
 ##' 
 ##' @param x  An object npqcd (Non parametric Quality Control Data)
-##' @param ... arguments passed to or from methods.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Regina Liu (1995)
 ##' @examples
@@ -47,12 +47,12 @@ npqcs.S <- function(x, ...) {
 ##' @rdname npqcs.S
 ##' @method npqcs.S default
 ##' @inheritParams npqcd
-##' @param limits a two-value vector specifying the control limits lower and central.
+##' @param limits A two-value vector specifying the control limits lower and central.
 ##' @param method Character string which determines the depth function used. 
-##' method can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
-##' @param alpha it is the the significance level (0.01 for default)
-##' @param plot a logical value indicating it should be plotted.
-##' @param standardize a logical value indicating data should be standardized. 
+##' \code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
+##' @param alpha It is the significance level (0.01 for default)
+##' @param plot Logical value. If TRUE a S chart should be plotted.
+##' @param standardize A logical value indicating data should be standardized. 
 ##' @export
  
 npqcs.S.default <- function(x, G, data.name = NULL, limits =NULL,

@@ -34,23 +34,24 @@ npqcs.S(x, ...)
 \arguments{
 \item{x}{An object npqcd (Non parametric Quality Control Data)}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 
-\item{G}{The x as a matrix, data frame or list. If it is a matrix or data frame, then each row is viewed as one multivariate observation.}
+\item{G}{The x as a matrix, data frame or list. If it is a matrix or data frame,
+then each row is viewed as one multivariate observation.}
 
-\item{data.name}{a string that specifies the title displayed on the plots. 
+\item{data.name}{A string that specifies the title displayed on the plots. 
 If not provided it is taken from the name of the object x.}
 
-\item{limits}{a two-value vector specifying the control limits lower and central.}
+\item{limits}{A two-value vector specifying the control limits lower and central.}
 
 \item{method}{Character string which determines the depth function used. 
-method can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.}
+\code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.}
 
-\item{alpha}{it is the the significance level (0.01 for default)}
+\item{alpha}{It is the significance level (0.01 for default)}
 
-\item{plot}{a logical value indicating it should be plotted.}
+\item{plot}{Logical value. If TRUE a S chart should be plotted.}
 
-\item{standardize}{a logical value indicating data should be standardized.}
+\item{standardize}{A logical value indicating data should be standardized.}
 }
 \description{
 This function is used to compute statistics required by the S chart.

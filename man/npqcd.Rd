@@ -7,11 +7,13 @@
 npqcd(x, G = NULL, data.name = NULL)
 }
 \arguments{
-\item{x}{a matrix or data-frame or array which it should contain data. Dimension has to be the same as that of the observations.}
+\item{x}{A matrix or data-frame or array which it should contain data. 
+Dimension has to be the same as that of the observations.}
 
-\item{G}{The x as a matrix, data frame or list. If it is a matrix or data frame, then each row is viewed as one multivariate observation.}
+\item{G}{The x as a matrix, data frame or list. If it is a matrix or data frame,
+then each row is viewed as one multivariate observation.}
 
-\item{data.name}{a string that specifies the title displayed on the plots. 
+\item{data.name}{A string that specifies the title displayed on the plots. 
 If not provided it is taken from the name of the object x.}
 }
 \description{

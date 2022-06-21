@@ -24,7 +24,7 @@ reference:
       - qcs.cusum
       - qcs.ewma
       - plot.qcs
-  - title: "Independence univariate non parametric"
+  - title: "Independence non parametric"
     contents:    
       - npqcd
       - npqcs
