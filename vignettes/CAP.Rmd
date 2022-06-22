@@ -25,7 +25,7 @@ knitr::opts_chunk$set(
 library(qcr)
 ```
 
-#Análisis de capacidad de un proceso
+# Análisis de capacidad de un proceso
 
 El análisis del capacidad de un proceso, en el caso del control de calidad se lo realiza a través del cálculo de índices que permiten medir si un proceso es o no capaz, relacionando las especificaciones técnicas que se debe cumplir (fijadas por el cliente ó fabricante) con la variabilidad del proceso. La interpretación de estos índices está asociada al resultado de dicha relación.
 

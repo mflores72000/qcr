@@ -10,6 +10,11 @@ reference:
       - qcr
   - title: "Control Charts"
   - title: "Independence univariate parametric"
+    desc: >
+     These functions are used to compute the quality control statistics for the 
+     different univariate control charts for variables and attributes. The 
+     control charts consider are: Xbar chart, R chart, S chart, I chart, 
+     p chart, np chart, c chart, u chart, CUSUM chart, EWMA chart.
     contents:
       - qcd
       - qcs
@@ -25,6 +30,10 @@ reference:
       - qcs.ewma
       - plot.qcs
   - title: "Independence non parametric"
+    desc: >
+     These functions are used to compute the quality control statistics for 
+     nonparametric control charts based on data depth. The 
+     control charts consider are: Q chart, r chart, S chart.
     contents:    
       - npqcd
       - npqcs
@@ -33,6 +42,10 @@ reference:
       - npqcs.S
       - plot.npqcs
   - title: "Independence multivariate parametric"
+    desc: >
+     These functions are used to compute the quality control statistics for the 
+     different multivariate control charts. The control charts consider are: 
+     MCUSUM chart, MEWMA chart, Hotelling T^2 chart.
     contents:  
       - mqcd
       - mqcs
@@ -41,6 +54,9 @@ reference:
       - mqcs.t2
       - plot.mqcs
   - title: "Independence functional parametric"
+    desc: >
+     These functions are used to compute the quality control statistics for the 
+     Phase I and Phase II control charts. 
     contents:  
       - fdqcd
       - fdqcs.depth
@@ -48,8 +64,10 @@ reference:
       - plot.fdqcd
       - plot.fdqcs.depth
       - plot.fdqcs.rank
-  - title: "Index capability parametric "
-    subtitle: 
+  - title: "Process Capability Analysis"
+    desc: >
+     These functions are used to perform process capability analysis and 
+     capability indices. 
     contents:
       - qcs.cp
       - qcs.pcr

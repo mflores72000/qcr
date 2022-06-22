@@ -124,13 +124,15 @@
 <span class="co">#&gt;  Package qcr: Quality Control Review </span>
 <span class="co">#&gt;  version 1.3 (built on 2021-05-14).</span>
 <span class="co">#&gt;  Copyright Miguel A. Flores Sanchez 2016-2021.</span></code></pre></div>
-<p>#Análisis de capacidad de un proceso</p>
+<div class="section level2">
+<h2 id="análisis-de-capacidad-de-un-proceso">Análisis de capacidad de un proceso<a class="anchor" aria-label="anchor" href="#an%C3%A1lisis-de-capacidad-de-un-proceso"></a>
+</h2>
 <p>El análisis del capacidad de un proceso, en el caso del control de calidad se lo realiza a través del cálculo de índices que permiten medir si un proceso es o no capaz, relacionando las especificaciones técnicas que se debe cumplir (fijadas por el cliente ó fabricante) con la variabilidad del proceso. La interpretación de estos índices está asociada al resultado de dicha relación.</p>
 <p>Los índices de capacidad se cálculan generalmente como la razón entre la magnitud del rango de variación de las especificaciones y la variabilidad del proceso en términos de <span class="math inline">\(\sigma\)</span>. En el caso de valores grandes de estos índices se tiene un proceso capaz de producir artículos que cumplen con los requerimientos del cliente. En otras palabras, cuánto más grande sea el valor que tome el índice de capacidad, más pequeña será la cantidad de productos fuera de los límites de especificación.</p>
 <p>En esta sección se describirán los índices de capacidad para procesos cuya distribución subyacente es normal y no normal(exponencial, weibull, etc.), además se presenta un método gráfico para ver si un proceso, con distribución normal, se puede considerar capaz y finalmente se describen índices de capacidad para distribuciones no normales.</p>
-<div class="section level2">
-<h2 id="asumiendo-una-distribución-normal">Asumiendo una distribución normal<a class="anchor" aria-label="anchor" href="#asumiendo-una-distribuci%C3%B3n-normal"></a>
-</h2>
+<div class="section level3">
+<h3 id="asumiendo-una-distribución-normal">Asumiendo una distribución normal<a class="anchor" aria-label="anchor" href="#asumiendo-una-distribuci%C3%B3n-normal"></a>
+</h3>
 <p>Los índices de capacidad más utilizados en la industria, analizan la capacidad del proceso bajo la suposición de que el proceso es estable y de que la característica estudiada se distribuye normalmente. En la Table~ se describen los índices <span class="math inline">\(C_p,C_{pk},C_{pm},C_{pmk}\)</span> que se obtienen a partir de estos supuestos.</p>
 <p>Kerstin Vannman (1995) propone una formulación general de estos índices mediante una expresión que permite obtenerlos para distintos valores de dos nuevos parámetros no negativos <span class="math inline">\(u\)</span> y <span class="math inline">\(v\)</span>:</p>
 <p><span class="math display">\[ C_p\left( u,v\right)= \frac{d-u\vert \mu - m\vert}{3\sqrt{\sigma^2+v\left( \mu - T\right)^2}}\]</span></p>
@@ -159,9 +161,9 @@
 <span class="fu"><a href="../reference/qcs.cp.html">qcs.cp</a></span><span class="op">(</span>object <span class="op">=</span> <span class="va">xbar</span>,parameters <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, limits <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">LSL</span>,<span class="va">USL</span><span class="op">)</span>,ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1</span><span class="op">)</span>, contour <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
 <span class="co">#&gt;   Cpmk  delta  gamma </span>
 <span class="co">#&gt; 0.2984 0.1176 0.9785</span></code></pre></div>
-<div class="section level3">
-<h3 id="gráfico-de-la-capacidad-del-proceso">Gráfico de la capacidad del proceso<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-de-la-capacidad-del-proceso"></a>
-</h3>
+<div class="section level4">
+<h4 id="gráfico-de-la-capacidad-del-proceso">Gráfico de la capacidad del proceso<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-de-la-capacidad-del-proceso"></a>
+</h4>
 <p>Deleryd y Vannman (1999) y Vannman (2001), (2006) propusieron un método gráfico basado en los índices de capacidad para analizar la capacidad de un proceso. La ventaja de usar este tipo de gráficos, comparado con utilizar sólo el índice de capacidad, es que los gráficos proporcionan información visual instantáneamente: información sobre la localización y variación de la característica estudiada del proceso e información sobre la capacidad del proceso.</p>
 <p>Un proceso se dice que es capaz si el índice de capacidad del proceso excede un cierto valor k, donde k &gt; 1. Algunos de los valores de k que más se usan son k = 1, k = 4/3, o k = 5/3. Se supondrá que el valor del target coincide con el centro del intervalo de especificación, es decir, <span class="math inline">\(T = \frac{\left( USL + LSL\right)}{2} = m\)</span>. Entonces, se utilizará uno de los índices definidos por la familia <span class="math inline">\(C_p\left( u,v\right)\)</span></p>
 <p>por ejemplo, <span class="math inline">\(C_{pk}\)</span> o <span class="math inline">\(C_{pm}\)</span> y se definirá el proceso como capaz si <span class="math inline">\(C_p\left( u, v\right) &gt; k\)</span>, dados los valores de u, v, y k. Notemos de nuevo que si <span class="math inline">\(\mu = T\)</span>, todos los índices <span class="math inline">\(C_p\left( u, v\right)\)</span>, se reducen al mismo,<span class="math inline">\(C_p\)</span>. Diferentes elecciones de u, v, y k imponen diferentes restricciones en los parámetros del proceso <span class="math inline">\(\left( \mu, \sigma \right)\)</span>. Esto se puede ver f´acilmente en un gr´afico de capacidades. Este gráfico es simplemente un gráfico de contorno de <span class="math inline">\(C_p\left( u, v\right) = k\)</span> como una función de <span class="math inline">\(\mu\)</span> y <span class="math inline">\(\sigma\)</span>, o como una función de <span class="math inline">\(\delta\)</span> y <span class="math inline">\(\gamma\)</span>, donde <span class="math inline">\(\delta = \frac{\mu - T}{d}\)</span> y <span class="math inline">\(\gamma = \frac{\sigma}{d}\)</span>.</p>
@@ -198,9 +200,9 @@
 <pre><code><span class="co">#&gt;   Cpmk  delta  gamma </span>
 <span class="co">#&gt; 0.2984 0.1176 0.9785</span></code></pre>
 </div>
-<div class="section level3">
-<h3 id="gráfico-de-la-capacidad-del-proceso-estimado">Gráfico de la capacidad del proceso estimado<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-de-la-capacidad-del-proceso-estimado"></a>
-</h3>
+<div class="section level4">
+<h4 id="gráfico-de-la-capacidad-del-proceso-estimado">Gráfico de la capacidad del proceso estimado<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-de-la-capacidad-del-proceso-estimado"></a>
+</h4>
 <p>En la práctica los parámetros del proceso son desconocidos y necesitamos estimarlos. Podemos establecer entonces, una regla de decisión basada en los estadísticos muestrales y un gráfico de capacidad del proceso estimado, para usarla para decidir si un proceso se puede considerar capaz o no, cuando <span class="math inline">\(\mu\)</span> y <span class="math inline">\(\sigma\)</span> son desconocidas y necesitamos estimarlas por:</p>
 <p><span class="math display">\[\hat{\mu}=\bar{x}=\frac{1}{n}\sum_{i=1}^n{X_i} \; y \;  \hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^n{X_i-\bar{X}}\]</span></p>
 <p>que son los estimadores de máxima verosimilitud en el caso en el que la característica estudiada del proceso se distribuye normalmente; y sea <span class="math inline">\(X_1,X_2,\dots,X_n\)</span> una muestra aleatoria simple de una distribución normal con media <span class="math inline">\(\mu\)</span> y varianza <span class="math inline">\(\sigma^2\)</span>.</p>
@@ -220,9 +222,9 @@
 <p><img src="CAP_files/figure-html/unnamed-chunk-2-2.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 </div>
-<div class="section level2">
-<h2 id="non-normal-parametric-process-capability-analysis">Non Normal parametric process capability analysis<a class="anchor" aria-label="anchor" href="#non-normal-parametric-process-capability-analysis"></a>
-</h2>
+<div class="section level3">
+<h3 id="non-normal-parametric-process-capability-analysis">Non Normal parametric process capability analysis<a class="anchor" aria-label="anchor" href="#non-normal-parametric-process-capability-analysis"></a>
+</h3>
 <p>En el documento correspondiente ISO 21747 (2006), se definen los siguientes índices:</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span> 
@@ -301,9 +303,9 @@
 <span class="co">#&gt; A = 0.7297, shape = 18232.755, scale = 74.004, p-value &lt;= 0.05</span>
 <span class="co">#&gt; alternative hypothesis: true distribution is not equal to weibull</span></code></pre>
 </div>
-<div class="section level2">
-<h2 id="análisis-de-capacidad-no-paramétrico">Análisis de capacidad no paramétrico<a class="anchor" aria-label="anchor" href="#an%C3%A1lisis-de-capacidad-no-param%C3%A9trico"></a>
-</h2>
+<div class="section level3">
+<h3 id="análisis-de-capacidad-no-paramétrico">Análisis de capacidad no paramétrico<a class="anchor" aria-label="anchor" href="#an%C3%A1lisis-de-capacidad-no-param%C3%A9trico"></a>
+</h3>
 <p>Las hipótesis tradicionales sobre los datos como la normalidad o la independencia son frecuentemente violadas en muchas situaciones reales. Así, en escenarios en los que los supuestos de normalidad no se verifican, los índices definidos en las secciones anteriores no son válidos. Pearn y Chen (1997) y Tong y Chen (1998) propusieron generalizaciones de <span class="math inline">\(C_p\left(u, v\right)\)</span> para el caso de distribuciones arbitrarias de los datos:</p>
 <p><span class="math display">\[ C_{Np}\left( u,v\right)= \frac{d-u\vert M - m\vert}{3\sqrt{\left(\frac{F_{99.865}-F_{0.135}}{6} \right)^2+v\left( M - T\right)^2}}\]</span></p>
 <p>donde <span class="math inline">\(F_{\alpha}\)</span> el correspondiente percentil (100 <span class="math inline">\(\alpha\)</span>)% de la distribución y M la mediana del proceso.</p>
@@ -337,9 +339,9 @@
 <span class="co">#&gt;  CNpmk </span>
 <span class="co">#&gt; 0.9015</span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="un-análisis-completo-del-proceso">Un análisis completo del proceso<a class="anchor" aria-label="anchor" href="#un-an%C3%A1lisis-completo-del-proceso"></a>
-</h2>
+<div class="section level3">
+<h3 id="un-análisis-completo-del-proceso">Un análisis completo del proceso<a class="anchor" aria-label="anchor" href="#un-an%C3%A1lisis-completo-del-proceso"></a>
+</h3>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span> 
 <span class="va">xbar</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span>,plot <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
@@ -392,6 +394,7 @@
 <span class="co">#&gt; data:  xbar </span>
 <span class="co">#&gt; A = 0.1399, mean = 74.001, sd = 0.005, p-value = 0.9694</span>
 <span class="co">#&gt; alternative hypothesis: true distribution is not equal to normal</span></code></pre>
+</div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
