@@ -3,10 +3,11 @@ pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   CAP: CAP.html
+  material: material.html
   Mqcc: Mqcc.html
   Npqcc: Npqcc.html
   Uqcc: Uqcc.html
-last_built: 2022-06-22T23:12Z
+last_built: 2022-06-23T03:59Z
 urls:
   reference: https://mflores72000.github.io/qcr/reference
   article: https://mflores72000.github.io/qcr/articles
