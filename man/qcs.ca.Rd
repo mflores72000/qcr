@@ -22,14 +22,16 @@ qcs.ca(
 \item{limits}{A vector specifying the lower and upper specification limits.}
 
 \item{target}{A value specifying the target of the process. 
-If is \code{NULL}, the target is set at the middle value bewteen specification limits.}
+If it is \code{NULL}, the target is set at the middle value between specification limits.}
 
 \item{std.dev}{A value specifying the within-group standard deviation.}
 
 \item{nsigmas}{A numeric value specifying the number of sigmas to use.}
 
-\item{confidence}{A numeric value between 0 and 1 specifying the probabilities for computing the quantiles.
-This values is used only when object values is provided. The default value is 0.9973.}
+\item{confidence}{A numeric value between 0 and 1 specifying the probabilities 
+for computing the quantiles.
+This values is used only when \code{object} values is provided. 
+By default \code{confidence}=0.9973.}
 
 \item{plot}{Logical value indicating whether graph should be plotted.}
 
@@ -38,14 +40,18 @@ This values is used only when object values is provided. The default value is 0.
 \item{...}{Arguments to be passed to or from methods.}
 }
 \description{
-Calculates the process capability indices cp, cpk, cpL cpU, cpm, cpmk for a qcs object and normal distribution. 
-Also, this function calculates confidence limits for \eqn{C_p}{C_p} using the method described by Chou et al. (1990). 
-Approximate confidence limits for \eqn{C_{pl}}{C_pl}, \eqn{C_{pu}}{C_pu} and  \eqn{C_{pk}}{C_pk} are computed using the method in Bissell (1990). 
-Confidence limits for \eqn{C_{pm}}{C_pm} are based on the method of Boyles (1991); this method is approximate and it assumes 
-the target is midway between the specification limits.
+Calculates the process capability indices cp, cpk, cpL cpU, cpm, cpmk for a 
+qcs object and normal distribution. Also, this function calculates confidence
+limits for \eqn{C_p}{C_p} using the method described by Chou et al. (1990). 
+Approximate confidence limits for \eqn{C_{pl}}{C_pl}, \eqn{C_{pu}}{C_pu} and
+\eqn{C_{pk}}{C_pk} are computed using the method in Bissell (1990). 
+Confidence limits for \eqn{C_{pm}}{C_pm} are based on the method of Boyles (1991); 
+this method is approximate and it assumes the target is midway between the 
+specification limits.
 Moreover, calculates the process capability indices cnp, cnpk, cnpm, cnpmk for a qcs object. 
-A histogramm with a density curve is displayed along with the specification limits, a 
-Quantile-Quantile Plot for the specified distribution and contour graph is plotted for estimate the indice cpm.
+A histogram with a density curve is displayed along with the specification limits, a 
+Quantile-Quantile Plot for the specified distribution and contour graph is plotted 
+for estimate the index cpm.
 }
 \examples{
 library(qcr)

@@ -458,15 +458,15 @@ qcs.add <- function(x, ...){
 ##' @rdname  qcs.add 
 ##' @method qcs.add default
 ##' @param value   Object type data.frame
-##' @param var.index a scalar with the column number corresponding to the observed data for
-##' the variable (the variable quality).  Alternativelly it can be a string with the
+##' @param var.index A scalar with the column number corresponding to the observed data for
+##' the variable (the variable quality).  Alternatively it can be a string with the
 ##' name of the quality variable.
-##' @param sample.index a scalar with the column number corresponding the index each
+##' @param sample.index A scalar with the column number corresponding the index each
 ##' group (sample).
-##' @param covar.index  optional. A scalar or numeric vector with the column number(s)
-##' corresponding to the covariate(s). Alternativelly can be a character vector with
+##' @param covar.index  Optional. A scalar or numeric vector with the column number(s)
+##' corresponding to the covariate(s). Alternatively can be a character vector with
 ##' the names of the covariates.
-##' @param ...  arguments to be passed to or from methods.
+##' @param ...  Arguments to be passed to or from methods.
 ##' @export 
 
 
@@ -533,7 +533,7 @@ qcs.add.default <- function(x, value, var.index = NULL,
 ##' Univariante process state
 ##' 
 ##' This function removes observations from the sample which violates 
-##' the rules of a process under control
+##' the rules of a process under control.
 ##' @aliases state.control
 ##' @param x  Object qcs (Quality Control Statistical)
 ##' @export

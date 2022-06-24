@@ -20,12 +20,13 @@
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
 ##' @param limits A vector specifying the lower and upper specification limits.
 ##' @param target A value specifying the target of the process. 
-##' If is \code{NULL}, the target is set at the middle value bewteen specification limits.
+##' If it is \code{NULL}, the target is set at the middle value between specification limits.
 ##' @param mu A value specifying the mean of data.
 ##' @param std.dev A value specifying the within-group standard deviation.
 ##' @param nsigmas A numeric value specifying the number of sigmas to use.
-##' @param k0 A numeric value. If the capacity index exceeds the \code{k} value, then the process is capable.
-##' @param alpha The significance level (0.05 for default)
+##' @param k0 A numeric value. If the capacity index exceeds the \code{k} value, 
+##' then the process is capable.
+##' @param alpha The significance level (by default alpha=0.05).
 ##' @param n Size of the sample.
 ##' @param contour Logical value indicating whether contour graph should be plotted.
 ##' @param ylim The y limits of the plot.

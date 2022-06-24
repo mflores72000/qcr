@@ -19,19 +19,19 @@ qcs.add(x, ...)
 \arguments{
 \item{x}{Object type qcs}
 
-\item{...}{arguments to be passed to or from methods.}
+\item{...}{Arguments to be passed to or from methods.}
 
 \item{value}{Object type data.frame}
 
-\item{var.index}{a scalar with the column number corresponding to the observed data for
-the variable (the variable quality).  Alternativelly it can be a string with the
+\item{var.index}{A scalar with the column number corresponding to the observed data for
+the variable (the variable quality).  Alternatively it can be a string with the
 name of the quality variable.}
 
-\item{sample.index}{a scalar with the column number corresponding the index each
+\item{sample.index}{A scalar with the column number corresponding the index each
 group (sample).}
 
-\item{covar.index}{optional. A scalar or numeric vector with the column number(s)
-corresponding to the covariate(s). Alternativelly can be a character vector with
+\item{covar.index}{Optional. A scalar or numeric vector with the column number(s)
+corresponding to the covariate(s). Alternatively can be a character vector with
 the names of the covariates.}
 }
 \description{

@@ -12,9 +12,9 @@ npqcs.add(x, ...)
 \arguments{
 \item{x}{Object type npqcs}
 
-\item{...}{arguments to be passed to or from methods.}
+\item{...}{Arguments to be passed to or from methods.}
 
-\item{value}{Object type data.frame, matrix or array}
+\item{value}{Object type data.frame, matrix or array.}
 }
 \description{
 This function is used to join two objects of type matrix, data.frame or array and npqcs.

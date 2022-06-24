@@ -19,25 +19,31 @@ qcs.cpn(
 \item{object}{qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.}
 
 \item{parameters}{A vector specifying the \code{u} and \code{v} parameters values. 
-If parameters = c(u=0, v=0), the cp indice is calculed; If parameters = c(u=1, v=0), the cpk indice is calculed;
-If parameters = c(u=0, v=1), the cpm indice is calculed; If parameters = c(u=1, v=1), the cpmk indice is calculed.}
+If \code{parameters} = c(u=0, v=0), the cp indice is calculed; 
+If \code{parameters} = c(u=1, v=0), the cpk indice is calculed;
+If \code{parameters} = c(u=0, v=1), the cpm indice is calculed; 
+If \code{parameters} = c(u=1, v=1), the cpmk indice is calculed.}
 
 \item{limits}{A vector specifying the lower and upper specification limits.}
 
-\item{q}{A vector specifying the lower and upper quantiles. These values are necessary, if \code{object} value is missing.}
+\item{q}{A vector specifying the lower and upper quantiles. These values are 
+necessary, if \code{object} value is missing.}
 
 \item{target}{A value specifying the target of the process. 
-If is \code{NULL}, the target is set at the middle value bewteen specification limits.}
+If it is \code{NULL}, the target is set at the middle value between specification limits.}
 
 \item{median}{A value specifying the median of data.}
 
 \item{nsigmas}{A numeric value specifying the number of sigmas to use.}
 
-\item{confidence}{A numeric value between 0 and 1 specifying the probabilities for computing the quantiles.
-This values is used only when object values is provided. The default value is 0.9973.}
+\item{confidence}{A numeric value between 0 and 1 specifying the probabilities 
+for computing the quantiles.
+This values is used only when \code{object} values is provided. 
+By default \code{confidence}=0.9973.}
 }
 \description{
-Calculates \eqn{CNp}{CNpk}, \eqn{CNpm}{CNpmk} using the formulation described by Tong and Chen (1998).
+Calculates \eqn{CNp}{CNpk}, \eqn{CNpm}{CNpmk} using the formulation 
+described by Tong and Chen (1998).
 }
 \examples{
 library(qcr)

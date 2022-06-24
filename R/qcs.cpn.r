@@ -5,7 +5,7 @@
 #  An R package for statistical in-line quality control.                      #
 #                                                                             #
 #  Written by: Miguel A. Flores Sanchez                                       #
-#              Professor of the Mathematics Department                             #
+#              Professor of the Mathematics Department                        #
 #              Escuela Politecnica Nacional, Ecuador                          #
 #              miguel.flores@epn.edu.ec                                       #
 #                                                                             #
@@ -15,20 +15,26 @@
 #-----------------------------------------------------------------------------#
 ##' Process capability indices (Nonparametric)
 ##' 
-##' Calculates \eqn{CNp}{CNpk}, \eqn{CNpm}{CNpmk} using the formulation described by Tong and Chen (1998).
+##' Calculates \eqn{CNp}{CNpk}, \eqn{CNpm}{CNpmk} using the formulation 
+##' described by Tong and Chen (1998).
 ##' @aliases qcs.cpn 
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
 ##' @param parameters A vector specifying the \code{u} and \code{v} parameters values. 
-##' If parameters = c(u=0, v=0), the cp indice is calculed; If parameters = c(u=1, v=0), the cpk indice is calculed;
-##' If parameters = c(u=0, v=1), the cpm indice is calculed; If parameters = c(u=1, v=1), the cpmk indice is calculed.  
+##' If \code{parameters} = c(u=0, v=0), the cp indice is calculed; 
+##' If \code{parameters} = c(u=1, v=0), the cpk indice is calculed;
+##' If \code{parameters} = c(u=0, v=1), the cpm indice is calculed; 
+##' If \code{parameters} = c(u=1, v=1), the cpmk indice is calculed.  
 ##' @param limits A vector specifying the lower and upper specification limits.
-##' @param q A vector specifying the lower and upper quantiles. These values are necessary, if \code{object} value is missing. 
+##' @param q A vector specifying the lower and upper quantiles. These values are 
+##' necessary, if \code{object} value is missing. 
 ##' @param target A value specifying the target of the process. 
-##' If is \code{NULL}, the target is set at the middle value bewteen specification limits.
+##' If it is \code{NULL}, the target is set at the middle value between specification limits.
 ##' @param median A value specifying the median of data.
 ##' @param nsigmas A numeric value specifying the number of sigmas to use.
-##' @param confidence A numeric value between 0 and 1 specifying the probabilities for computing the quantiles.
-##' This values is used only when object values is provided. The default value is 0.9973.
+##' @param confidence A numeric value between 0 and 1 specifying the probabilities 
+##' for computing the quantiles.
+##' This values is used only when \code{object} values is provided. 
+##' By default \code{confidence}=0.9973.
 ##' @export
 ##' @references 
 ##' Montgomery, D.C. (1991) \emph{Introduction to Statistical Quality Control}, 2nd

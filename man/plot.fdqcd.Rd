@@ -11,19 +11,19 @@
 
 \item{y}{Object fdqcd (monitoring)}
 
-\item{title}{an overall title for the plot}
+\item{title}{An overall title for the plot.}
 
-\item{xlab}{a title for the x axis}
+\item{xlab}{A title for the x axis.}
 
-\item{ylab}{a title for the y axis}
+\item{ylab}{A title for the y axis.}
 
-\item{col}{The color for curves}
+\item{col}{The color for curves.}
 
-\item{...}{arguments to be passed to or from methods.}
+\item{...}{Arguments to be passed to or from methods.}
 }
 \description{
-Generic function for plotting Multivarite charts of object of class 'fdqcd' to perform statistical 
-quality control.
+Generic function for plotting Multivarite charts of object of class 'fdqcd' 
+to perform statistical quality control.
 }
 \examples{
 library(qcr)

@@ -25,7 +25,7 @@ qcs.hat.cpm(
 \item{limits}{A vector specifying the lower and upper specification limits.}
 
 \item{target}{A value specifying the target of the process. 
-If is \code{NULL}, the target is set at the middle value bewteen specification limits.}
+If it is \code{NULL}, the target is set at the middle value between specification limits.}
 
 \item{mu}{A value specifying the mean of data.}
 
@@ -33,9 +33,10 @@ If is \code{NULL}, the target is set at the middle value bewteen specification l
 
 \item{nsigmas}{A numeric value specifying the number of sigmas to use.}
 
-\item{k0}{A numeric value. If the capacity index exceeds the \code{k} value, then the process is capable.}
+\item{k0}{A numeric value. If the capacity index exceeds the \code{k} value, 
+then the process is capable.}
 
-\item{alpha}{The significance level (0.05 for default)}
+\item{alpha}{The significance level (by default alpha=0.05).}
 
 \item{n}{Size of the sample.}
 

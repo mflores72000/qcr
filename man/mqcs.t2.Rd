@@ -36,31 +36,34 @@ mqcs.t2(x, ...)
 )
 }
 \arguments{
-\item{x}{an R object (used to select the method). See details.}
+\item{x}{An R object (used to select the method). See details.}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 
-\item{data.name}{a string that specifies the title displayed on the plots. 
+\item{data.name}{A string that specifies the title displayed on the plots. 
 If not provided it is taken from the name of the object's data.}
 
-\item{limits}{a two-values vector specifying the control limits.}
+\item{limits}{A two-values vector specifying the control limits.}
 
-\item{Xmv}{is the mean vector. It is only specified for Phase II or when the parameters of the distribution are known.}
+\item{Xmv}{Is the mean vector. It is only specified for Phase II or when 
+the parameters of the distribution are known.}
 
-\item{S}{is the sample covariance matrix. It is only used for Phase II or when the parameters of the distribution are known.}
+\item{S}{Is the sample covariance matrix. It is only used for Phase II or 
+when the parameters of the distribution are known.}
 
-\item{colm}{is the number of samples (m) and it is only used in Hotelling control chart for Phase II}
+\item{colm}{Is the number of samples (m) and it is only used in Hotelling 
+control chart for Phase II.}
 
-\item{alpha}{it is the the significance level (0.01 for default)}
+\item{alpha}{It is the the significance level (0.01 for default)}
 
 \item{phase}{Allows to select the type of UCL to use. Only values of phase = 1 or 2 are allowed.}
 
-\item{method}{is the method employed to compute the covatiance matrix
+\item{method}{Is the method employed to compute the covariance matrix
 in the individual observation case. Two methods are used "sw" 
 for compute according to (Sullivan,Woodall 1996a) and "hm" 
 by (Holmes,Mergen 1993)}
 
-\item{plot}{a logical value indicating that it should be plotted.}
+\item{plot}{Logical value. If TRUE a t2 chart should be plotted.}
 }
 \description{
 This function is used to compute statistics required by the t2 chart.

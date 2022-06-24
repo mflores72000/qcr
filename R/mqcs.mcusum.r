@@ -17,8 +17,8 @@
 ##'
 ##' This function is used to compute statistics required by the mcusum chart.
 ##'
-##' @param x   an R object (used to select the method). See details.
-##' @param ... arguments passed to or from methods.
+##' @param x   An R object (used to select the method). See details.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ## @references Montgomery, D.C. (2000)
 ##' @examples
@@ -47,16 +47,18 @@ mqcs.mcusum <- function(x, ...) {
 ##' @rdname mqcs.mcusum
 ##' @method mqcs.mcusum default
 ##' @inheritParams mqcd
-##' @param limits a two-values vector specifying the control limits.
-##' @param Xmv is the mean vector. It is only specified for Phase II or when the parameters of the distribution are known.
-##' @param S is the sample covariance matrix. It is only used for Phase II or when the parameters of the distribution are known.
-##' @param k is a constant used in MCUSUM chart. Frequently k = 0.5
-##' @param h is a constant used in MCUSUM chart. Usually h = 5.5
-##' @param method is the method employed to compute the covatiance matrix
+##' @param limits A two-values vector specifying the control limits.
+##' @param Xmv Is the mean vector. It is only specified for Phase II or when 
+##' the parameters of the distribution are known.
+##' @param S Is the sample covariance matrix. It is only used for Phase II or 
+##' when the parameters of the distribution are known.
+##' @param k Is a constant used in MCUSUM chart. Frequently k = 0.5
+##' @param h Is a constant used in MCUSUM chart. Usually h = 5.5
+##' @param method Is the method employed to compute the covariance matrix
 ##' in the individual observation case. Two methods are used "sw" 
 ##' for compute according to (Sullivan,Woodall 1996a) and "hm" 
 ##' by (Holmes,Mergen 1993)
-##' @param plot a logical value indicating that it should be plotted. 
+##' @param plot Logical value. If TRUE a mcusum chart should be plotted. 
 ##' @author Edgar Santos-Fernandez
 ##' @export
 ##' 

@@ -10,10 +10,10 @@ fdqcd(x, data.name = NULL, ...)
 \item{x}{Matrix of set cases with dimension (n x m), where n is the number of curves 
 and m are the points observed in each curve.}
 
-\item{data.name}{a string that specifies the title displayed on the plots. 
+\item{data.name}{A string that specifies the title displayed on the plots. 
 If not provided it is taken from the name of the object's data.}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 }
 \description{
 Create an object of class 'fdqcd' to perform statistical quality control.

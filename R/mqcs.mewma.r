@@ -17,8 +17,8 @@
 ##'
 ##' This function is used to compute statistics required by the mewma chart.
 ##'
-##' @param x   an R object (used to select the method). See details.
-##' @param ... arguments passed to or from methods.
+##' @param x   An R object (used to select the method). See details.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ## @references Montgomery, D.C. (2000)
 ##' @examples
@@ -41,15 +41,17 @@ mqcs.mewma <- function(x, ...) {
 ##' @rdname mqcs.mewma
 ##' @method mqcs.mewma default
 ##' @inheritParams mqcd
-##' @param limits a two-values vector specifying the control limits.
-##' @param Xmv is the mean vector. It is only specified for Phase II or when the parameters of the distribution are known.
-##' @param S is the sample covariance matrix. It is only used for Phase II or when the parameters of the distribution are known.
-##' @param lambda is the smoothing constant. Only values of 0.1, 0.2,...,0.9 are allowed.
-##' @param method is the method employed to compute the covatiance matrix
+##' @param limits A two-values vector specifying the control limits.
+##' @param Xmv Is the mean vector. It is only specified for Phase II or 
+##' when the parameters of the distribution are known.
+##' @param S Is the sample covariance matrix. It is only used for Phase II or 
+##' when the parameters of the distribution are known.
+##' @param lambda Is the smoothing constant. Only values of 0.1, 0.2,...,0.9 are allowed.
+##' @param method Is the method employed to compute the covariance matrix
 ##' in the individual observation case. Two methods are used "sw" 
 ##' for compute according to (Sullivan,Woodall 1996a) and "hm" 
 ##' by (Holmes,Mergen 1993)
-##' @param plot a logical value indicating that it should be plotted. 
+##' @param plot Logical value. If TRUE a mewma chart should be plotted. 
 ##' @author Edgar Santos-Fernandez
 ##' @export
 ##' 

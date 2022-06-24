@@ -20,13 +20,14 @@
 ##' @rdname  plot.fdqcs
 ##' @method plot fdqcs.depth
 ##' @param x  Object fdqcs.depth
-##' @param title.fdata an overall title for the fdata plot
-##' @param title.depth an overall title for the depth plot 
-##' @param xlab a title for the x axis
-##' @param ylab a title for the y axis
-##' @param col The color for curves
-##' @param draw.control ist that it specifies the col, lty and lwd for objects: fdataobj, statistic, IN and OUT.
-##' @param ...  arguments to be passed to or from methods.
+##' @param title.fdata An overall title for the fdata plot.
+##' @param title.depth An overall title for the depth plot. 
+##' @param xlab A title for the x axis.
+##' @param ylab A title for the y axis.
+##' @param col The color for curves.
+##' @param draw.control It specifies the col, lty and lwd for objects: 
+##' fdataobj, statistic, IN and OUT.
+##' @param ...  Arguments to be passed to or from methods.
 ##' @export
 ##' 
 plot.fdqcs.depth <- function(x, title.fdata=NULL, title.depth=NULL,xlab=NULL, ylab=NULL, col=NULL,

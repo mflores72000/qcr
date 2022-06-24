@@ -2,18 +2,19 @@
 % Please edit documentation in R/npqcs.R
 \name{npstate.control}
 \alias{npstate.control}
-\title{non parametric process state}
+\title{Non parametric process state}
 \usage{
 npstate.control(x, control = FALSE)
 }
 \arguments{
 \item{x}{Object npqcd (Quality Control Statitical Non Parametric)}
 
-\item{control}{a logical value indicating whether the initial sample comes from a process under control.}
+\item{control}{A logical value indicating whether the initial sample comes 
+from a process under control.}
 }
 \description{
 This function removes observations from the sample which violates 
-the rules of a process under control
+the rules of a process under control.
 }
 \examples{
 \dontrun{

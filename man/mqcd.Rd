@@ -7,9 +7,9 @@
 mqcd(data, data.name = NULL)
 }
 \arguments{
-\item{data}{a matrix or data-frame or array where it should contain data.}
+\item{data}{A matrix or data-frame or array where it should contain data.}
 
-\item{data.name}{a string that specifies the title displayed on the plots. 
+\item{data.name}{A string that specifies the title displayed on the plots. 
 If not provided it is taken from the name of the object's data.}
 }
 \description{

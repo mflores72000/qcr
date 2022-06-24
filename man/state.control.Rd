@@ -11,7 +11,7 @@ state.control(x)
 }
 \description{
 This function removes observations from the sample which violates 
-the rules of a process under control
+the rules of a process under control.
 }
 \examples{
 

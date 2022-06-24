@@ -15,21 +15,25 @@
 #-----------------------------------------------------------------------------#
 ##' Process capability indices for a given dataset and distribution
 ##' 
-##' Calculates the process capability indices cp, cpk, cpkL and cpkU for a given dataset and distribution. 
-##' A histogramm with a density curve is displayed along with the specification limits and a 
+##' Calculates the process capability indices cp, cpk, cpkL and cpkU for a given 
+##' dataset and distribution. 
+##' A histogram with a density curve is displayed along with the specification limits and a 
 ##' Quantile-Quantile Plot for the specified distribution.
 ##' @aliases qcs.pcr 
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
-##' @param distribution character string that representing the probability distribution the data, such as:"normal","beta", "chi-squared", 
+##' @param distribution Character string that represent the probability 
+##' distribution of the data, such as: "normal", "beta", "chi-squared", 
 ##' "exponential", "f", "geometric", "lognormal", "log-normal", "logistic","t",
 ##' "negative binomial", "poisson", "weibull", "gamma".
 ##' @param limits A vector specifying the lower and upper specification limits.
 ##' @param target A value specifying the target of the process. 
-##' If is \code{NULL}, the target is set at the middle value bewteen specification limits.
+##' If it is \code{NULL}, the target is set at the middle value between specification limits.
 ##' @param std.dev A value specifying the within-group standard deviation.
-##' @param boxcox Logical value (default is FALSE). If TRUE, perform a Box-Cox transformation.
-##' @param lambda A vector specifying or numeric value indicating lambda for the transformation
-##' @param confidence A numeric value between 0 and 1 specifying the nivel for computing the specification limits.
+##' @param boxcox Logical value (by default \code{FALSE}). If \code{TRUE}, 
+##' perform a Box-Cox transformation.
+##' @param lambda A vector specifying or numeric value indicating lambda for the transformation.
+##' @param confidence A numeric value between 0 and 1 specifying the nivel for 
+##' computing the specification limits.
 ##' @param plot Logical value indicating whether graph should be plotted.
 ##' @param main Title of the plot.
 ##' @param ... Arguments to be passed to or from methods.

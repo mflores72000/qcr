@@ -19,15 +19,18 @@
 ##' @aliases qcs.cp 
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
 ##' @param parameters A vector specifying the \code{u} and \code{v} parameters values. 
-##' If parameters = c(u=0, v=0), the cp indice is calculed; If parameters = c(u=1, v=0), the cpk indice is calculed;
-##' If parameters = c(u=0, v=1), the cpm indice is calculed; If parameters = c(u=1, v=1), the cpmk indice is calculed.  
+##' If \code{parameters} = c(u=0, v=0), the cp indice is calculed; 
+##' If \code{parameters} = c(u=1, v=0), the cpk indice is calculed;
+##' If \code{parameters} = c(u=0, v=1), the cpm indice is calculed; 
+##' If \code{parameters} = c(u=1, v=1), the cpmk indice is calculed.  
 ##' @param limits A vector specifying the lower and upper specification limits.
 ##' @param target A value specifying the target of the process. 
-##' If is \code{NULL}, the target is set at the middle value bewteen specification limits.
+##' If it is \code{NULL}, the target is set at the middle value between specification limits.
 ##' @param mu A value specifying the mean of data.
 ##' @param std.dev A value specifying the within-group standard deviation.
 ##' @param nsigmas A numeric value specifying the number of sigmas to use.
-##' @param k A numeric value. If the capacity index exceeds the \code{k} value, then the process is capable.
+##' @param k A numeric value. If the capacity index exceeds the \code{k} value, 
+##' then the process is capable.
 ##' @param contour Logical value indicating whether contour graph should be plotted.
 ##' @param ylim The y limits of the plot.
 ##' @param ... Arguments to be passed to or from methods.

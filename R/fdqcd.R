@@ -21,9 +21,9 @@
 ##' @aliases fdqcd 
 ##' @param x Matrix of set cases with dimension (n x m), where n is the number of curves 
 ##' and m are the points observed in each curve.
-##' @param data.name  a string that specifies the title displayed on the plots. 
+##' @param data.name  A string that specifies the title displayed on the plots. 
 ##' If not provided it is taken from the name of the object's data.
-##' @param ... arguments passed to or from methods.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @examples
 ##' library(qcr)

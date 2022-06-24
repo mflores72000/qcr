@@ -135,8 +135,8 @@ npqcs.add <- function(x, ...){
 
 ##' @rdname  npqcs.add 
 ##' @method npqcs.add default
-##' @param value   Object type data.frame, matrix or array
-##' @param ...  arguments to be passed to or from methods.
+##' @param value   Object type data.frame, matrix or array.
+##' @param ...  Arguments to be passed to or from methods.
 ##' @export 
 
 
@@ -194,13 +194,14 @@ npqcs.add.default <- function(x, value, ...){
 #-------------------------------------------------------------------------
 # npstate.control
 #-------------------------------------------------------------------------
-##' non parametric process state
+##' Non parametric process state
 ##' 
 ##' This function removes observations from the sample which violates 
-##' the rules of a process under control
+##' the rules of a process under control.
 ##' @aliases npstate.control
 ##' @param x  Object npqcd (Quality Control Statitical Non Parametric)
-##' @param control a logical value indicating whether the initial sample comes from a process under control.
+##' @param control A logical value indicating whether the initial sample comes 
+##' from a process under control.
 ##' @export
 ##' @examples
 ##' \dontrun{

@@ -82,13 +82,15 @@
 <dd><p>qcs object of type <code>"qcs.xbar"</code> or <code>"qcs.one"</code>.</p></dd>
 <dt>parameters</dt>
 <dd><p>A vector specifying the <code>u</code> and <code>v</code> parameters values. 
-If parameters = c(u=0, v=0), the cp indice is calculed; If parameters = c(u=1, v=0), the cpk indice is calculed;
-If parameters = c(u=0, v=1), the cpm indice is calculed; If parameters = c(u=1, v=1), the cpmk indice is calculed.</p></dd>
+If <code>parameters</code> = c(u=0, v=0), the cp indice is calculed; 
+If <code>parameters</code> = c(u=1, v=0), the cpk indice is calculed;
+If <code>parameters</code> = c(u=0, v=1), the cpm indice is calculed; 
+If <code>parameters</code> = c(u=1, v=1), the cpmk indice is calculed.</p></dd>
 <dt>limits</dt>
 <dd><p>A vector specifying the lower and upper specification limits.</p></dd>
 <dt>target</dt>
 <dd><p>A value specifying the target of the process. 
-If is <code>NULL</code>, the target is set at the middle value bewteen specification limits.</p></dd>
+If it is <code>NULL</code>, the target is set at the middle value between specification limits.</p></dd>
 <dt>mu</dt>
 <dd><p>A value specifying the mean of data.</p></dd>
 <dt>std.dev</dt>
@@ -96,7 +98,8 @@ If is <code>NULL</code>, the target is set at the middle value bewteen specifica
 <dt>nsigmas</dt>
 <dd><p>A numeric value specifying the number of sigmas to use.</p></dd>
 <dt>k</dt>
-<dd><p>A numeric value. If the capacity index exceeds the <code>k</code> value, then the process is capable.</p></dd>
+<dd><p>A numeric value. If the capacity index exceeds the <code>k</code> value, 
+then the process is capable.</p></dd>
 <dt>contour</dt>
 <dd><p>Logical value indicating whether contour graph should be plotted.</p></dd>
 <dt>ylim</dt>

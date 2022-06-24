@@ -11,12 +11,12 @@ mqcs(x, method = "sw", ...)
 \arguments{
 \item{x}{Object mqcd (Multivariante Quality Control Data)}
 
-\item{method}{Is the method employed to compute the covatiance matrix
+\item{method}{Is the method employed to compute the covariance matrix
 in individual observation case. Two methods are used "sw" 
 for compute according to (Sullivan,Woodall 1996a) and "hm" 
 by (Holmes,Mergen 1993)}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 }
 \description{
 Create an object of class 'mqcs' to perform statistical quality control.

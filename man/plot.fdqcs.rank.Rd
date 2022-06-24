@@ -18,17 +18,18 @@
 \arguments{
 \item{x}{Object fdqcs.depth}
 
-\item{title.fdata}{an overall title for the fdata plot}
+\item{title.fdata}{An overall title for the fdata plot.}
 
-\item{title.rank}{an overall title for the depth plot}
+\item{title.rank}{An overall title for the depth plot.}
 
-\item{xlab}{a title for the x axis}
+\item{xlab}{A title for the x axis.}
 
-\item{ylab}{a title for the y axis}
+\item{ylab}{A title for the y axis.}
 
-\item{draw.control}{ist that it specifies the col, lty and lwd for objects: fdataobj, statistic, IN and OUT.}
+\item{draw.control}{It specifies the col, lty and lwd for objects: 
+fdataobj, statistic, IN and OUT.}
 
-\item{...}{arguments to be passed to or from methods.}
+\item{...}{Arguments to be passed to or from methods.}
 }
 \description{
 Generic function for plotting charts of object of class 'fdqcs.rank' to 

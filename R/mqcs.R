@@ -21,11 +21,11 @@
 ##' @aliases mqcs summary.mqcs print.mqcs
 ##' 
 ##' @param x  Object mqcd (Multivariante Quality Control Data)
-##' @param method Is the method employed to compute the covatiance matrix
+##' @param method Is the method employed to compute the covariance matrix
 ##' in individual observation case. Two methods are used "sw" 
 ##' for compute according to (Sullivan,Woodall 1996a) and "hm" 
 ##' by (Holmes,Mergen 1993)
-##' @param ... arguments passed to or from methods.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 
 mqcs <- function(x, method = "sw", ...)
@@ -261,10 +261,11 @@ mqcs.add.default <- function(x, value, ...){
 ##' Multivariate process state
 ##' 
 ##' This function removes observations from the sample which violates 
-##' the rules of a process under control
+##' the rules of a process under control.
 ##' @aliases mstate.control
 ##' @param x  Object mqcd (Multivariate Quality Control Statistical)
-##' @param control a logical value indicating whether the initial sample comes from a process under control.
+##' @param control A logical value indicating whether the initial sample comes 
+##' from a process under control.
 ##' @export
 ##' @examples
 ##' 

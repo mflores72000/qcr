@@ -17,8 +17,8 @@
 ##'
 ##' This function is used to compute statistics required by the t2 chart.
 ##'
-##' @param x   an R object (used to select the method). See details.
-##' @param ... arguments passed to or from methods.
+##' @param x   An R object (used to select the method). See details.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ## @references Montgomery, D.C. (2000)
 ##' @examples
@@ -48,17 +48,20 @@ mqcs.t2 <- function(x, ...) {
 ##' @rdname mqcs.t2
 ##' @method mqcs.t2 default
 ##' @inheritParams mqcd
-##' @param limits a two-values vector specifying the control limits.
-##' @param Xmv is the mean vector. It is only specified for Phase II or when the parameters of the distribution are known.
-##' @param S is the sample covariance matrix. It is only used for Phase II or when the parameters of the distribution are known.
-##' @param colm is the number of samples (m) and it is only used in Hotelling control chart for Phase II
-##' @param alpha it is the the significance level (0.01 for default)
+##' @param limits A two-values vector specifying the control limits.
+##' @param Xmv Is the mean vector. It is only specified for Phase II or when 
+##' the parameters of the distribution are known.
+##' @param S Is the sample covariance matrix. It is only used for Phase II or 
+##' when the parameters of the distribution are known.
+##' @param colm Is the number of samples (m) and it is only used in Hotelling 
+##' control chart for Phase II.
+##' @param alpha It is the the significance level (0.01 for default)
 ##' @param phase Allows to select the type of UCL to use. Only values of phase = 1 or 2 are allowed.
-##' @param method is the method employed to compute the covatiance matrix
+##' @param method Is the method employed to compute the covariance matrix
 ##' in the individual observation case. Two methods are used "sw" 
 ##' for compute according to (Sullivan,Woodall 1996a) and "hm" 
 ##' by (Holmes,Mergen 1993)
-##' @param plot a logical value indicating that it should be plotted. 
+##' @param plot Logical value. If TRUE a t2 chart should be plotted. 
 ##' @author Edgar Santos-Fernandez
 ##' @export
 ##' 

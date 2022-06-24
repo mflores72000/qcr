@@ -19,8 +19,8 @@
 ##' This object is used to plot Multivariate Control Charts.
 ##' 
 ##' @aliases mqcd 
-##' @param data a matrix or data-frame or array where it should contain data.
-##' @param data.name  a string that specifies the title displayed on the plots. 
+##' @param data A matrix or data-frame or array where it should contain data.
+##' @param data.name  A string that specifies the title displayed on the plots. 
 ##' If not provided it is taken from the name of the object's data.
 ##' @export
 ##' @examples

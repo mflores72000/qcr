@@ -16,8 +16,8 @@
 ##' Function to plot depth functional data (DFD) - chart
 ##'
 ##' This function is used to compute statistics required by the DFD chart.
-##' @param x   an R object (used to select the method). See details.
-##' @param ... arguments passed to or from methods.
+##' @param x   An R object (used to select the method). See details.
+##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Flores, M.; Naya, S.; Fernández-Casal,R.; Zaragoza, S.; Raña, P.; Tarrío-Saavedra, J. 
 ##' Constructing a Control Chart Using Functional Data. Mathematics 2020, 8, 58.
@@ -49,12 +49,13 @@ fdqcs.depth <- function(x, ...) {
 ##' @inheritParams fdqcd
 ##' @param func.depth Type of depth measure, by default depth.mode.
 ##' @param nb         The number of bootstrap samples.
-##' @param type       the method used to trim the data (trim or pond).
-##' @param ns      Quantile to determine the cutoff from the Bootstrap procedure
-##' @param plot       a logical value indicating that it should be plotted.
-##' @param trim       The porcentage of the trimming.
+##' @param type       The method used to trim the data (trim or pond).
+##' @param ns      Quantile to determine the cutoff from the Bootstrap procedure.
+##' @param plot       Logical value. If TRUE a DFD chart should be plotted.
+##' @param trim       The percentage of the trimming.
 ##' @param smo        The smoothing parameter for the bootstrap samples.
-##' @param draw.control ist that it specifies the col, lty and lwd for objects: fdataobj, statistic, IN and OUT.
+##' @param draw.control It specifies the col, lty and lwd for objects:
+##' fdataobj, statistic, IN and OUT.
 ##' @export
 
 fdqcs.depth.default <- function(x, data.name=NULL,func.depth = depth.mode,nb=200,

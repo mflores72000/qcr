@@ -9,11 +9,12 @@ mstate.control(x)
 \arguments{
 \item{x}{Object mqcd (Multivariate Quality Control Statistical)}
 
-\item{control}{a logical value indicating whether the initial sample comes from a process under control.}
+\item{control}{A logical value indicating whether the initial sample comes 
+from a process under control.}
 }
 \description{
 This function removes observations from the sample which violates 
-the rules of a process under control
+the rules of a process under control.
 }
 \examples{
 

@@ -36,28 +36,29 @@ fdqcs.depth(x, ...)
 )
 }
 \arguments{
-\item{x}{an R object (used to select the method). See details.}
+\item{x}{An R object (used to select the method). See details.}
 
-\item{...}{arguments passed to or from methods.}
+\item{...}{Arguments passed to or from methods.}
 
-\item{data.name}{a string that specifies the title displayed on the plots. 
+\item{data.name}{A string that specifies the title displayed on the plots. 
 If not provided it is taken from the name of the object's data.}
 
 \item{func.depth}{Type of depth measure, by default depth.mode.}
 
 \item{nb}{The number of bootstrap samples.}
 
-\item{type}{the method used to trim the data (trim or pond).}
+\item{type}{The method used to trim the data (trim or pond).}
 
-\item{ns}{Quantile to determine the cutoff from the Bootstrap procedure}
+\item{ns}{Quantile to determine the cutoff from the Bootstrap procedure.}
 
-\item{plot}{a logical value indicating that it should be plotted.}
+\item{plot}{Logical value. If TRUE a DFD chart should be plotted.}
 
-\item{trim}{The porcentage of the trimming.}
+\item{trim}{The percentage of the trimming.}
 
 \item{smo}{The smoothing parameter for the bootstrap samples.}
 
-\item{draw.control}{ist that it specifies the col, lty and lwd for objects: fdataobj, statistic, IN and OUT.}
+\item{draw.control}{It specifies the col, lty and lwd for objects:
+fdataobj, statistic, IN and OUT.}
 }
 \description{
 This function is used to compute statistics required by the DFD chart.
