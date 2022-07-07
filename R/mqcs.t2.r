@@ -15,10 +15,13 @@
 #-------------------------------------------------------------------------
 ##' Function to plot t2 Hotelling chart
 ##'
-##' This function is used to compute statistics required by the t2 chart.
+##' This function is used to compute statistics required by the t2 of HOTELLING 
+##' or Shewhart Multivariate chart.
 ##'
-##' @param x   An R object (used to select the method). See details.
+##' @param x   An object of class 'mqcd'
 ##' @param ... Arguments passed to or from methods.
+##' @seealso
+##' \code{\link{mqcd}}, \code{\link{mqcs}}
 ##' @export
 ## @references Montgomery, D.C. (2000)
 ##' @examples
@@ -49,19 +52,19 @@ mqcs.t2 <- function(x, ...) {
 ##' @method mqcs.t2 default
 ##' @inheritParams mqcd
 ##' @param limits A two-values vector specifying the control limits.
-##' @param Xmv Is the mean vector. It is only specified for Phase II or when 
+##' @param Xmv The mean vector. It is only specified for Phase II or when 
 ##' the parameters of the distribution are known.
-##' @param S Is the sample covariance matrix. It is only used for Phase II or 
+##' @param S The sample covariance matrix. It is only used for Phase II or 
 ##' when the parameters of the distribution are known.
-##' @param colm Is the number of samples (m) and it is only used in Hotelling 
+##' @param colm The number of samples (m) and it is only used in Hotelling 
 ##' control chart for Phase II.
 ##' @param alpha It is the the significance level (0.01 for default)
 ##' @param phase Allows to select the type of UCL to use. Only values of phase = 1 or 2 are allowed.
-##' @param method Is the method employed to compute the covariance matrix
+##' @param method The method employed to compute the covariance matrix
 ##' in the individual observation case. Two methods are used "sw" 
 ##' for compute according to (Sullivan,Woodall 1996a) and "hm" 
 ##' by (Holmes,Mergen 1993)
-##' @param plot Logical value. If TRUE a t2 chart should be plotted. 
+##' @param plot Logical value. If \code{TRUE} a t2 chart should be plotted. 
 ##' @author Edgar Santos-Fernandez
 ##' @export
 ##' 

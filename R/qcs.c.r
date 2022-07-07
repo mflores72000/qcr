@@ -17,7 +17,7 @@
 ##'
 ##' This function is used to compute statistics required by the c chart.
 ##'
-##' @param x   An object qcd (Quality Control Data).
+##' @param x   An object of class "qcd".
 ##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @examples
@@ -51,7 +51,7 @@ qcs.c <- function(x, ...) {
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
 ##' @param limits A two-value vector specifying control limits.
-##' @param plot Logical value. If TRUE a c chart should be plotted.
+##' @param plot Logical value. If \code{TRUE} a c chart should be plotted.
 ##' @export
 qcs.c.default <- function(x, var.index  =  1, sample.index  =  2,
                              covar.index  =  NULL, covar.names  =  NULL,

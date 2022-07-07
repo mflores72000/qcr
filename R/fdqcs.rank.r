@@ -16,7 +16,7 @@
 ##' Function to plot rank functional data (RFD) - chart
 ##'
 ##' This function is used to compute statistics required by the RFD chart.
-##' @param x   An R object (used to select the method). See details.
+##' @param x   The set of reference curves respect to which the depth is computed. fdqcd class object.
 ##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Flores, M.; Naya, S.; Fernández-Casal,R.; Zaragoza, S.; Raña, P.; Tarrío-Saavedra, J. 
@@ -67,13 +67,18 @@ fdqcs.rank <- function(x, ...) {
 ##' @method fdqcs.rank fdqcd
 ## @inheritParams fdqcd
 ##' @param y   The set of new curves to evaluate the depth. fdqcd class object.
-##' The set of reference curves respect to which the depth is computed. fdqcd class object.
-##' @param func.depth Type of depth measure, by default depth.mode.
+##' @param func.depth Type of depth measure, by default depth.FM
 ##' @param alpha      Quantile to determine the cutoff from the Bootstrap procedure.
-##' @param plot       Logical value. If TRUE a RFD chart should be plotted.
+##' @param plot       Logical value. If \code{TRUE} a RFD chart should be plotted.
 ##' @param trim       The percentage of the trimming.
 ##' @param draw.control It specifies the col, lty and lwd for objects: 
 ##' fdataobj, statistic, IN and OUT.
+## @details
+## In the default method \code{fdqcs.rank.default} parameter \code{x} is a matrix
+## of set cases with dimension (n x m), where n is the number of curves 
+## and m are the points observed in each curve.
+## @seealso
+## \code{\link{fdqcd}}
 ##' @export
 
 fdqcs.rank.fdqcd <- function(x, y = x, 

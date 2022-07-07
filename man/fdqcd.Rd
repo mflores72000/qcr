@@ -7,11 +7,11 @@
 fdqcd(x, data.name = NULL, ...)
 }
 \arguments{
-\item{x}{Matrix of set cases with dimension (n x m), where n is the number of curves 
-and m are the points observed in each curve.}
+\item{x}{Matrix of set cases with dimension (n x m), where 'n' is the number of curves 
+and 'm' are the points observed in each curve.}
 
 \item{data.name}{A string that specifies the title displayed on the plots. 
-If not provided it is taken from the name of the object's data.}
+If not provided it is taken from the name of the object \code{x}.}
 
 \item{...}{Arguments passed to or from methods.}
 }

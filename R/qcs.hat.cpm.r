@@ -13,9 +13,9 @@
 #-----------------------------------------------------------------------------#
 # Main function to create a 'qcs.hat.cpm' object
 #-----------------------------------------------------------------------------#
-##' Process capability index (estimate cpm)
+##' Process capability index (estimate Cpm)
 ##' 
-##' Estimate  \code{"cpm"} using the method described by Kerstin Vannman(2001).
+##' Estimate  \code{"Cpm"} using the method described by Kerstin Vannman(2001).
 ##' @aliases qcs.hat.cpm 
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
 ##' @param limits A vector specifying the lower and upper specification limits.
@@ -29,7 +29,7 @@
 ##' @param alpha The significance level (by default alpha=0.05).
 ##' @param n Size of the sample.
 ##' @param contour Logical value indicating whether contour graph should be plotted.
-##' @param ylim The y limits of the plot.
+##' @param ylim The "y" limits of the plot.
 ##' @param ... Arguments to be passed to or from methods.
 ##' @export
 ##' @references 

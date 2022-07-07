@@ -22,10 +22,10 @@ qcs.cp(
 \item{object}{qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.}
 
 \item{parameters}{A vector specifying the \code{u} and \code{v} parameters values. 
-If \code{parameters} = c(u=0, v=0), the cp indice is calculed; 
-If \code{parameters} = c(u=1, v=0), the cpk indice is calculed;
-If \code{parameters} = c(u=0, v=1), the cpm indice is calculed; 
-If \code{parameters} = c(u=1, v=1), the cpmk indice is calculed.}
+If \code{parameters} = c(u=0, v=0), the Cp indice is calculed; 
+If \code{parameters} = c(u=1, v=0), the Cpk indice is calculed;
+If \code{parameters} = c(u=0, v=1), the Cpm indice is calculed; 
+If \code{parameters} = c(u=1, v=1), the Cpmk indice is calculed.}
 
 \item{limits}{A vector specifying the lower and upper specification limits.}
 
@@ -43,7 +43,7 @@ then the process is capable.}
 
 \item{contour}{Logical value indicating whether contour graph should be plotted.}
 
-\item{ylim}{The y limits of the plot.}
+\item{ylim}{The 'y' limits of the plot.}
 
 \item{...}{Arguments to be passed to or from methods.}
 }

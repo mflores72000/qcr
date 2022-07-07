@@ -15,7 +15,7 @@
 #-----------------------------------------------------------------------------#
 ##' Capability Analysis
 ##' 
-##' Calculates the process capability indices cp, cpk, cpL cpU, cpm, cpmk for a 
+##' Calculates the process capability indices Cp, Cpk, Cpl, Cpu, Cpm, Cpmk for a 
 ##' qcs object and normal distribution. Also, this function calculates confidence
 ##' limits for \eqn{C_p}{C_p} using the method described by Chou et al. (1990). 
 ##' Approximate confidence limits for \eqn{C_{pl}}{C_pl}, \eqn{C_{pu}}{C_pu} and
@@ -23,10 +23,10 @@
 ##' Confidence limits for \eqn{C_{pm}}{C_pm} are based on the method of Boyles (1991); 
 ##' this method is approximate and it assumes the target is midway between the 
 ##' specification limits.
-##' Moreover, calculates the process capability indices cnp, cnpk, cnpm, cnpmk for a qcs object. 
+##' Moreover, calculates the process capability indices CNp, CNpk, CNpm, CNpmk for a qcs object. 
 ##' A histogram with a density curve is displayed along with the specification limits, a 
 ##' Quantile-Quantile Plot for the specified distribution and contour graph is plotted 
-##' for estimate the index cpm.
+##' for estimate the index Cpm.
 ##' @aliases qcs.ca 
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
 ##' @param limits A vector specifying the lower and upper specification limits.

@@ -19,7 +19,7 @@
 ##' quality control.
 ##' @rdname  plot.fdqcs
 ##' @method plot fdqcs.depth
-##' @param x  Object fdqcs.depth
+##' @param x  An object of class fdqcs.depth
 ##' @param title.fdata An overall title for the fdata plot.
 ##' @param title.depth An overall title for the depth plot. 
 ##' @param xlab A title for the x axis.

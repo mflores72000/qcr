@@ -20,8 +20,8 @@
 ##' 
 ##' @aliases mqcs summary.mqcs print.mqcs
 ##' 
-##' @param x  Object mqcd (Multivariante Quality Control Data)
-##' @param method Is the method employed to compute the covariance matrix
+##' @param x  An object of class 'mqcd' (Multivariante Quality Control Data)
+##' @param method The method employed to compute the covariance matrix
 ##' in individual observation case. Two methods are used "sw" 
 ##' for compute according to (Sullivan,Woodall 1996a) and "hm" 
 ##' by (Holmes,Mergen 1993)

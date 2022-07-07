@@ -23,28 +23,38 @@ optionally, covariate(s).}
 the variable (the variable quality).  Alternativelly can be a string with the
 name of the quality variable.}
 
-\item{sample.index}{A scalar with the column number corresponding to the index each
+\item{sample.index}{A scalar with the column number corresponding to the index fo each
 group (sample).}
 
 \item{covar.index}{Optional. A scalar or numeric vector with the column number(s)
 corresponding to the covariate(s). Alternativelly it can be a character vector with
 the names of the covariates.}
 
-\item{covar.names}{Optional. A string or vector of strings with names for the
+\item{covar.names}{Optional. A string or vector of strings indicating the names for the
 covariate columns.  Only valid if there is more than one column of data. By
 default, takes the names from the original object.}
 
 \item{data.name}{A string specifying the name of the variable which appears on the
-plots. If not provided it is taken from the object given as data.}
+plots. If not provided, it is taken from the object given as data.}
 
 \item{type.data}{A string specifying the type of data.}
 
 \item{sizes}{Optional. A value or a vector of values specifying the sample sizes
-associated with each group. For continuous data, the sample sizes are obtained counting the non-\code{NA} elements
-of the sample.index vector. For attribute variable the argument sizes is required.}
+associated with each group. For continuous data, the sample sizes are obtained 
+counting the non-\code{NA} elements of the \code{sample.index} vector. 
+For attribute variable the argument sizes is required.}
 }
 \description{
 Create an object of class 'qcd' to perform statistical quality control.
 This object may then be used to plot Shewhart charts, Multivariate Control Charts,
 and more.
+}
+\examples{
+\dontrun{
+library(qcr)
+data(pistonrings)
+str(pistonrings)
+pistonrings.qcd<-qcd(pistonrings)
+class(pistonrings.qcd)
+}
 }

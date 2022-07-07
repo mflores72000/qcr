@@ -104,21 +104,42 @@ to perform statistical quality control.</p>
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>x</dt>
-<dd><p>Object mqcs (Multivarite Quality Control Statical)</p></dd>
+<dd><p>An Object of class 'mqcs' (Multivarite Quality Control Statical)</p></dd>
 <dt>title</dt>
 <dd><p>An overall title for the plot.</p></dd>
 <dt>subtitle</dt>
 <dd><p>A sub title for the plot.</p></dd>
 <dt>xlab</dt>
-<dd><p>A title for the x axis.</p></dd>
+<dd><p>A title for the 'x' axis.</p></dd>
 <dt>ylab</dt>
-<dd><p>A title for the y axis.</p></dd>
+<dd><p>A title for the 'y' axis.</p></dd>
 <dt>ylim</dt>
-<dd><p>The y limits of the plot.</p></dd>
+<dd><p>The 'y' limits of the plot.</p></dd>
 <dt>...</dt>
 <dd><p>Arguments to be passed to or from methods.</p></dd>
 </dl></div>
 
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
+<span class="r-in"><span class="co">## </span></span>
+<span class="r-in"><span class="co">## Continuous data </span></span>
+<span class="r-in"><span class="co">## </span></span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">dowel1</span><span class="op">)</span> </span>
+<span class="r-in"><span class="va">data.mqcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="mqcd.html">mqcd</a></span><span class="op">(</span><span class="va">dowel1</span><span class="op">)</span>  </span>
+<span class="r-in"><span class="va">res.mqcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="mqcs.mcusum.html">mqcs.mcusum</a></span><span class="op">(</span><span class="va">data.mqcd</span><span class="op">)</span> </span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.mqcs</span>, title <span class="op">=</span><span class="st">" MCUSUM Control Chart "</span>, subtitle<span class="op">=</span><span class="st">"Database dowel1"</span>,</span>
+<span class="r-in">     xlab <span class="op">=</span> <span class="st">"Observations"</span>, ylab <span class="op">=</span> <span class="st">"MCUSUM"</span>, ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>,<span class="fl">6.5</span><span class="op">)</span><span class="op">)</span> </span>
+<span class="r-in"></span>
+<span class="r-in"><span class="va">res1.mqcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="mqcs.mewma.html">mqcs.mewma</a></span><span class="op">(</span><span class="va">data.mqcd</span><span class="op">)</span> </span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res1.mqcs</span>, title <span class="op">=</span><span class="st">" MEWMA Control Chart"</span>, subtitle<span class="op">=</span><span class="st">"Database dowel1"</span>,</span>
+<span class="r-in">     xlab <span class="op">=</span> <span class="st">"Observations"</span>, ylab <span class="op">=</span> <span class="st">"MEWMA"</span>, ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>,<span class="fl">10</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in">      </span>
+<span class="r-in"><span class="va">res2.mqcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="mqcs.t2.html">mqcs.t2</a></span><span class="op">(</span><span class="va">data.mqcd</span><span class="op">)</span></span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res2.mqcs</span>, title <span class="op">=</span><span class="st">" Hotelling Control Chart"</span>,subtitle<span class="op">=</span><span class="st">"Database dowel1"</span>,</span>
+<span class="r-in">     xlab <span class="op">=</span> <span class="st">"Observations"</span>, ylab <span class="op">=</span> <span class="st">"T2 Hotelling"</span>, ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>,<span class="fl">14</span><span class="op">)</span><span class="op">)</span><span class="op">}</span></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 

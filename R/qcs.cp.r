@@ -19,10 +19,10 @@
 ##' @aliases qcs.cp 
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
 ##' @param parameters A vector specifying the \code{u} and \code{v} parameters values. 
-##' If \code{parameters} = c(u=0, v=0), the cp indice is calculed; 
-##' If \code{parameters} = c(u=1, v=0), the cpk indice is calculed;
-##' If \code{parameters} = c(u=0, v=1), the cpm indice is calculed; 
-##' If \code{parameters} = c(u=1, v=1), the cpmk indice is calculed.  
+##' If \code{parameters} = c(u=0, v=0), the Cp indice is calculed; 
+##' If \code{parameters} = c(u=1, v=0), the Cpk indice is calculed;
+##' If \code{parameters} = c(u=0, v=1), the Cpm indice is calculed; 
+##' If \code{parameters} = c(u=1, v=1), the Cpmk indice is calculed.  
 ##' @param limits A vector specifying the lower and upper specification limits.
 ##' @param target A value specifying the target of the process. 
 ##' If it is \code{NULL}, the target is set at the middle value between specification limits.
@@ -32,7 +32,7 @@
 ##' @param k A numeric value. If the capacity index exceeds the \code{k} value, 
 ##' then the process is capable.
 ##' @param contour Logical value indicating whether contour graph should be plotted.
-##' @param ylim The y limits of the plot.
+##' @param ylim The 'y' limits of the plot.
 ##' @param ... Arguments to be passed to or from methods.
 ##' @export
 ##' @references 

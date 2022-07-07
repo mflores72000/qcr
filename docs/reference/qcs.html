@@ -120,14 +120,14 @@ and more.</p>
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>x</dt>
-<dd><p>A vector containing observed data.</p></dd>
+<dd><p>An object of class "qcd".</p></dd>
 <dt>sample.index</dt>
 <dd><p>A scalar with the column number corresponding to the index 
 of each group (sample).</p></dd>
 <dt>sizes</dt>
 <dd><p>A value or a vector of values specifying the sample sizes
 associated with each group. For continuous data the sample sizes are obtained counting the non-<code>NA</code> elements of
-the sample.index vector. For <code>"p"</code>, <code>"np"</code> and <code>"u"</code> charts the argument
+the <code>sample.index</code> vector. For <code>"p"</code>, <code>"np"</code> and <code>"u"</code> charts the argument
 <code>sizes</code> is required.</p></dd>
 <dt>type</dt>
 <dd><p>A character string specifying the group statistics to compute:</p>
@@ -137,14 +137,14 @@ continuous process variable</td></tr><tr><td><code>"p"</code></td><td>proportion
 of nonconforming units</td></tr><tr><td><code>"np"</code></td><td>count</td><td>number of
 nonconforming units</td></tr><tr><td><code>"c"</code></td><td>count</td><td>nonconformities per unit</td></tr><tr><td><code>"u"</code></td><td>count</td><td>average nonconformities per unit</td></tr><tr><td><code>"g"</code></td><td>count</td><td>number of non-events between events</td></tr></table></dd>
 <dt>center</dt>
-<dd><p>a value specifying the center of group statistics or the
+<dd><p>A value specifying the center of group statistics or the
 ''target'' value of the process.</p></dd>
 <dt>std.dev</dt>
-<dd><p>a value or an available method specifying the within-group standard
+<dd><p>A value or an available method specifying the within-group standard
 deviation(s) of the process. Several methods are available for estimating the
 standard deviation in case of a continuous process variable.</p></dd>
 <dt>conf.nsigma</dt>
-<dd><p>a numeric value used to compute control limits, specifying the
+<dd><p>A numeric value used to compute control limits, specifying the
 number of standard deviations (if <code>conf.nsigma</code> &gt; 1) or the confidence level (if 0
 &lt; <code>conf.nsigma</code> &lt; 1).</p></dd>
 <dt>limits</dt>

@@ -19,9 +19,9 @@
 ##' This object is used to plot Multivariate Control Charts.
 ##' 
 ##' @aliases mqcd 
-##' @param data A matrix or data-frame or array where it should contain data.
+##' @param x A matrix, a data-frame or an array where it should contain data.
 ##' @param data.name  A string that specifies the title displayed on the plots. 
-##' If not provided it is taken from the name of the object's data.
+##' If not provided it is taken from the name of the object \code{x}.
 ##' @export
 ##' @examples
 ##' library(qcr)
@@ -30,26 +30,26 @@
 ##' data.mqcd <- mqcd(dowel1)
 ##' str(data.mqcd)
 
-mqcd <- function(data, data.name = NULL)
+mqcd <- function(x, data.name = NULL)
   #.........................................................................
 {
 
-  if (!is.matrix(data) & !is.data.frame(data) & !is.array(data))
+  if (!is.matrix(x) & !is.data.frame(x) & !is.array(x))
     stop("object must be a matrix or data.frame or array")
   
-  p <- ncol(data) # quality characteristics
-  m <- nrow(data) # number of samples or observations
-  if (inherits(data, "matrix") || inherits(data, "data.frame")) {
-      names <- colnames(data)    
-      data <- array(data.matrix(data),c(m,p,1))
-      colnames(data) <- names        
+  p <- ncol(x) # quality characteristics
+  m <- nrow(x) # number of samples or observations
+  if (inherits(x, "matrix") || inherits(x, "data.frame")) {
+      names <- colnames(x)    
+      x <- array(data.matrix(x),c(m,p,1))
+      colnames(x) <- names        
   }    
-  n <- dim(data)[3] # observations or sample size 
+  n <- dim(x)[3] # observations or sample size 
   
   if (is.null(data.name))
     data.name <- " DATA"
   
-  result <- data
+  result <- x
   
   attr(result, "data.name") <- data.name
   attr(result, "type.data") <- "Multivariate"

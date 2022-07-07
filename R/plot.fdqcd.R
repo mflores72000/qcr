@@ -22,8 +22,8 @@
 ##' @param x  Object fdqcd (pashe I)
 ##' @param y  Object fdqcd (monitoring)
 ##' @param title An overall title for the plot.
-##' @param xlab A title for the x axis.
-##' @param ylab A title for the y axis.
+##' @param xlab A title for the 'x' axis.
+##' @param ylab A title for the 'y' axis.
 ##' @param col  The color for curves.
 ##' @param ...  Arguments to be passed to or from methods.
 ##' @export

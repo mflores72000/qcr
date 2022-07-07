@@ -41,9 +41,9 @@ NULL
 ##' @docType data
 ##' @format A data frame with 250 observations on the following 2 variables:
 ##' \describe{
-##'   \item{hardness}{Vickers hardness corresponding to different
-##'    areas of artificial stone}
-##'   \item{sample}{sample id}
+##'   \item{hardness}{A quantitative variable that measure Vickers hardness corresponding to different
+##'    areas of artificial stone.}
+##'   \item{sample}{Sample ID}
 ##' }
 ##' @keywords datasets
 ##' @examples
@@ -55,7 +55,7 @@ NULL
 ##' detach(plates)
 NULL
 
-##' @title Level of presion data
+##' @title Level of pressure data
 ##' @description A shipyard of recreational boats manufacturing, 
 ##' intended to optimize and control the mechanical properties hull yacht models. 
 ##' This has made a study in which the modulus of elasticity tensile strength of the epoxy resin 
@@ -66,9 +66,9 @@ NULL
 ##' @docType data
 ##' @format A data frame with 180 observations on the following 3 variables:
 ##' \describe{
-##'   \item{presion}{presion level}
+##'   \item{presion}{Presion level.}
 ##'   \item{sample}{sample id}
-##'   \item{measur}{pressures measured: 0.1 y 10 MPa}
+##'   \item{measur}{Pressures measured: 0.1 y 10 MPa}
 ##' }
 ##' @keywords datasets
 ##' @examples
@@ -138,14 +138,14 @@ NULL
 ##' @title Oxidation Onset Temperature
 ##' @description This database contains information about the level of purity 
 ##' of each batch of Picual varities. Then we have the type of oil 
-##' by measuring the Oxidation Onset Temperature. 
-##' We have 50 subsamples of oil with their temperature to oxide.
+##' by measuring the Oxidation Onset Temperature (OOT). 
+##' We have 50 subsamples of oil with their temperature to oxide, each subsample is size 5.
 ##'
 ##' @name oxidation
 ##' @docType data
 ##' @format A data frame with 250 observations on the following 2 variables:
 ##' \describe{
-##'   \item{OOT}{That is a quantitative variable that controls the quality of oil.}
+##'   \item{OOT}{A quantitative variable that controls the quality of oil.}
 ##'   \item{sample}{sample id}
 ##' }
 ##' @keywords datasets
@@ -154,7 +154,7 @@ NULL
 ##' data(oxidation)
 ##' attach(oxidation)
 ##' summary(oxidation)
-##' plot(OOT, type="b")
+##' plot(OOT, type="b",xlab='Observations')
 ##' detach(oxidation)
 NULL
 
@@ -238,11 +238,11 @@ NULL
 ##' 
 ##' @name pcmanufact
 ##' @docType data
-##' @format A data frame with 10 observations on the following 2 variables.
+##' @format A data frame with 20 observations on the following 3 variables.
 ##' \describe{
-##' \item{x}{number of nonconformities (inspection units)}
-##' \item{sample}{sample ID}
-##' \item{size}{number of computers inspected}
+##' \item{x}{A quantitative variable that measures the number of nonconformities in each sample.}
+##' \item{sample}{Sample ID}
+##' \item{size}{Number of computers inspected.}
 ##' } 
 ##' @references Montgomery, D.C. (1991) \emph{Introduction to Statistical
 ##' Quality Control}, 2nd ed, New York, John Wiley & Sons, pp. 181--182
@@ -255,18 +255,18 @@ NULL
 NULL
 
 ##' @title Piston rings data
-##' @description Piston rings for an automotive engine are produced by a forging process.
-##' The inside diameter of the rings manufactured by the process is measured on
-##' 25 samples, each of size 5, drawn from a process being considered 'in
-##' control'.
+##' @description This is a database that contains information on the inside 
+##' diameter of piston rings. Piston rings are manufactured for an automobile 
+##' engine that are produced through a forging process. This process is 
+##' considered "in control" and is measured on 25 samples, each of size 5.
 ##' 
 ##' @name pistonrings
 ##' @docType data
 ##' @format A data frame with 200 observations on the following 3 variables.
 ##' \describe{ 
-##' \item{diameter}{a numeric vector}
-##' \item{sample}{sample ID}
-##' \item{trial}{trial sample indicator (TRUE/FALSE)}
+##' \item{diameter}{A numeric vector.}
+##' \item{sample}{Sample ID}
+##' \item{trial}{Trial sample indicator (\code{TRUE}/\code{FALSE})}
 ##'  }
 ##' @references Montgomery, D.C. (1991) \emph{Introduction to Statistical
 ##' Quality Control}, 2nd ed, New York, John Wiley & Sons, pp. 206--213

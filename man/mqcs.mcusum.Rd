@@ -34,34 +34,35 @@ mqcs.mcusum(x, ...)
 )
 }
 \arguments{
-\item{x}{An R object (used to select the method). See details.}
+\item{x}{An object of class 'mqcd'.}
 
 \item{...}{Arguments passed to or from methods.}
 
 \item{data.name}{A string that specifies the title displayed on the plots. 
-If not provided it is taken from the name of the object's data.}
+If not provided it is taken from the name of the object \code{x}.}
 
 \item{limits}{A two-values vector specifying the control limits.}
 
-\item{Xmv}{Is the mean vector. It is only specified for Phase II or when 
+\item{Xmv}{The mean vector. It is only specified for Phase II or when 
 the parameters of the distribution are known.}
 
-\item{S}{Is the sample covariance matrix. It is only used for Phase II or 
+\item{S}{The sample covariance matrix. It is only used for Phase II or 
 when the parameters of the distribution are known.}
 
-\item{k}{Is a constant used in MCUSUM chart. Frequently k = 0.5}
+\item{k}{A constant used in MCUSUM chart. Frequently k = 0.5}
 
-\item{h}{Is a constant used in MCUSUM chart. Usually h = 5.5}
+\item{h}{A constant used in MCUSUM chart. Usually h = 5.5}
 
-\item{method}{Is the method employed to compute the covariance matrix
+\item{method}{The method employed to compute the covariance matrix
 in the individual observation case. Two methods are used "sw" 
 for compute according to (Sullivan,Woodall 1996a) and "hm" 
 by (Holmes,Mergen 1993)}
 
-\item{plot}{Logical value. If TRUE a mcusum chart should be plotted.}
+\item{plot}{Logical value. If \code{TRUE} a mcusum chart should be plotted.}
 }
 \description{
-This function is used to compute statistics required by the mcusum chart.
+This function is used to compute statistics required by the Multivariate 
+Cumulative Sum (MCUSUM) chart.
 }
 \examples{
 
@@ -75,6 +76,9 @@ data.mqcd <- mqcd(dowel1)
 res.mqcs <- mqcs.mcusum(data.mqcd)
 summary(res.mqcs)
 plot(res.mqcs, title =" MCUSUM Control Chart for dowel1")
+}
+\seealso{
+\code{\link{mqcd}}, \code{\link{mqcs}}
 }
 \author{
 Edgar Santos-Fernandez

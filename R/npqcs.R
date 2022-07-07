@@ -20,7 +20,7 @@
 ##' Non Parametric Multivariate Control Charts.
 ##' 
 ##' @aliases npqcs summary.npqcs print.npqcs
-##' @param x  Object npqcd (Non Parametric Multivariante Quality Control Data)
+##' @param x  Object npqcd (Non Parametric Multivariate Quality Control Data)
 ##' @param method Character string which determines the depth function used. 
 ##' \code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
 ##' @param ... Arguments passed to or from methods.
@@ -199,7 +199,7 @@ npqcs.add.default <- function(x, value, ...){
 ##' This function removes observations from the sample which violates 
 ##' the rules of a process under control.
 ##' @aliases npstate.control
-##' @param x  Object npqcd (Quality Control Statitical Non Parametric)
+##' @param x  An object of class "npqcd" (Quality Control Statitical Non Parametric).
 ##' @param control A logical value indicating whether the initial sample comes 
 ##' from a process under control.
 ##' @export

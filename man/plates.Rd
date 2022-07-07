@@ -7,9 +7,9 @@
 \format{
 A data frame with 250 observations on the following 2 variables:
 \describe{
-  \item{hardness}{Vickers hardness corresponding to different
-   areas of artificial stone}
-  \item{sample}{sample id}
+  \item{hardness}{A quantitative variable that measure Vickers hardness corresponding to different
+   areas of artificial stone.}
+  \item{sample}{Sample ID}
 }
 }
 \description{

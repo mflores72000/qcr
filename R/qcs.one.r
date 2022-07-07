@@ -21,7 +21,7 @@
   # In the default method \code{qcs.one.default} parameter \code{x} is a matrix 
   # or data-frame which should contain data, index sample and, optionally, covariate(s).  
   ##'   
-  ##' @param x   Object qcd (Quality Control Data).
+  ##' @param x   An object of class "qcd".
   ##' @param ... Arguments passed to or from methods.
   ##' @export
   ##' @examples
@@ -65,7 +65,7 @@
   ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
   ##' < \code{conf.nsigma} < 1).
   ##' @param limits A two-value vector specifying control limits.
-  ##' @param plot Logical value. If TRUE a xbar.one chart should be plotted.
+  ##' @param plot Logical value. If \code{TRUE} a xbar.one chart should be plotted.
   ##' @export
 qcs.one.default <- function(x, var.index  =  1, sample.index  =  2, 
                                    covar.index  =  NULL, covar.names  =  NULL,

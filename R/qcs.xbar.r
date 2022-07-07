@@ -17,7 +17,7 @@
 ##'
 ##' This function is used to compute statistics required by the xbar chart.
 ##'
-##' @param x   Object qcd (Quality Control Data).
+##' @param x   An object of class "qcd" (Quality Control Data).
 ##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Montgomery, D.C. (2000)
@@ -80,7 +80,7 @@ qcs.xbar <- function(x, ...) {
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
 ##' @param limits A two-value vector specifying control limits.
-##' @param plot Logical value. If TRUE a xbar chart should be plotted.
+##' @param plot Logical value. If \code{TRUE} a xbar chart should be plotted.
 ##' @export
 ##' 
 qcs.xbar.default <- function(x, var.index  =  1, sample.index  =  2,

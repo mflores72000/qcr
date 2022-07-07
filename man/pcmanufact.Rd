@@ -5,11 +5,11 @@
 \alias{pcmanufact}
 \title{Personal computer manufacturer data}
 \format{
-A data frame with 10 observations on the following 2 variables.
+A data frame with 20 observations on the following 3 variables.
 \describe{
-\item{x}{number of nonconformities (inspection units)}
-\item{sample}{sample ID}
-\item{size}{number of computers inspected}
+\item{x}{A quantitative variable that measures the number of nonconformities in each sample.}
+\item{sample}{Sample ID}
+\item{size}{Number of computers inspected.}
 }
 }
 \description{

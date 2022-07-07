@@ -15,9 +15,9 @@
 #-------------------------------------------------------------------------
 ##' Function to plot the Q chart
 ##'
-##' This function is used to compute statistics required by the Q chart.
+##' This function is used to compute statistics required by the Non Parametric Q chart.
 ##' 
-##' @param x  An object npqcd (Non parametric Quality Control Data)
+##' @param x  An object of class "npqcd".
 ##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Regina Liu (1995)
@@ -60,7 +60,7 @@ npqcs.Q <- function(x, ...) {
 ##' @param method Character string which determines the depth function used. 
 ##' \code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.
 ##' @param alpha It is the significance level (0.01 for default)
-##' @param plot Logical value. If TRUE a Q chart should be plotted. 
+##' @param plot Logical value. If \code{TRUE} a Q chart should be plotted. 
 ##' @export
  
 npqcs.Q.default <- function(x, G, data.name = NULL, limits = NULL,

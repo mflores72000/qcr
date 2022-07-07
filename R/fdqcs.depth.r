@@ -16,7 +16,7 @@
 ##' Function to plot depth functional data (DFD) - chart
 ##'
 ##' This function is used to compute statistics required by the DFD chart.
-##' @param x   An R object (used to select the method). See details.
+##' @param x   An object of class 'fdqcd'.
 ##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @references Flores, M.; Naya, S.; Fernández-Casal,R.; Zaragoza, S.; Raña, P.; Tarrío-Saavedra, J. 
@@ -51,11 +51,17 @@ fdqcs.depth <- function(x, ...) {
 ##' @param nb         The number of bootstrap samples.
 ##' @param type       The method used to trim the data (trim or pond).
 ##' @param ns      Quantile to determine the cutoff from the Bootstrap procedure.
-##' @param plot       Logical value. If TRUE a DFD chart should be plotted.
+##' @param plot       Logical value. If \code{TRUE} a DFD chart should be plotted.
 ##' @param trim       The percentage of the trimming.
 ##' @param smo        The smoothing parameter for the bootstrap samples.
 ##' @param draw.control It specifies the col, lty and lwd for objects:
 ##' fdataobj, statistic, IN and OUT.
+## @details
+## In the default method \code{fdqcs.depth.default} parameter \code{x} is a matrix
+## of set cases with dimension (n x m), where n is the number of curves 
+## and m are the points observed in each curve.
+## @seealso
+## \code{\link{fdqcd}}
 ##' @export
 
 fdqcs.depth.default <- function(x, data.name=NULL,func.depth = depth.mode,nb=200,

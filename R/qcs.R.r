@@ -17,7 +17,7 @@
   ##'
   ##' This function is used to compute statistics required by the R chart.
   ##'
-  ##' @param x   An R object (used to select the method). See details.
+  ##' @param x   An object of class "qcd".
   ##' @param ... Arguments passed to or from methods.
   ##' @export
   ##' @examples
@@ -53,10 +53,10 @@
   ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
   ##' < \code{conf.nsigma} < 1).
   ##' @param limits A two-values vector specifying control limits.
-  ##' @param plot Logical value. If TRUE a R chart should be plotted.
-  ##' @details
-  ##' In the default method \code{qcs.R.default} parameter \code{x} is a matrix
-  ##' or data-frame where it should contain data, index sample and, optionally, covariate(s).
+  ##' @param plot Logical value. If \code{TRUE} a R chart should be plotted.
+  ## @details
+  ## In the default method \code{qcs.R.default} parameter \code{x} is a matrix
+  ## or data-frame where it should contain data, index sample and, optionally, covariate(s).
   ##' @seealso
   ##' \code{\link{qcs}}, \code{\link{qcd}}
   ##' @export

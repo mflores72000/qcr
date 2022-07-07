@@ -2,7 +2,7 @@
 % Please edit documentation in R/qcs.hat.cpm.r
 \name{qcs.hat.cpm}
 \alias{qcs.hat.cpm}
-\title{Process capability index (estimate cpm)}
+\title{Process capability index (estimate Cpm)}
 \usage{
 qcs.hat.cpm(
   object,
@@ -42,12 +42,12 @@ then the process is capable.}
 
 \item{contour}{Logical value indicating whether contour graph should be plotted.}
 
-\item{ylim}{The y limits of the plot.}
+\item{ylim}{The "y" limits of the plot.}
 
 \item{...}{Arguments to be passed to or from methods.}
 }
 \description{
-Estimate  \code{"cpm"} using the method described by Kerstin Vannman(2001).
+Estimate  \code{"Cpm"} using the method described by Kerstin Vannman(2001).
 }
 \examples{
 library(qcr)

@@ -15,10 +15,13 @@
 #-------------------------------------------------------------------------
 ##' Function to plot mewma chart
 ##'
-##' This function is used to compute statistics required by the mewma chart.
+##' This function is used to compute statistics required by the Multivariate 
+##' Exponentially Weighted Moving Average (MEWMA) chart.
 ##'
-##' @param x   An R object (used to select the method). See details.
+##' @param x   An object of class 'mqcd' 
 ##' @param ... Arguments passed to or from methods.
+##' @seealso
+##' \code{\link{mqcd}}, \code{\link{mqcs}}
 ##' @export
 ## @references Montgomery, D.C. (2000)
 ##' @examples
@@ -42,16 +45,16 @@ mqcs.mewma <- function(x, ...) {
 ##' @method mqcs.mewma default
 ##' @inheritParams mqcd
 ##' @param limits A two-values vector specifying the control limits.
-##' @param Xmv Is the mean vector. It is only specified for Phase II or 
+##' @param Xmv The mean vector. It is only specified for Phase II or 
 ##' when the parameters of the distribution are known.
-##' @param S Is the sample covariance matrix. It is only used for Phase II or 
+##' @param S The sample covariance matrix. It is only used for Phase II or 
 ##' when the parameters of the distribution are known.
-##' @param lambda Is the smoothing constant. Only values of 0.1, 0.2,...,0.9 are allowed.
-##' @param method Is the method employed to compute the covariance matrix
+##' @param lambda The smoothing constant. Only values of 0.1, 0.2,...,0.9 are allowed.
+##' @param method The method employed to compute the covariance matrix
 ##' in the individual observation case. Two methods are used "sw" 
 ##' for compute according to (Sullivan,Woodall 1996a) and "hm" 
 ##' by (Holmes,Mergen 1993)
-##' @param plot Logical value. If TRUE a mewma chart should be plotted. 
+##' @param plot Logical value. If \code{TRUE} a mewma chart should be plotted. 
 ##' @author Edgar Santos-Fernandez
 ##' @export
 ##' 

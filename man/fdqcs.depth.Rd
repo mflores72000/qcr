@@ -36,12 +36,12 @@ fdqcs.depth(x, ...)
 )
 }
 \arguments{
-\item{x}{An R object (used to select the method). See details.}
+\item{x}{An object of class 'fdqcd'.}
 
 \item{...}{Arguments passed to or from methods.}
 
 \item{data.name}{A string that specifies the title displayed on the plots. 
-If not provided it is taken from the name of the object's data.}
+If not provided it is taken from the name of the object \code{x}.}
 
 \item{func.depth}{Type of depth measure, by default depth.mode.}
 
@@ -51,7 +51,7 @@ If not provided it is taken from the name of the object's data.}
 
 \item{ns}{Quantile to determine the cutoff from the Bootstrap procedure.}
 
-\item{plot}{Logical value. If TRUE a DFD chart should be plotted.}
+\item{plot}{Logical value. If \code{TRUE} a DFD chart should be plotted.}
 
 \item{trim}{The percentage of the trimming.}
 

@@ -40,23 +40,23 @@
 )
 }
 \arguments{
-\item{x}{Object npqcs (Multivarite Quality Control Statical)}
+\item{x}{An object of class "npqcs" (Multivariate Statistical Quality Control)}
 
-\item{title}{an overall title for the plot}
+\item{title}{An overall title for the plot.}
 
-\item{subtitle}{a sub title for the plot}
+\item{subtitle}{A sub title for the plot.}
 
-\item{xlab}{a title for the x axis}
+\item{xlab}{A title for the "x" axis.}
 
-\item{ylab}{a title for the y axis}
+\item{ylab}{A title for the "y" axis.}
 
-\item{ylim}{the y limits of the plot}
+\item{ylim}{The "y" limits of the plot.}
 
-\item{lim}{a logical value indicating that limits should be constant.}
+\item{lim}{A logical value indicating that limits should be constant.}
 
-\item{...}{arguments to be passed to or from methods.}
+\item{...}{Arguments to be passed to or from methods.}
 }
 \description{
-Generic function for plotting Multivarite charts of object of class 'npqcs' to perform statistical 
-quality control.
+Generic function for plotting Multivariate charts of object of class 'npqcs'
+to perform statistical quality control.
 }

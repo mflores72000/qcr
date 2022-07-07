@@ -17,7 +17,7 @@
 ##'
 ##' This function is used to compute statistics required by the ewma chart.
 ##'
-##' @param x   Object qcd (Quality Control Data).
+##' @param x   An object of class "qcd".
 ##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @examples 
@@ -33,10 +33,6 @@ qcs.ewma <- function(x, ...) {
   UseMethod("qcs.ewma")
 }
 
-##' Function to plot the ewma chart
-##'
-##' This function is used to compute statistics required by the ewma chart.
-##'
 ##' @rdname qcs.ewma
 ##' @method qcs.ewma default
 ##' @inheritParams qcd
@@ -49,7 +45,7 @@ qcs.ewma <- function(x, ...) {
 ##' number of standard deviations.
 ##' @param lambda The smoothing parameter \eqn{0 \le \lambda \le 1}{0 <= lambda
 ##' <= 1}
-##' @param plot Logical value. If TRUE a ewma chart should be plotted.
+##' @param plot Logical value. If \code{TRUE} a ewma chart should be plotted.
 ##' @export
 qcs.ewma.default <- function(x, var.index  =  1, sample.index  =  2,
                           covar.index  =  NULL, covar.names  =  NULL,

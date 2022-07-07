@@ -30,7 +30,7 @@ npqcs.Q(x, ...)
 )
 }
 \arguments{
-\item{x}{An object npqcd (Non parametric Quality Control Data)}
+\item{x}{An object of class "npqcd".}
 
 \item{...}{Arguments passed to or from methods.}
 
@@ -38,7 +38,7 @@ npqcs.Q(x, ...)
 then each row is viewed as one multivariate observation.}
 
 \item{data.name}{A string that specifies the title displayed on the plots. 
-If not provided it is taken from the name of the object x.}
+If not provided it is taken from the name of the object \code{x}.}
 
 \item{limits}{A two-value vector specifying the control limits lower and central.}
 
@@ -47,10 +47,10 @@ If not provided it is taken from the name of the object x.}
 
 \item{alpha}{It is the significance level (0.01 for default)}
 
-\item{plot}{Logical value. If TRUE a Q chart should be plotted.}
+\item{plot}{Logical value. If \code{TRUE} a Q chart should be plotted.}
 }
 \description{
-This function is used to compute statistics required by the Q chart.
+This function is used to compute statistics required by the Non Parametric Q chart.
 }
 \examples{
 \dontrun{ 

@@ -7,16 +7,16 @@
 \format{
 A data frame with 200 observations on the following 3 variables.
 \describe{ 
-\item{diameter}{a numeric vector}
-\item{sample}{sample ID}
-\item{trial}{trial sample indicator (TRUE/FALSE)}
+\item{diameter}{A numeric vector.}
+\item{sample}{Sample ID}
+\item{trial}{Trial sample indicator (\code{TRUE}/\code{FALSE})}
  }
 }
 \description{
-Piston rings for an automotive engine are produced by a forging process.
-The inside diameter of the rings manufactured by the process is measured on
-25 samples, each of size 5, drawn from a process being considered 'in
-control'.
+This is a database that contains information on the inside 
+diameter of piston rings. Piston rings are manufactured for an automobile 
+engine that are produced through a forging process. This process is 
+considered "in control" and is measured on 25 samples, each of size 5.
 }
 \examples{
 

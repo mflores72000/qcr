@@ -26,7 +26,7 @@ qcs.p(x, ...)
 \method{qcs.p}{qcd}(x, center = NULL, conf.nsigma = 3, limits = NULL, plot = FALSE, ...)
 }
 \arguments{
-\item{x}{An R object (used to select the method). See details.}
+\item{x}{An object of class "qcd".}
 
 \item{...}{Arguments passed to or from methods.}
 
@@ -34,23 +34,24 @@ qcs.p(x, ...)
 the variable (the variable quality).  Alternativelly can be a string with the
 name of the quality variable.}
 
-\item{sample.index}{A scalar with the column number corresponding to the index each
+\item{sample.index}{A scalar with the column number corresponding to the index fo each
 group (sample).}
 
 \item{covar.index}{Optional. A scalar or numeric vector with the column number(s)
 corresponding to the covariate(s). Alternativelly it can be a character vector with
 the names of the covariates.}
 
-\item{covar.names}{Optional. A string or vector of strings with names for the
+\item{covar.names}{Optional. A string or vector of strings indicating the names for the
 covariate columns.  Only valid if there is more than one column of data. By
 default, takes the names from the original object.}
 
 \item{data.name}{A string specifying the name of the variable which appears on the
-plots. If not provided it is taken from the object given as data.}
+plots. If not provided, it is taken from the object given as data.}
 
 \item{sizes}{Optional. A value or a vector of values specifying the sample sizes
-associated with each group. For continuous data, the sample sizes are obtained counting the non-\code{NA} elements
-of the sample.index vector. For attribute variable the argument sizes is required.}
+associated with each group. For continuous data, the sample sizes are obtained 
+counting the non-\code{NA} elements of the \code{sample.index} vector. 
+For attribute variable the argument sizes is required.}
 
 \item{center}{A value specifying the center of group statistics or the
 ''target'' value of the process.}
@@ -61,14 +62,10 @@ number of standard deviations (if \code{conf.nsigma} > 1) or the confidence leve
 
 \item{limits}{A two-values vector specifying control limits.}
 
-\item{plot}{Logical value. If TRUE a p chart should be plotted.}
+\item{plot}{Logical value. If \code{TRUE} a p chart should be plotted.}
 }
 \description{
 This function is used to compute statistics required by the p chart.
-}
-\details{
-In the default method \code{qcs.p.default} parameter \code{x} is a matrix
-or data-frame where it should contain data, index sample and, optionally, covariate(s).
 }
 \examples{
 library(qcr)

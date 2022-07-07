@@ -30,22 +30,23 @@
 ##' @param var.index A scalar with the column number corresponding to the observed data for
 ##' the variable (the variable quality).  Alternativelly can be a string with the
 ##' name of the quality variable.
-##' @param sample.index A scalar with the column number corresponding to the index each
+##' @param sample.index A scalar with the column number corresponding to the index fo each
 ##' group (sample).
 ##' @param covar.index Optional. A scalar or numeric vector with the column number(s)
 ##' corresponding to the covariate(s). Alternativelly it can be a character vector with
 ##' the names of the covariates. 
-##' @param covar.names  Optional. A string or vector of strings with names for the
+##' @param covar.names  Optional. A string or vector of strings indicating the names for the
 ##' covariate columns.  Only valid if there is more than one column of data. By
 ##' default, takes the names from the original object.
 ##' @param data.name  A string specifying the name of the variable which appears on the
-##' plots. If not provided it is taken from the object given as data.
+##' plots. If not provided, it is taken from the object given as data.
 ##' @param type.data  A string specifying the type of data.
 ##' @param sizes  Optional. A value or a vector of values specifying the sample sizes
-##' associated with each group. For continuous data, the sample sizes are obtained counting the non-\code{NA} elements
-##' of the sample.index vector. For attribute variable the argument sizes is required.
+##' associated with each group. For continuous data, the sample sizes are obtained 
+##' counting the non-\code{NA} elements of the \code{sample.index} vector. 
+##' For attribute variable the argument sizes is required.
 ##' @export
-##' @example
+##' @examples 
 ##' \dontrun{
 ##' library(qcr)
 ##' data(pistonrings)
@@ -53,6 +54,7 @@
 ##' pistonrings.qcd<-qcd(pistonrings)
 ##' class(pistonrings.qcd)
 ##' }
+
 
 qcd <- function(data, var.index  =  1, sample.index  =  2,
                 covar.index = NULL, covar.names = NULL,

@@ -22,12 +22,12 @@
 ##' 
 ##' @aliases qcs summary.qcs print.qcs
 ##' 
-##' @param x  A vector containing observed data.
+##' @param x  An object of class "qcd".
 ##' @param sample.index A scalar with the column number corresponding to the index 
 ##' of each group (sample).
 ##' @param sizes A value or a vector of values specifying the sample sizes
 ##' associated with each group. For continuous data the sample sizes are obtained counting the non-\code{NA} elements of
-##' the sample.index vector. For \code{"p"}, \code{"np"} and \code{"u"} charts the argument
+##' the \code{sample.index} vector. For \code{"p"}, \code{"np"} and \code{"u"} charts the argument
 ##' \code{sizes} is required.
 ##' @param type A character string specifying the group statistics to compute:
 ##' 
@@ -41,12 +41,12 @@
 ##' nonconforming units \cr \code{"c"} \tab count \tab nonconformities per unit
 ##' \cr \code{"u"} \tab count \tab average nonconformities per unit \cr
 ##' \code{"g"} \tab count \tab number of non-events between events }
-##' @param center a value specifying the center of group statistics or the
+##' @param center A value specifying the center of group statistics or the
 ##' ''target'' value of the process.
-##' @param std.dev  a value or an available method specifying the within-group standard
+##' @param std.dev  A value or an available method specifying the within-group standard
 ##' deviation(s) of the process. Several methods are available for estimating the
 ##' standard deviation in case of a continuous process variable.
-##' @param conf.nsigma  a numeric value used to compute control limits, specifying the
+##' @param conf.nsigma  A numeric value used to compute control limits, specifying the
 ##' number of standard deviations (if \code{conf.nsigma} > 1) or the confidence level (if 0
 ##' < \code{conf.nsigma} < 1).
 ##' @param limits A two-value vector specifying control limits.

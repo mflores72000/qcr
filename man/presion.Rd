@@ -3,13 +3,13 @@
 \docType{data}
 \name{presion}
 \alias{presion}
-\title{Level of presion data}
+\title{Level of pressure data}
 \format{
 A data frame with 180 observations on the following 3 variables:
 \describe{
-  \item{presion}{presion level}
+  \item{presion}{Presion level.}
   \item{sample}{sample id}
-  \item{measur}{pressures measured: 0.1 y 10 MPa}
+  \item{measur}{Pressures measured: 0.1 y 10 MPa}
 }
 }
 \description{

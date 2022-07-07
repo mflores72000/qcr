@@ -153,17 +153,17 @@
 )
 }
 \arguments{
-\item{x}{Object qcs (Quality Control Statical).}
+\item{x}{An object of class "qcs" (Quality Control Statical).}
 
 \item{title}{An overall title for the plot.}
 
 \item{subtitle}{A sub title for the plot.}
 
-\item{xlab}{A title for the x axis.}
+\item{xlab}{A title for the "x" axis.}
 
-\item{ylab}{A title for the y axis.}
+\item{ylab}{A title for the "y" axis.}
 
-\item{ylim}{The y limits of the plot.}
+\item{ylim}{The "y" limits of the plot.}
 
 \item{center.nominal}{A value specifying the 
 center of group statistics or the "target" value 

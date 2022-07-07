@@ -9,7 +9,7 @@
 npqcs(x, method = c("Tukey", "Liu", "Mahalanobis", "RP", "LD"), ...)
 }
 \arguments{
-\item{x}{Object npqcd (Non Parametric Multivariante Quality Control Data)}
+\item{x}{Object npqcd (Non Parametric Multivariate Quality Control Data)}
 
 \item{method}{Character string which determines the depth function used. 
 \code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.}

@@ -20,10 +20,10 @@
 ##' @aliases qcs.cpn 
 ##' @param object qcs object of type \code{"qcs.xbar"} or \code{"qcs.one"}.
 ##' @param parameters A vector specifying the \code{u} and \code{v} parameters values. 
-##' If \code{parameters} = c(u=0, v=0), the cp indice is calculed; 
-##' If \code{parameters} = c(u=1, v=0), the cpk indice is calculed;
-##' If \code{parameters} = c(u=0, v=1), the cpm indice is calculed; 
-##' If \code{parameters} = c(u=1, v=1), the cpmk indice is calculed.  
+##' If \code{parameters} = c(u=0, v=0), the CNp indice is calculed; 
+##' If \code{parameters} = c(u=1, v=0), the CNpk indice is calculed;
+##' If \code{parameters} = c(u=0, v=1), the CNpm indice is calculed; 
+##' If \code{parameters} = c(u=1, v=1), the CNpmk indice is calculed.  
 ##' @param limits A vector specifying the lower and upper specification limits.
 ##' @param q A vector specifying the lower and upper quantiles. These values are 
 ##' necessary, if \code{object} value is missing. 

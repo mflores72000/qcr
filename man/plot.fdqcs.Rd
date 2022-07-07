@@ -16,7 +16,7 @@
 )
 }
 \arguments{
-\item{x}{Object fdqcs.depth}
+\item{x}{An object of class fdqcs.depth}
 
 \item{title.fdata}{An overall title for the fdata plot.}
 

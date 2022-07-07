@@ -30,7 +30,7 @@ npqcs.r(x, ...)
 )
 }
 \arguments{
-\item{x}{An object npqcd (Non parametric Quality Control Data)}
+\item{x}{An object of class "npqcd".}
 
 \item{...}{Arguments passed to or from methods.}
 
@@ -38,19 +38,19 @@ npqcs.r(x, ...)
 then each row is viewed as one multivariate observation.}
 
 \item{data.name}{A string that specifies the title displayed on the plots. 
-If not provided it is taken from the name of the object x.}
+If not provided it is taken from the name of the object \code{x}.}
 
 \item{limits}{A two-value vector specifying the control limits lower and central.}
 
 \item{method}{Character string which determines the depth function used. 
 \code{method} can be "Tukey" (the default), "Liu", "Mahalanobis", "RP" Random Project or "LD" Likelihood depth.}
 
-\item{alpha}{It is the significance level (0.01 for default)}
+\item{alpha}{It is the significance level (by default \code{alpha} = 0.01)}
 
-\item{plot}{Logical value. If TRUE a r chart should be plotted.}
+\item{plot}{Logical value. If \code{TRUE} a r chart should be plotted.}
 }
 \description{
-This function is used to compute statistics required by the r chart.
+This function is used to compute statistics required by the Non Parametric r chart.
 }
 \examples{
 \dontrun{

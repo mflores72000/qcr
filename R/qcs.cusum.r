@@ -17,7 +17,7 @@
 ##'
 ##' This function is used to compute statistics required by the cusum chart.
 ##'
-##' @param x   Object qcd (Quality Control Data).
+##' @param x   An object of class "qcd".
 ##' @param ... Arguments passed to or from methods.
 ##' @export
 ##' @examples
@@ -49,7 +49,7 @@ qcs.cusum <- function(x, ...) {
 ##' control.
 ##' @param se.shift The amount of shift to detect in the process, measured in
 ##' standard errors of the summary statistics.
-##' @param plot Logical value. If TRUE a cusum chart should be plotted.
+##' @param plot Logical value. If \code{TRUE} a cusum chart should be plotted.
 ##' @export
 ##' 
 qcs.cusum.default <- function(x, var.index  =  1, sample.index  =  2,

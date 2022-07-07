@@ -4,13 +4,13 @@
 \alias{mqcd}
 \title{It creates a data object to be used in Multivariante Quality Control}
 \usage{
-mqcd(data, data.name = NULL)
+mqcd(x, data.name = NULL)
 }
 \arguments{
-\item{data}{A matrix or data-frame or array where it should contain data.}
+\item{x}{A matrix, a data-frame or an array where it should contain data.}
 
 \item{data.name}{A string that specifies the title displayed on the plots. 
-If not provided it is taken from the name of the object's data.}
+If not provided it is taken from the name of the object \code{x}.}
 }
 \description{
 Create an object of class 'mqcd' to perform statistical quality control.

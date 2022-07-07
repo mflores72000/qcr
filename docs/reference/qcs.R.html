@@ -95,7 +95,7 @@
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>x</dt>
-<dd><p>An R object (used to select the method). See details.</p></dd>
+<dd><p>An object of class "qcd".</p></dd>
 <dt>...</dt>
 <dd><p>Arguments passed to or from methods.</p></dd>
 <dt>var.index</dt>
@@ -103,23 +103,24 @@
 the variable (the variable quality).  Alternativelly can be a string with the
 name of the quality variable.</p></dd>
 <dt>sample.index</dt>
-<dd><p>A scalar with the column number corresponding to the index each
+<dd><p>A scalar with the column number corresponding to the index fo each
 group (sample).</p></dd>
 <dt>covar.index</dt>
 <dd><p>Optional. A scalar or numeric vector with the column number(s)
 corresponding to the covariate(s). Alternativelly it can be a character vector with
 the names of the covariates.</p></dd>
 <dt>covar.names</dt>
-<dd><p>Optional. A string or vector of strings with names for the
+<dd><p>Optional. A string or vector of strings indicating the names for the
 covariate columns.  Only valid if there is more than one column of data. By
 default, takes the names from the original object.</p></dd>
 <dt>data.name</dt>
 <dd><p>A string specifying the name of the variable which appears on the
-plots. If not provided it is taken from the object given as data.</p></dd>
+plots. If not provided, it is taken from the object given as data.</p></dd>
 <dt>sizes</dt>
 <dd><p>Optional. A value or a vector of values specifying the sample sizes
-associated with each group. For continuous data, the sample sizes are obtained counting the non-<code>NA</code> elements
-of the sample.index vector. For attribute variable the argument sizes is required.</p></dd>
+associated with each group. For continuous data, the sample sizes are obtained 
+counting the non-<code>NA</code> elements of the <code>sample.index</code> vector. 
+For attribute variable the argument sizes is required.</p></dd>
 <dt>center</dt>
 <dd><p>A value specifying the center of group statistics or the
 ''target'' value of the process.</p></dd>
@@ -134,13 +135,8 @@ number of standard deviations (if <code>conf.nsigma</code> &gt; 1) or the confid
 <dt>limits</dt>
 <dd><p>A two-values vector specifying control limits.</p></dd>
 <dt>plot</dt>
-<dd><p>Logical value. If TRUE a R chart should be plotted.</p></dd>
+<dd><p>Logical value. If <code>TRUE</code> a R chart should be plotted.</p></dd>
 </dl></div>
-    <div class="section level2">
-    <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>In the default method <code>qcs.R.default</code> parameter <code>x</code> is a matrix
-or data-frame where it should contain data, index sample and, optionally, covariate(s).</p>
-    </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
     <div class="dont-index"><p><code><a href="qcs.html">qcs</a></code>, <code><a href="qcd.html">qcd</a></code></p></div>

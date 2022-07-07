@@ -7,7 +7,7 @@
 npstate.control(x, control = FALSE)
 }
 \arguments{
-\item{x}{Object npqcd (Quality Control Statitical Non Parametric)}
+\item{x}{An object of class "npqcd" (Quality Control Statitical Non Parametric).}
 
 \item{control}{A logical value indicating whether the initial sample comes 
 from a process under control.}

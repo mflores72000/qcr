@@ -20,7 +20,7 @@
 ##' perform statistical quality control.
 ##'  
 ##' @method plot fdqcs.rank
-##' @param x  Object fdqcs.depth
+##' @param x  An object of class fdqcs.rank
 ##' @param title.fdata An overall title for the fdata plot.
 ##' @param title.rank An overall title for the depth plot. 
 ##' @param xlab A title for the x axis.

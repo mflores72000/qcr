@@ -15,18 +15,18 @@
 #-------------------------------------------------------------------------
 ##' Plot method for 'npqcs' objects
 ##' 
-##' Generic function for plotting Multivarite charts of object of class 'npqcs' to perform statistical 
-##' quality control.
+##' Generic function for plotting Multivariate charts of object of class 'npqcs'
+##' to perform statistical quality control.
 ##' 
 ##' @method plot npqcs
-##' @param x  Object npqcs (Multivarite Quality Control Statical)
-##' @param title an overall title for the plot
-##' @param subtitle a sub title for the plot
-##' @param xlab a title for the x axis
-##' @param ylab a title for the y axis
-##' @param ylim the y limits of the plot
-##' @param lim a logical value indicating that limits should be constant.
-##' @param ...  arguments to be passed to or from methods.
+##' @param x  An object of class "npqcs" (Multivariate Statistical Quality Control)
+##' @param title An overall title for the plot.
+##' @param subtitle A sub title for the plot.
+##' @param xlab A title for the "x" axis.
+##' @param ylab A title for the "y" axis.
+##' @param ylim The "y" limits of the plot.
+##' @param lim A logical value indicating that limits should be constant.
+##' @param ...  Arguments to be passed to or from methods.
 ##' @export
 
 

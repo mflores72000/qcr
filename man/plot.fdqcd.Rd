@@ -13,9 +13,9 @@
 
 \item{title}{An overall title for the plot.}
 
-\item{xlab}{A title for the x axis.}
+\item{xlab}{A title for the 'x' axis.}
 
-\item{ylab}{A title for the y axis.}
+\item{ylab}{A title for the 'y' axis.}
 
 \item{col}{The color for curves.}
 

@@ -19,18 +19,17 @@ fdqcs.rank(x, ...)
 )
 }
 \arguments{
-\item{x}{An R object (used to select the method). See details.}
+\item{x}{The set of reference curves respect to which the depth is computed. fdqcd class object.}
 
 \item{...}{Arguments passed to or from methods.}
 
-\item{y}{The set of new curves to evaluate the depth. fdqcd class object.
-The set of reference curves respect to which the depth is computed. fdqcd class object.}
+\item{y}{The set of new curves to evaluate the depth. fdqcd class object.}
 
-\item{func.depth}{Type of depth measure, by default depth.mode.}
+\item{func.depth}{Type of depth measure, by default depth.FM}
 
 \item{alpha}{Quantile to determine the cutoff from the Bootstrap procedure.}
 
-\item{plot}{Logical value. If TRUE a RFD chart should be plotted.}
+\item{plot}{Logical value. If \code{TRUE} a RFD chart should be plotted.}
 
 \item{trim}{The percentage of the trimming.}
 

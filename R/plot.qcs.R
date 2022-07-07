@@ -19,12 +19,12 @@
 ##' quality control.
 ##' 
 ##' @method plot qcs
-##' @param x  Object qcs (Quality Control Statical).
+##' @param x  An object of class "qcs" (Quality Control Statical).
 ##' @param title An overall title for the plot.
 ##' @param subtitle A sub title for the plot.
-##' @param xlab A title for the x axis.
-##' @param ylab A title for the y axis.
-##' @param ylim The y limits of the plot.
+##' @param xlab A title for the "x" axis.
+##' @param ylab A title for the "y" axis.
+##' @param ylim The "y" limits of the plot.
 ##' @param center.nominal A value specifying the 
 ##' center of group statistics or the "target" value 
 ##' of the process.

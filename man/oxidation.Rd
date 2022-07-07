@@ -7,22 +7,22 @@
 \format{
 A data frame with 250 observations on the following 2 variables:
 \describe{
-  \item{OOT}{That is a quantitative variable that controls the quality of oil.}
+  \item{OOT}{A quantitative variable that controls the quality of oil.}
   \item{sample}{sample id}
 }
 }
 \description{
 This database contains information about the level of purity 
 of each batch of Picual varities. Then we have the type of oil 
-by measuring the Oxidation Onset Temperature. 
-We have 50 subsamples of oil with their temperature to oxide.
+by measuring the Oxidation Onset Temperature (OOT). 
+We have 50 subsamples of oil with their temperature to oxide, each subsample is size 5.
 }
 \examples{
 
 data(oxidation)
 attach(oxidation)
 summary(oxidation)
-plot(OOT, type="b")
+plot(OOT, type="b",xlab='Observations')
 detach(oxidation)
 }
 \keyword{datasets}
