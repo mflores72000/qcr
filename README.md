@@ -21,3 +21,4 @@ Flores, M., Naya, S., Fernández-Casal, R., Zaragoza, S., Raña, P., and Tarrío
 
 Flores, M., Fernández-Casal, R., Naya, S., & Tarrío-Saavedra, J. (2021). Statistical Quality Control with the qcr Package. *R Journal*, **13**, 194-217. [DOI](http://doi.org/10.32614/rj-2021-034).
 
+Naya, S., Devia-Rivera, A., Saavedra, J. T., & Flores, M. A. (2016). Nueva propuesta de índices de capacidad robustos para el control de la calidad. Dyna, 83(198), 94-101. [DOI](https://doi.org/10.15446/dyna.v83n198.49930).
