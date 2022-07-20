@@ -97,7 +97,7 @@
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <p>Throughout the last decades, there has been an increasing interest to measure, improve and control the quality of products, services and procedures. This is connected to the strong relationship between quality, productivity, prestige, trust and brand image. In fact, implementing procedures of statistical quality control (SQC) are currently related to increasing companies’ competitiveness. The concept of quality control has been extended from the first definitions based on the idea of adjusting production, to a standard model to satisfy customer requirements and include all participants. Nowadays, SQC is not only applied to manufactured products but to all industrial and service processes. The use of diferent SQC techniques were standarized With the development of the Six Sigma method by Motorola in 1997 . Six Sigma is a methodology or even philosophy focused on the variability reduction that promotes the use of statistical methods and tools in order to improve processes in industry and services. Six Sigma’s goal is to reach maximum 3.4 defects per million of events or opportunities (DPMO) meeting the customer requirements. The Six Sigma application is composed by five stages: Define, Measure, Analyze, Improve, and Control (DEMAIC). The Six Sigma methodology itself indicates which technique to apply at each stage of the improvement process. The Figure  shows some representative statistical techniques applied in each of the Six Sigma stages. The two most representative statistical tools of SQC are the control charts and the process capabity analysis . Therefore, the proposed <code>qcr</code> package has been developed in order to provide users an exhaustive, comprehensive and free set of programming tools to apply control charts and perform capability analysis in the SQC framework.</p>
-<p><img src="../articles/images/f1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="../reference/figures/f1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>
 </p>
 <p>The control stage is characterized by the use of tools based on anomaly detection and correction . The most representative techniques of this stage and the primary tool of the Statistical Process Control (SPC) are the control charts . They have been developed to evaluate the process performance and at any time. The use of control charts prevents the process getting out of control, and helping to detect the assignable causes corresponding to variations of the critical-to-quality features (CTQs), thus performing process changes when actually required. Furthermore, control charts provide estimates of the natural range of process variation (natural control limits), allowing us to compare this range with those limits specified by standards, company managers or customers (specification limits). Hence, the process monitoring can be carried out by comparing each new observation with these natural limits, preventing defects in the final product. Briefly, a control chart is a two dimensional graph whose axis represents the variable or attribute that is being monitored (CTQ variables). They were introduced by Shewhart in 1924 at Bell laboratories. The estimation of natural control limits of the CTQ variables is developed by a process composed of two phases: In Phase I, the natural control limits are estimated using a preliminary sample (calibration sample) where we assume that the causes of variation are only random. In Phase II, each new observation is plotted on the control chart along with the natural limits obtained in the previous step. The set of new observations (twhich are not used to calculate the natural control limits) make up the so-called monitoring sample. Patterns, observations of out of control limits, runs of more than six observations on one side of the central line, among others, are some of the diferent criteria to identify out of control states in a specific process, providing also valuable information about the detection of any assignable causes of variation in the monitoring.</p>
@@ -106,7 +106,7 @@
 <p>
 </p>
 <p><span class="math inline">\(~~~~~~\)</span>The most used control charts are based on the assumptions of normality and independence of the studied CTQ variables. These charts are used to control position and dispersion of CTQ attributes and variables. Figure  shows some of the most important types of control charts. These can be classified according to the type of feature that is being controlled (attribute or variable), the variable dimension (univariate or multivariate), and assuming or not a parametric 65 distribution of the variable (parametric or nonparametric).</p>
-<p><img src="images/f2.PNG"></p>
+<p><img src="../reference/figures/f2.png" width="60%" style="display: block; margin: auto;"></p>
 <p>The <code>qcr</code> package provides charts for the mean (<span class="math inline">\(\bar{x}\)</span>), standard deviation (<span class="math inline">\(s\)</span>), range (<span class="math inline">\(R\)</span>), individual measurements (<span class="math inline">\(I\)</span>), moving ranges (<span class="math inline">\(MR\)</span>), proportion of nonconforming units (<span class="math inline">\(p\)</span>), number of nonconforming units (<span class="math inline">\(np\)</span>), number of defects per unit (<span class="math inline">\(c\)</span>), mean number of defects per control unit (<span class="math inline">\(u\)</span>), exponentially weighted moving average (EWMA), and cumulative sum control chart (CUSUM). The last two techniques are also called memory control charts and they are the specially designed to detect shifts of less than two standard deviations, both when using rational samples or individual measurements. On the other hand, new control charts based on the concept of data depth and developed by  are implemented in <code>qcr</code>. Those are the <span class="math inline">\(r, Q\)</span> and <span class="math inline">\(S\)</span> control charts, the nonparametric alternatives for individual measurements, mean control chart and CUSUM control chart, respectively. When more than one variable defines the process quality, multivariate control charts are applied. If the Gaussian assumption is met, Hotelling T<span class="math inline">\(^2\)</span> control chart can be applied. If we want to detect small deviations, multivariate EWMA (MEWMA) and multivariate CUSUM (MCUSUM) can be implemented. When no parametric distribution is assumed, <span class="math inline">\(r, Q\)</span> and <span class="math inline">\(S\)</span> charts can be used.</p>
 <p>
 </p>
@@ -114,7 +114,7 @@
 <p>
 </p>
 <p>The <code>qcr</code> package has been developed in <code>R</code>  under the 90 GNU license. Nowadays there are other <code>R</code> packages that currently provide quality control tools for users. The use of each one is shown in Figure . The <code>qcc</code> package  was developed by Professor Luca Scrucca of the Department of Economics, Finance and Statistics at the University of Perugia. It enables us to perform Shewhart quality control charts for variables and attributes, as well as the CUSUM and EWMA charts for detecting small changes in the CTQ variable. Multivariate analysis is performed applying the Hotelling T<span class="math inline">\(^2\)</span> control chart. Additionally, it has functions implemented to obtain the operating characteristic curves (OC) and to estimate process capability analysis indices. Pareto and Ishikawa diagrams are also implemented. Otherwise, the <code>IQCC</code> package  is maintained by Professor Emanuel P. Barbosa of the Institute of Mathematics in the State University of Campinas. It has a smaller number of control charts implemented but it incorporates multivariate graphics. The <code>qualityTools</code> package  was developed to aid learning in quality sciences. The Figure  shows some of its utilities, e.g. capability analysis (providing a comprehensive set of parametric distributions) and design of experiments. In addition, the SixSigma library  provides alternative functions to <code>qualityTools</code> and <code>qcc</code> packages, and the possibility of 104 implementing process maps.</p>
-<p><img src="images/f3.PNG"></p>
+<p><img src="../reference/figures/f3.png" width="60%" style="display: block; margin: auto;"></p>
 <p><span class="math inline">\(~~~~~~\)</span>Furthermore, there are other libraries specifically focused on control chart applications. Namely, the spcadjust  that allows us to estimate the calibration control limits of Shewhart, CUSUM and EWMA control charts, and the <code>spc</code>  which provides tools for the evaluation of EWMA, CUSUM and Shiryaev-Roberts control charts by using Average Run Length and RL quantiles criteria. Moreover, the <code>MSQC</code> package  is a set of tools for multivariate process control, mainly control charts. It contains the main alternatives for multivariate control charts such as Hotelling (T<span class="math inline">\(^2\)</span>), Chi squared, MEWMA, MCUSUM and Generalized Variance control charts. It also includes some tools to evaluate the multivariate normal assumption. The corresponding multivariate capability analysis can be performed using the <code>MPCI</code> library  that provides diferent multivariate capability indices. It is also interesting to mention the <code>edcc</code> package  for its ecomomic design of control charts by minimizing the expected cost per hour of the studied process.</p>
 <p>
 </p>
@@ -220,7 +220,7 @@
 <p><code>R&gt; plot(res.qcs, title = "Control chart for pistonrings: R")</code></p>
 <p>(see Figure ). As there are not patterns, runs, nor samples out of the natural control limits, the process is assumed under control in terms of variability.</p>
 <p>Once the variability is controled, <span class="math inline">\(\sigma\)</span> can be estimated by using its unbiased estimator <span class="math inline">\(\hat{\sigma}=\frac{1}{d_2}\bar{R}\)</span>, where <span class="math inline">\(d_2\)</span> is a constant tabulated for various sample sizes . Consequently, the process mean can be controled by an <span class="math inline">\(\bar{x}\)</span> chart, considering the <span class="math inline">\(3\sigma\)</span> control limits</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-4-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-6-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p><span class="math display">\[\begin{align*}
 \mbox{LCL} &amp; = \bar{x} - \frac{3}{\sqrt{n}d_2}\bar{R}=\bar{x}-A_2\bar{R}\\
 \mbox{CL} &amp; = \bar{x} \\
@@ -230,7 +230,7 @@
 <p><code>R&gt; res.qcs &lt;- qcs.xbar(x, data.name = "pistonrings", std.dev = "UWAVE-R")</code></p>
 <p><code>R&gt; plot(res.qcs, title = expression(paste("Control chart for pistonrings: ",+ bar(x))))</code></p>
 <p>(see Figure ). As shown, there is no evidence that indicates the process is out of control.</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-5-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>The process standard deviation can also be estimated using the sample standard deviation instead of the sample range. This leads to control charts for <span class="math inline">\(\bar{x}\)</span> and <span class="math inline">\(s\)</span>, where <span class="math inline">\(s\)</span> is the sample standard deviation, and to apply the s control chart instead of the <code>R</code> chart, whose center line and control limits are</p>
 <p><span class="math display">\[\begin{align*}
 \mbox{LCL} &amp; = B_3\bar{s}\\
@@ -265,7 +265,7 @@
 <p><span class="math inline">\(~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\)</span><code>+ sample.index = 2, sizes = orangejuice$size, type.data = "atributte")</code></p>
 <p><code>R&gt; res.qcs &lt;- qcs.p(datos.qcd)</code></p>
 <p><code>R&gt; plot(res.qcs, title = "Control chart for orangejuice: p")</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-6-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-8-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>The resulting chart is shown in Figure . Samples 6 and 20 are outside the control limits and should be removed from the control limit calculations since assignable causes have been found. Namely, sample 6 was examined by an inexperienced inspector who overlooked several types of nonconformities. In addition, the large number of nonconformities in sample 20 was due to a problem of temperature control in the welding machine .</p>
 <p>
 </p>
@@ -283,7 +283,7 @@ s_r=\displaystyle\sum_{i=1}^{r}(\bar{x}_1-\mu_0)
 <p><code>R&gt; res.qcs &lt;- qcs.cusum(res.qcd, type = "cusum")</code></p>
 <p><code>R&gt; plot(res.qcs, title = "Control chart for pistonrings: CUSUM")</code></p>
 <p>and is shown in Figure .</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-9-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level4">
 <h4 id="ewma-control-chart">EWMA control chart<a class="anchor" aria-label="anchor" href="#ewma-control-chart"></a>
@@ -321,7 +321,7 @@ y_i=\lambda x_i+(1-\lambda)y_{i-1}
 <p><code>R&gt; res.qcs &lt;- qcs.xbar(pistonrings.qcd)</code></p>
 <p><code>R&gt; plot(res.qcs, title = "Xbar control chart for pistonrings I")</code></p>
 <p>(see Figure ), and the results can be printed by calling</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-8-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-10-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p><code>R&gt; summary(res.qcs)</code></p>
 <pre><code><span class="co">#&gt; xbar chart for pistonrings </span>
 <span class="co">#&gt; </span>
@@ -352,12 +352,12 @@ y_i=\lambda x_i+(1-\lambda)y_{i-1}
 <p><code>R&gt; res.qcd &lt;- state.control(res.qcs)</code></p>
 <p><code>R&gt; res.qcs &lt;- qcs.xbar(res.qcd)</code></p>
 <p><code>R&gt; plot(res.qcs, title = "Xbar control chart for pistonrings II")</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-10-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-12-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>Figure  still shows a point outside the control limits. Therefore, the <code><a href="../reference/state.control.html">state.control()</a></code> function is used to delete it and the control limits are estimated again. Figure  shows that the process is under control, thus, the control limits estimates are reliable.</p>
 <p><code>R&gt; res.qcd &lt;- state.control(res.qcs)</code></p>
 <p><code>R&gt; res.qcs &lt;- qcs.xbar(res.qcd)</code></p>
 <p><code>R&gt; plot(res.qcs, title = "Xbar control chart for pistonrings III")</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-11-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-13-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level4">
 <h4 id="monitoring-a-process">Monitoring a process<a class="anchor" aria-label="anchor" href="#monitoring-a-process"></a>
@@ -367,12 +367,12 @@ y_i=\lambda x_i+(1-\lambda)y_{i-1}
 <p><code>R&gt; y &lt;- droplevels(pistonrings[126:200, ])</code></p>
 <p><code>R&gt; res.qcs &lt;- qcs.xbar(x, data.name = "Xbar control chart for pistonrings")</code></p>
 <p><code>R&gt; plot(res.qcs)</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-12-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-14-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>Once the control limits are obtained, the remaining samples are monitored (Figure ) by running</p>
 <p><code>R&gt; res.qcs &lt;- qcs.add(x = res.qcs, value = y[, 1:2])</code></p>
 <p><code>R&gt; plot(res.qcs)</code></p>
 <p>As Figure  suggests, the process falls out of control from sample number thirty seven onwards, where the diameters are unusually high when compared with the calibration sample counterparts. These four points form a bunch pattern whose assignable cause should be identified before making any corrective actions or even recalculating the control limits due to an actual change in the process.</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-13-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-15-1.png" width="60%" style="display: block; margin: auto;"></p>
 
 </div>
 <div class="section level4">
@@ -381,7 +381,7 @@ y_i=\lambda x_i+(1-\lambda)y_{i-1}
 <p>Warning limits are applied during the Phase II when using the Shewhart control charts, in order to improve their performance against small shifts. They can be defined with a semi-amplitude of about <span class="math inline">\(2\sigma\)</span> as shown in Figure .</p>
 <p><code>res.qcs &lt;- qcs.xbar(x, data.name = "Xbar control chart for pistonrings")</code></p>
 <p><code>R&gt; plot(res.qcs, conf.nsigma.alert = 2)</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-14-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-16-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>However, the ARL is reduced when the process is actually in control. To prevent this drawback, CUSUM and EWMA control charts are excellent alternatives to the Shewhart control chart for detecting small changes (less than <span class="math inline">\(2\sigma\)</span>) during the Phase II of the process monitoring.</p>
 </div>
 </div>
@@ -451,7 +451,7 @@ T^{2}\sim\frac{p(m-1)(n-1)}{mn-m-p+1}F_{p,mn-m-p + 1}
 <p>The <code><a href="../reference/mqcs.t2.html">mqcs.t2()</a></code> function can used to compute statistics required by the <span class="math inline">\(T^2\)</span> chart.</p>
 <p><code>R&gt; res.mqcs &lt;- mqcs.t2(data.mqcd)</code></p>
 <p><code>R&gt; plot(res.mqcs, title = "Hotelling control chart for dowel pin")</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-15-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-17-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>As shown in Figure , the control limits have been estimated observing that the Dowell pins process is under control. The next step should be to implement the Phase II process monitoring using the proper UCL. The UCL for retrospective analysis or for monitoring phase can be computed by setting the phase argument to 1 or 2, respectively, of the <code><a href="../reference/mqcs.t2.html">mqcs.t2()</a></code> function.</p>
 </div>
 <div class="section level4">
@@ -476,7 +476,7 @@ S_i=\mbox{max}\{0,S_{i.1}+T_i-k\}
 <p>where <span class="math inline">\(T_i=\sqrt{n(\bar{\mbox{x}}_i-\mu_0)^{\mbox{T}}\Sigma_{0}^{-1}(\bar{\mbox{x}}_i-\mu_0)}\)</span>, and <span class="math inline">\(S_0\geq 0\)</span> (generally <span class="math inline">\(S_0 = 0\)</span>) and <span class="math inline">\(k &gt; 0\)</span>. The MCUSUM chart gives an out of control signal when the value of <span class="math inline">\(S_i\)</span> is greater than a certain value <span class="math inline">\(h\)</span> which depends on the value of the desired ARL when the process is operating at the target value [<span class="math inline">\(S_i &gt; h\)</span>]. Crosier used Markov processes for determining the values of <span class="math inline">\(h\)</span> and <span class="math inline">\(k\)</span> with <span class="math inline">\(p=2,5,10\)</span> and 20 and ARL values of 200 and 500 (with process is under control). These tables were designed to detect a change <span class="math inline">\(d = 1\)</span> in the mean vector, where <span class="math inline">\(d = \lambda\)</span>, with <span class="math inline">\(\lambda\)</span> a non-centrality parameter. The <code><a href="../reference/mqcs.mcusum.html">mqcs.mcusum()</a></code> function of <code>qcr</code> package is used to compute the statistics required to perform the MCUSUM chart</p>
 <p><code>R&gt; res.mqcs &lt;- mqcs.mcusum(data.mqcd)</code></p>
 <p><code>R&gt; plot(res.mqcs, title = "MCUSUM control chart for dowel pin")</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-16-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-18-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level4">
 <h4 id="mewma-control-charts">MEWMA control charts<a class="anchor" aria-label="anchor" href="#mewma-control-charts"></a>
@@ -499,7 +499,7 @@ T_i^2=Z_i^T\Sigma_{Z_i}^{-1}Z_{i}
 \end{align*}\]</span> Regarding the choice of the upper control limit, Runger and Prabhu  suggest a Markov chain approximation, which allows us to study the performance of the chart taking into account the ARL. They also provide a series of recommendations for selecting the parameters of the proposed control chart. Moreover, Montgomery  recommends the <span class="math inline">\(\lambda\)</span> parameter value to be between 0.05 and 0.25. The higher the value of the parameter, the less importance will be given to values that are further away in time. Taking into account ARL based criteria, <span class="math inline">\(\lambda = 0.1\)</span> is usually chosen in practical applications. This is the default value when the <code>qcr</code> <code><a href="../reference/mqcs.mewma.html">mqcs.mewma()</a></code> function is used to compute statistics required by the MEWMA chart.</p>
 <p><code>R&gt; res.mqcs &lt;- mqcs.mewma(data.mqcd)</code></p>
 <p><code>R&gt; plot(res.mqcs, title = "MEWMA control chart for dowel pin")</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-17-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-19-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>See the package documentation  for more information about the arguments of this function. As in the previous cases, after the estimation of the corresponding control limits, the MEWMA control chart shown in Figure  indicates that the process is under control.</p>
 </div>
 </div>
@@ -601,7 +601,7 @@ S_{n}^{*}(G_m)&amp;=\frac{S_n(G_m)}{\sqrt{n^2\frac{\left(\frac{1}{m}+\frac{1}{n}
 <p>The <span class="math inline">\(r\)</span> control chart can be obtained by applying the <code><a href="../reference/npqcs.r.html">npqcs.r()</a></code> function to the <code>npqcd</code> object and plotting the result</p>
 <p><code>R&gt; res.npqcs &lt;- npqcs.r(data.npqcd, method = "Tukey", alpha = 0.025)</code></p>
 <p><code>R&gt; plot(res.npqcs, title = " r Control Chart")</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-18-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-20-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>The resulting chart is shown in Figure , where it can be observed that the process is out of control from the 42nd observation, as expected, taking into account that most of the <span class="math inline">\(r_{G_m}(X_i)\)</span> values are falling below the LCL.</p>
 </div>
 <div class="section level4">
@@ -618,7 +618,7 @@ S_{n}^{*}(G_m)&amp;=\frac{S_n(G_m)}{\sqrt{n^2\frac{\left(\frac{1}{m}+\frac{1}{n}
 <p><code>R&gt; res.npqcs &lt;- npqcs.Q(data.npqcd, method = "Tukey", alpha = 0.025)</code></p>
 <p><code>R&gt; plot(res.npqcs, title = "Q Control Chart")</code></p>
 <p>Figure  clearly shows that the process is out of control in the second half, from the 20th rotational sample. We can also see that the high random fuctuations of the <span class="math inline">\(r\)</span> chart are attenuated in the <span class="math inline">\(Q\)</span> chart due to the averaging effect.</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-19-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-21-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level4">
 <h4 id="s-chart">
@@ -629,7 +629,7 @@ S_{n}^{*}(G_m)&amp;=\frac{S_n(G_m)}{\sqrt{n^2\frac{\left(\frac{1}{m}+\frac{1}{n}
 <p><code>R&gt; res.npqcs &lt;- npqcs.S(data.npqcd, method = "Tukey", alpha = 0.05)</code></p>
 <p><code>R&gt; plot(res.npqcs, title = "S Control Chart")</code></p>
 <p>Figure  shows that the process is out of control from the 48th observation. Note that the <span class="math inline">\(S\)</span> graph performs better in identifying small changes in a process. In this case, he performance of <span class="math inline">\(Q\)</span> chart is better than the corresponding to the <span class="math inline">\(S\)</span> chart.</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-20-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-22-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 </div>
 </div>
@@ -676,16 +676,16 @@ C_p(u,v)=\frac{d-u|\mu-m|}{3\sqrt{\sigma^2+v(u+T)^2}}
 <p><code>R&gt; qcs.cp(object = xbar, parameters = c(0, 1), limits = limits, ylim = c(0, 1))</code></p>
 <p><code>R&gt; qcs.cp(object = xbar, parameters = c(1, 1), limits = limits, ylim = c(0, 1))</code></p>
 <p><code>R&gt; par(oldpar)</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-22-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-24-1.png" width="60%" style="display: block; margin: auto;"></p>
 <pre><code><span class="co">#&gt;        Cp delta.usl gamma.usl </span>
 <span class="co">#&gt;    0.3407    0.1176    0.9785</span></code></pre>
-<p><img src="en_material_files/figure-html/unnamed-chunk-22-2.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-24-2.png" width="60%" style="display: block; margin: auto;"></p>
 <pre><code><span class="co">#&gt;       Cpk delta.usl gamma.usl </span>
 <span class="co">#&gt;    0.3006    0.1176    0.9785</span></code></pre>
-<p><img src="en_material_files/figure-html/unnamed-chunk-22-3.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-24-3.png" width="60%" style="display: block; margin: auto;"></p>
 <pre><code><span class="co">#&gt;       Cpm delta.usl gamma.usl </span>
 <span class="co">#&gt;    0.3382    0.1176    0.9785</span></code></pre>
-<p><img src="en_material_files/figure-html/unnamed-chunk-22-4.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-24-4.png" width="60%" style="display: block; margin: auto;"></p>
 <pre><code><span class="co">#&gt;      Cpmk delta.usl gamma.usl </span>
 <span class="co">#&gt;    0.2984    0.1176    0.9785</span></code></pre>
 <p>The result is shown in Figure . In all the cases the points in red are out of the area defined by the line in blue and the <span class="math inline">\(\delta\)</span> axis. Thus, the corresponding process is not capable no matter the capability index that is used. In any case, note that the <span class="math inline">\(C_p\)</span> index is useless in identifying non capable processes due to location shifts with respect to the target. In the same way, the <span class="math inline">\(C_pk\)</span> index assumes as capable processes that are far from the target as long as it were close to the specification limits (as shown in Figure ). Thus, the use of the <span class="math inline">\(C_{pm}\)</span> and <span class="math inline">\(C_{pmk}\)</span> are recommended due to they take into account both shifts from the target and the spread. In the present case the process is not capable due to the spread rather than the target shift. Therefore, the process changes could be due to decreases in the variability process.</p>
@@ -706,7 +706,7 @@ c_{\alpha}=k_0\sqrt{\frac{n}{\chi_{\alpha,n}^2}}
 <p><code>R&gt; mu &lt;- xbar$center</code></p>
 <p><code>R&gt; std.dev &lt;- xbar$std.dev</code></p>
 <p><code>R&gt; qcs.hat.cpm(limits = limits, mu = mu, std.dev = std.dev, ylim = c(0,1))</code></p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-23-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-25-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>The result is shown in Figure . The contour line corresponding to the capability region obtained from the capability index sample is always more restrictive than the corresponding theoretical one.</p>
 </div>
 <div class="section level3">
@@ -738,7 +738,7 @@ C_{Np}(u,v)=\frac{d-u|M-m|}{3\sqrt{\left(\frac{F_{99,865}-F_{0,135}}{6}\right)^2
 <span class="co">#&gt;  CNpmk </span>
 <span class="co">#&gt; 0.9015</span></code></pre>
 <p>Thus, the values obtained are <span class="math inline">\(CN_p = 1.0082, CN_{pk} = 0.9275, CN_{pm} = 0.9799~\mbox{and}~CN_{pmk} = 0.9015\)</span>. If a capability limit of <span class="math inline">\(k = 1\)</span> or <span class="math inline">\(k = 1.33\)</span> is assumed, we can infer that the process is not actually capable to meet the customers or manager’s requirements. ## <em>Tools for a comprehensive processs capability analysis</em> Function <code><a href="../reference/qcs.ca.html">qcs.ca()</a></code> provides a comprehensive information of the capability of a process, summarized trough a graphica output. This function calculates the process capability indices <span class="math inline">\(C_p, C_{pk}, C_{pL}, C_{pU}, C_{pm}, C_{pmk}\)</span> from a <code>qcs</code> object, assuming a Gaussian distribution. Moereover, it computes confidence limits for <span class="math inline">\(C_p\)</span> using the method described by Chou <em>et al</em>. . Approximate confidence limits for <span class="math inline">\(C_{pl}, C_{pu} ~\mbox{and}~ C_{pk}\)</span> are also estimated using the method described in Bissell , while the confidence limits for <span class="math inline">\(C_{pm}\)</span> are based on the aproximated method of Boyles , that assumes the target is the mean of the specification limits. Moreover, the <span class="math inline">\(CN_{p}, CN_{pk}, CN_{pm}, ~\mbox{and}~ CN_{pmk}\)</span> nonparametric capability indices are also obtained. There is also an specific box within the summary plot that shows the proportion of observations, and expected observations under the Gaussian assumption, out of the specification limits (nonconforming observations). Further, a histogram of data sample is provided, in addition to the corresponding Gaussian density curves obtained from the sample estimates (one per standard deviation estimate procedure). They are displayed along with the specification limits, a quantile-quantile plot for the specified distribution and a process capability plot obtained from the Cpm index (both using theoretical and sample alternatives). In order to describe the <code><a href="../reference/qcs.ca.html">qcs.ca()</a></code> performance, the following code corresponds to the analysis of the first 125 observations of the pistonrings dataset (the corresponding output is shown in Figure ).</p>
-<p><img src="en_material_files/figure-html/unnamed-chunk-25-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="en_material_files/figure-html/unnamed-chunk-27-1.png" width="60%" style="display: block; margin: auto;"></p>
 <pre><code><span class="co">#&gt; </span>
 <span class="co">#&gt; Process Capability Analysis</span>
 <span class="co">#&gt; </span>
