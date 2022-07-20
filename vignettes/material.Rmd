@@ -19,8 +19,27 @@ knitr::opts_chunk$set(
 En esta viñeta se encontrará material extra referente al paquete *qcr*, cartas de control, FDA, etc.
 
 * A continuación se muestra el material utilizado en la presentación "Control Estadístico de la Calidad y Seis Sigma con R"
-
-
+![](../man/figures/E1.jpg)
+![](../man/figures/E2.jpg)
+![](../man/figures/E3.jpg)
+![](../man/figures/E4.jpg)
+![](../man/figures/E5.jpg)
+![](../man/figures/E6.jpg)
+![](../man/figures/E7.jpg)
+![](../man/figures/E8.jpg)
+![](../man/figures/E9.jpg)
+![](../man/figures/E10.jpg)
+![](../man/figures/E11.jpg)
+![](../man/figures/E12.jpg)
+![](../man/figures/E13.jpg)
+![](../man/figures/E14.jpg)
+![](../man/figures/E15.jpg)
+![](../man/figures/E16.jpg)
+![](../man/figures/E17.jpg)
+![](../man/figures/E18.jpg)
+![](../man/figures/E19.jpg)
+![](../man/figures/E20.jpg)
+![](../man/figures/E21.jpg)
 
 * En el siguiente enlace se podrá dirigir a las diapositivas utilizadas en el V Xornada de Usuarios
 de R en Galicia. Nuevas Librerias para el Control Estadísitco de la Calidad (*qcr*) y Estudios Interlaboratorio (*ILS*) en la Industria:   (https://www.r-users.gal/sites/default/files/11_salvador_naya.pdf)
