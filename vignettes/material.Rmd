@@ -20,29 +20,6 @@ En esta viñeta se encontrará material extra referente al paquete *qcr*, cartas
 
 * A continuación se muestra el material utilizado en la presentación "Control Estadístico de la Calidad y Seis Sigma con R"
 
-```{r, echo = FALSE}
-knitr::include_graphics("../man/figures/E1.png", dpi = 300)
-knitr::include_graphics("../man/figures/E2.png", dpi = 300)
-knitr::include_graphics("../man/figures/E3.png", dpi = 300)
-knitr::include_graphics("../man/figures/E4.png", dpi = 300)
-knitr::include_graphics("../man/figures/E5.png", dpi = 300)
-knitr::include_graphics("../man/figures/E6.png", dpi = 300)
-knitr::include_graphics("../man/figures/E7.png", dpi = 300)
-knitr::include_graphics("../man/figures/E8.png", dpi = 300)
-knitr::include_graphics("../man/figures/E9.png", dpi = 300)
-knitr::include_graphics("../man/figures/E10.png", dpi = 300)
-knitr::include_graphics("../man/figures/E11.png", dpi = 300)
-knitr::include_graphics("../man/figures/E12.png", dpi = 300)
-knitr::include_graphics("../man/figures/E13.png", dpi = 300)
-knitr::include_graphics("../man/figures/E14.png", dpi = 300)
-knitr::include_graphics("../man/figures/E15.png", dpi = 300)
-knitr::include_graphics("../man/figures/E16.png", dpi = 300)
-knitr::include_graphics("../man/figures/E17.png", dpi = 300)
-knitr::include_graphics("../man/figures/E18.png", dpi = 300)
-knitr::include_graphics("../man/figures/E19.png", dpi = 300)
-knitr::include_graphics("../man/figures/E20.png", dpi = 300)
-knitr::include_graphics("../man/figures/E21.png", dpi = 300)
-```
 
 
 * En el siguiente enlace se podrá dirigir a las diapositivas utilizadas en el V Xornada de Usuarios
