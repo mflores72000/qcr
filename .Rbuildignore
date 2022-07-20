@@ -4,4 +4,4 @@
 ^pkgdown$
 ^docs$
 ^README\.Rmd$
-^README-.*\.png$
+
