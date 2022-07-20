@@ -1,6 +1,11 @@
 ---
 title: "English Material"
 output: rmarkdown::html_vignette
+resource_files:
+- man/figures/f1.png
+- man/figures/f2.png
+- man/figures/f3.png
+
 vignette: >
   %\VignetteIndexEntry{English Material}
   %\VignetteEngine{knitr::rmarkdown}
