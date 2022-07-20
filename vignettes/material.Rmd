@@ -14,7 +14,35 @@ knitr::opts_chunk$set(
 )
 ```
 
-En esta viñeta se encontrará material extra referente al paquete *qcr*, cartas de control, etc.
+En esta viñeta se encontrará material extra referente al paquete *qcr*, cartas de control, FDA, etc.
+
+* A continuación se muestra el material utilizado en la presentación "Control Estadístico de la Calidad y Seis Sigma con R"
+
+![](images/E1.png)
+![](images/E2.png)
+![](images/E3.png)
+![](images/E4.png)
+![](images/E5.png)
+![](images/E6.png)
+![](images/E7.png)
+![](images/E8.png)
+![](images/E9.png)
+![](images/E10.png)
+![](images/E11.png)
+![](images/E12.png)
+![](images/E13.png)
+![](images/E14.png)
+![](images/E15.png)
+![](images/E16.png)
+![](images/E17.png)
+![](images/E18.png)
+![](images/E19.png)
+![](images/E20.png)
+![](images/E21.png)
 
 * En el siguiente enlace se podrá dirigir a las diapositivas utilizadas en el V Xornada de Usuarios
-de R en Galicia. Nuevas Librerias para el Control Estadísitco de la Calidad (*qcr*) y Estudios Interlaboratorio (*ILS*) en la Industria:   (https://www.r-users.gal/sites/default/files/11_salvador_naya.pdf)  
+de R en Galicia. Nuevas Librerias para el Control Estadísitco de la Calidad (*qcr*) y Estudios Interlaboratorio (*ILS*) en la Industria:   (https://www.r-users.gal/sites/default/files/11_salvador_naya.pdf)
+
+* En el siguiente enlace se podrá dirigir al Proyecto presentado para el cumplimiento de los requisitos para culminar el Máster en Técnicas Estadísticas de la Universidad de La Coruña del Dr. Miguel Flores, titulado "Desarrollo de una aplicación para gráficos de control de procesos industriales": (http://eio.usc.es/pub/mte/descargas/proyectosfinmaster/proyecto_417.pdf)
+
+* En el siguiente enlace se podrá dirigir a la Tesis de Doctorado del Dr. Miguel Flores titulado "Nuevas Aportaciones del Análisis de Datos Funcionales en el Control Estadístico de Procesos": (https://ruc.udc.es/dspace/handle/2183/22320)
