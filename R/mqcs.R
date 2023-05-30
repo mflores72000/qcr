@@ -237,7 +237,7 @@ mqcs.add.default <- function(x, value, ...){
   if (n1 != n2) stop("The samples must be of the same dimension")
   if (k1 != k2) stop("The samples must be of the same quality characteristics")
   
-  xx <- array(,dim = c(m,k1,n1))
+  xx <- array(NA,dim = c(m,k1,n1))
   for (i in 1:n1 ){
     xx[,,i] <- rbind(data[,,i],value[,,i])     
   }
@@ -297,12 +297,12 @@ mstate.control <- function(x)
     n <- dim(x$mqcd)[3]
     m <- dim(x$mqcd)[1]
     k <- dim(x$mqcd)[2]
-    xx <- array(dim = c(m-length(ii),k,n))
+    xx <- array(NA,dim = c(m-length(ii),k,n))
     for (i in 1:n){ 
       xx[,,i] <- x$mqcd[,,i][-ii,]  
     }
 
-    result <- mqcd(data = xx, data.name = x$data.name)
+    result <- mqcd(x = xx, data.name = x$data.name)
     
   } else {
     cat("The process is under control")

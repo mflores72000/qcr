@@ -7,12 +7,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="qcr">
 <title>Gráficos de control de la calidad univariantes • qcr</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="../deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Gráficos de control de la calidad univariantes">
 <meta property="og:description" content="qcr">
+<meta property="og:image" content="https://mflores72000.github.io/qcr/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -36,6 +43,13 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
+  <a class="nav-link" href="../articles/Authors.html">
+    <span class="fa fa-user"></span>
+     
+    Authors
+  </a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="../reference/index.html">Functions and Data</a>
 </li>
 <li class="active nav-item dropdown">
@@ -53,6 +67,9 @@
   <div class="dropdown-menu" aria-labelledby="dropdown-material-en-">
     <a class="dropdown-item" href="../articles/en_material.html">Statisics with qcr package</a>
   </div>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="../articles/Conference.html">Conferences</a>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="../news/index.html">Changelog</a>
@@ -78,9 +95,10 @@
 
 
 
-<script src="Uqcc_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
-  <main id="main"><div class="page-header">
-      <img src="" class="logo" alt=""><h1>Gráficos de control de la calidad univariantes</h1>
+
+<div class="row">
+  <main id="main" class="col-md-9"><div class="page-header">
+      <img src="../logo.png" class="logo" alt=""><h1>Gráficos de control de la calidad univariantes</h1>
             
       
       <small class="dont-index">Source: <a href="https://github.com/mflores72000/qcr/blob/HEAD/vignettes/Uqcc.Rmd" class="external-link"><code>vignettes/Uqcc.Rmd</code></a></small>
@@ -90,68 +108,63 @@
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/mflores72000/qcr" class="external-link">qcr</a></span><span class="op">)</span>
-<span class="co">#&gt; Loading required package: qcc</span>
-<span class="co">#&gt; Warning: package 'qcc' was built under R version 4.0.5</span>
-<span class="co">#&gt; Package 'qcc' version 2.7</span>
-<span class="co">#&gt; Type 'citation("qcc")' for citing this R package in publications.</span>
-<span class="co">#&gt; Loading required package: fda.usc</span>
-<span class="co">#&gt; Warning: package 'fda.usc' was built under R version 4.0.5</span>
-<span class="co">#&gt; Loading required package: fda</span>
-<span class="co">#&gt; Warning: package 'fda' was built under R version 4.0.5</span>
-<span class="co">#&gt; Loading required package: splines</span>
-<span class="co">#&gt; Loading required package: Matrix</span>
-<span class="co">#&gt; Loading required package: fds</span>
-<span class="co">#&gt; Warning: package 'fds' was built under R version 4.0.5</span>
-<span class="co">#&gt; Loading required package: rainbow</span>
-<span class="co">#&gt; Warning: package 'rainbow' was built under R version 4.0.5</span>
-<span class="co">#&gt; Loading required package: MASS</span>
-<span class="co">#&gt; Loading required package: pcaPP</span>
-<span class="co">#&gt; Warning: package 'pcaPP' was built under R version 4.0.5</span>
-<span class="co">#&gt; Loading required package: RCurl</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Attaching package: 'fda'</span>
-<span class="co">#&gt; The following object is masked from 'package:graphics':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     matplot</span>
-<span class="co">#&gt; Loading required package: mgcv</span>
-<span class="co">#&gt; Loading required package: nlme</span>
-<span class="co">#&gt; This is mgcv 1.8-31. For overview type 'help("mgcv-package")'.</span>
-<span class="co">#&gt; ----------------------------------------------------------------------------------</span>
-<span class="co">#&gt;  Functional Data Analysis and Utilities for Statistical Computing</span>
-<span class="co">#&gt;  fda.usc version 2.0.2 (built on 2020-02-17) is now loaded</span>
-<span class="co">#&gt;  fda.usc is running sequentially usign foreach package</span>
-<span class="co">#&gt;  Please, execute ops.fda.usc() once to run in local parallel mode</span>
-<span class="co">#&gt;  Deprecated functions: min.basis, min.np, anova.hetero, anova.onefactor, anova.RPm</span>
-<span class="co">#&gt;  New functions: optim.basis, optim.np, fanova.hetero, fanova.onefactor, fanova.RPm</span>
-<span class="co">#&gt; ----------------------------------------------------------------------------------</span>
-<span class="co">#&gt; Loading required package: mvtnorm</span>
-<span class="co">#&gt; Warning: package 'mvtnorm' was built under R version 4.0.5</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;  Package qcr: Quality Control Review </span>
-<span class="co">#&gt;  version 1.3 (built on 2021-05-14).</span>
-<span class="co">#&gt;  Copyright Miguel A. Flores Sanchez 2016-2021.</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/mflores72000/qcr" class="external-link">qcr</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; Loading required package: qcc</span></span>
+<span><span class="co">#&gt; Package 'qcc' version 2.7</span></span>
+<span><span class="co">#&gt; Type 'citation("qcc")' for citing this R package in publications.</span></span>
+<span><span class="co">#&gt; Loading required package: fda.usc</span></span>
+<span><span class="co">#&gt; Loading required package: fda</span></span>
+<span><span class="co">#&gt; Loading required package: splines</span></span>
+<span><span class="co">#&gt; Loading required package: fds</span></span>
+<span><span class="co">#&gt; Loading required package: rainbow</span></span>
+<span><span class="co">#&gt; Loading required package: MASS</span></span>
+<span><span class="co">#&gt; Loading required package: pcaPP</span></span>
+<span><span class="co">#&gt; Loading required package: RCurl</span></span>
+<span><span class="co">#&gt; Loading required package: deSolve</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Attaching package: 'fda'</span></span>
+<span><span class="co">#&gt; The following object is masked from 'package:graphics':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     matplot</span></span>
+<span><span class="co">#&gt; Loading required package: mgcv</span></span>
+<span><span class="co">#&gt; Loading required package: nlme</span></span>
+<span><span class="co">#&gt; This is mgcv 1.8-40. For overview type 'help("mgcv-package")'.</span></span>
+<span><span class="co">#&gt; ----------------------------------------------------------------------------------</span></span>
+<span><span class="co">#&gt;  Functional Data Analysis and Utilities for Statistical Computing</span></span>
+<span><span class="co">#&gt;  fda.usc version 2.0.2 (built on 2020-02-17) is now loaded</span></span>
+<span><span class="co">#&gt;  fda.usc is running sequentially usign foreach package</span></span>
+<span><span class="co">#&gt;  Please, execute ops.fda.usc() once to run in local parallel mode</span></span>
+<span><span class="co">#&gt;  Deprecated functions: min.basis, min.np, anova.hetero, anova.onefactor, anova.RPm</span></span>
+<span><span class="co">#&gt;  New functions: optim.basis, optim.np, fanova.hetero, fanova.onefactor, fanova.RPm</span></span>
+<span><span class="co">#&gt; ----------------------------------------------------------------------------------</span></span>
+<span><span class="co">#&gt; Loading required package: mvtnorm</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  Package qcr: Quality Control Review </span></span>
+<span><span class="co">#&gt;  version 1.4 (built on 2022-02-15).</span></span>
+<span><span class="co">#&gt;  Copyright Miguel A. Flores Sanchez 2016-2022.</span></span></code></pre></div>
 <p>Exploramos los datos de la base pistonrings</p>
-<p>Los datos están en el data frame <strong>pistonrings</strong> que consta de 200 observaciones medidas en 25 muestras cada una de tamaño 5.</p>
+<p>Los datos están en el data frame <strong>pistonrings</strong> que
+consta de 200 observaciones medidas en 25 muestras cada una de tamaño
+5.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/attach.html" class="external-link">attach</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span>
-<span class="co">#&gt;     diameter         sample        trial        </span>
-<span class="co">#&gt;  Min.   :73.97   Min.   : 1.00   Mode :logical  </span>
-<span class="co">#&gt;  1st Qu.:74.00   1st Qu.:10.75   FALSE:75       </span>
-<span class="co">#&gt;  Median :74.00   Median :20.50   TRUE :125      </span>
-<span class="co">#&gt;  Mean   :74.00   Mean   :20.50                  </span>
-<span class="co">#&gt;  3rd Qu.:74.01   3rd Qu.:30.25                  </span>
-<span class="co">#&gt;  Max.   :74.04   Max.   :40.00</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html" class="external-link">boxplot</a></span><span class="op">(</span><span class="va">diameter</span> <span class="op">~</span> <span class="va">sample</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/attach.html" class="external-link">attach</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span>
+<span><span class="co">#&gt;     diameter         sample        trial        </span></span>
+<span><span class="co">#&gt;  Min.   :73.97   Min.   : 1.00   Mode :logical  </span></span>
+<span><span class="co">#&gt;  1st Qu.:74.00   1st Qu.:10.75   FALSE:75       </span></span>
+<span><span class="co">#&gt;  Median :74.00   Median :20.50   TRUE :125      </span></span>
+<span><span class="co">#&gt;  Mean   :74.00   Mean   :20.50                  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:74.01   3rd Qu.:30.25                  </span></span>
+<span><span class="co">#&gt;  Max.   :74.04   Max.   :40.00</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html" class="external-link">boxplot</a></span><span class="op">(</span><span class="va">diameter</span> <span class="op">~</span> <span class="va">sample</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/pistonrings-1.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">sample</span>, <span class="va">diameter</span>, cex<span class="op">=</span><span class="fl">0.7</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/tapply.html" class="external-link">tapply</a></span><span class="op">(</span><span class="va">diameter</span>,<span class="va">sample</span>,<span class="va">mean</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">sample</span>, <span class="va">diameter</span>, cex<span class="op">=</span><span class="fl">0.7</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/tapply.html" class="external-link">tapply</a></span><span class="op">(</span><span class="va">diameter</span>,<span class="va">sample</span>,<span class="va">mean</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/pistonrings-2.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/detach.html" class="external-link">detach</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/detach.html" class="external-link">detach</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="gráficos-de-control-de-la-calidad-univariantes">Gráficos de control de la calidad univariantes<a class="anchor" aria-label="anchor" href="#gr%C3%A1ficos-de-control-de-la-calidad-univariantes"></a>
 </h2>
@@ -160,39 +173,54 @@
 </h3>
 <ul>
 <li><p>Calcular la media y el rango de cada muestra, <span class="math inline">\(\bar{x}_i\)</span> y <span class="math inline">\(R_i\)</span>, respectivamente <span class="math inline">\(i=1,\dots,k\)</span>.</p></li>
-<li><p>Calcular la media y el rango global. Puesto que <span class="math inline">\(R_i/d_2\)</span> es un estimador insesgado de <span class="math inline">\(\sigma\)</span>, y definiendo <span class="math display">\[
+<li><p>Calcular la media y el rango global. Puesto que <span class="math inline">\(R_i/d_2\)</span> es un estimador insesgado de
+<span class="math inline">\(\sigma\)</span>, y definiendo <span class="math display">\[
 \bar{R}=\frac{\sum_iR_i}{k}
 \]</span> se utilizará <span class="math display">\[
 \frac{\bar{R}}{d_2}=\frac{\sum_iR_i}{d_2k}
-\]</span> como estimador centrado de la desviación típica teórica.</p></li>
-<li><p>Contrastar si cada valor <span class="math inline">\(\bar{x}_i\)</span> debe estar en el intervalo <span class="math display">\[
+\]</span> como estimador centrado de la desviación típica
+teórica.</p></li>
+<li><p>Contrastar si cada valor <span class="math inline">\(\bar{x}_i\)</span> debe estar en el intervalo
+<span class="math display">\[
 \left[\bar{\bar{x}}-\frac{3\bar{R}}{\sqrt{n}d_2},\bar{\bar{x}}+\frac{3\bar{R}}{\sqrt{n}d_2}\right]
-\]</span> con probabilidad aproximada del 97.73% (utilizando intervalos de amplitud <span class="math inline">\(3\sigma\)</span>)</p></li>
+\]</span> con probabilidad aproximada del 97.73% (utilizando intervalos
+de amplitud <span class="math inline">\(3\sigma\)</span>)</p></li>
 <li>
 <p>Podremos encontrar los valores de los límites de control <span class="math inline">\(3\sigma\)</span> para la media como:</p>
-<p><span class="math inline">\(LCL = \bar{\bar{x}}-\frac{3}{\sqrt{n}d_2}\bar{R}=\bar{\bar{x}}-A_2\bar{R}\)</span></p>
+<p><span class="math inline">\(LCL =
+\bar{\bar{x}}-\frac{3}{\sqrt{n}d_2}\bar{R}=\bar{\bar{x}}-A_2\bar{R}\)</span></p>
 <p><span class="math inline">\(CL = \bar{\bar{x}}\)</span></p>
-<p><span class="math inline">\(UCL = \bar{\bar{x}}+\frac{3}{\sqrt{n}d_2}\bar{R}=\bar{\bar{x}}+A_2\bar{R}\)</span></p>
+<p><span class="math inline">\(UCL =
+\bar{\bar{x}}+\frac{3}{\sqrt{n}d_2}\bar{R}=\bar{\bar{x}}+A_2\bar{R}\)</span></p>
 </li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"pistonrings"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-R"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Gráfico de control para pistonrings:"</span>, <span class="fu"><a href="https://rdrr.io/r/grDevices/plotmath.html" class="external-link">bar</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>,<span class="st">" "</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"pistonrings"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-R"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Gráfico de control para pistonrings:"</span>, <span class="fu">bar</span><span class="op">(</span><span class="va">x</span><span class="op">)</span>,<span class="st">" "</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/xbarR-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
 <h3 id="gráficos-r">Gráficos R<a class="anchor" aria-label="anchor" href="#gr%C3%A1ficos-r"></a>
 </h3>
 <ul>
-<li>Dado <span class="math inline">\(n\)</span>, encontrar los valores <span class="math inline">\(D_3\)</span> y <span class="math inline">\(D_4\)</span> y calcular <span class="math inline">\(\bar{R}\)</span>. Con todo ello obtener los límites inferior <span class="math inline">\(D_3\bar{R}\)</span> y superior <span class="math inline">\(D_4\bar{R}\)</span> de control.</li>
-<li>Construir un gráfico que presente en abscisas y en ordenadas los valores <span class="math inline">\(R_i\)</span>. Trazar también la línea central (<span class="math inline">\(\bar{R}\)</span>) y los límites de control (<span class="math inline">\(D_3\bar{R}\)</span> y <span class="math inline">\(D_4\bar{R}\)</span>).</li>
-<li>Si alguna de los rangos se sale de los límites de control, se admite que el proceso no está bajo control en ese instante.</li>
+<li>Dado <span class="math inline">\(n\)</span>, encontrar los valores
+<span class="math inline">\(D_3\)</span> y <span class="math inline">\(D_4\)</span> y calcular <span class="math inline">\(\bar{R}\)</span>. Con todo ello obtener los
+límites inferior <span class="math inline">\(D_3\bar{R}\)</span> y
+superior <span class="math inline">\(D_4\bar{R}\)</span> de
+control.</li>
+<li>Construir un gráfico que presente en abscisas y en ordenadas los
+valores <span class="math inline">\(R_i\)</span>. Trazar también la
+línea central (<span class="math inline">\(\bar{R}\)</span>) y los
+límites de control (<span class="math inline">\(D_3\bar{R}\)</span> y
+<span class="math inline">\(D_4\bar{R}\)</span>).</li>
+<li>Si alguna de los rangos se sale de los límites de control, se admite
+que el proceso no está bajo control en ese instante.</li>
 </ul>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.R.html">qcs.R</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"pistonrings"</span>,std.dev <span class="op">=</span> <span class="st">"UWAVE-R"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="st">"Gráfico de control para pistonrings: R"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.R.html">qcs.R</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"pistonrings"</span>,std.dev <span class="op">=</span> <span class="st">"UWAVE-R"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="st">"Gráfico de control para pistonrings: R"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/R-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
@@ -200,60 +228,88 @@
 </h3>
 <ul>
 <li><p>Calcular la media y la desviación típica de cada muestra, <span class="math inline">\(\bar{x}_i\)</span> y <span class="math inline">\(s_i\)</span>, respectivamente <span class="math inline">\(i=1,\dots,k\)</span>.</p></li>
-<li><p>Calcular la media y la desviación típica global. La media global <span class="math inline">\(\bar{\bar{x}}\)</span> resulta ser un estimador insesgado de la media teórica. Como la desviación típica muestral es un estimador sesgado de la desviación típica teórica, se utilizará <span class="math inline">\(s_i/c_2\)</span>, siendo <span class="math inline">\(c_2\)</span> una constante dependiente de <span class="math inline">\(n\)</span> y por ello se utilizará <span class="math display">\[
+<li><p>Calcular la media y la desviación típica global. La media global
+<span class="math inline">\(\bar{\bar{x}}\)</span> resulta ser un
+estimador insesgado de la media teórica. Como la desviación típica
+muestral es un estimador sesgado de la desviación típica teórica, se
+utilizará <span class="math inline">\(s_i/c_2\)</span>, siendo <span class="math inline">\(c_2\)</span> una constante dependiente de <span class="math inline">\(n\)</span> y por ello se utilizará <span class="math display">\[
 \hat{\sigma}=\frac{\bar{s}}{c_2}=\frac{\sum_is_i}{c_2k}
-\]</span> como estimador centrado de la desviación típica teórica.}</p></li>
+\]</span> como estimador centrado de la desviación típica
+teórica.}</p></li>
 <li><p>Contrastar si cada valor <span class="math inline">\(\bar{x}_i\)</span> está en el intervalo <span class="math display">\[
 \left[\bar{\bar{x}}-\frac{3\bar{s}}{\sqrt{n}c_2},\bar{\bar{x}}+\frac{3\bar{s}}{\sqrt{n}c_2}\right]
 \]</span> con probabilidad aproximada del 97.74%.</p></li>
 <li>
 <p>Podremos encontrar los valores de los límites de control <span class="math inline">\(3\sigma\)</span> para la media como:</p>
-<p><span class="math inline">\(LCL = \bar{\bar{x}}-\frac{3}{\sqrt{n}c_2}\bar{s}=\bar{\bar{x}}-A_1\bar{s}\)</span></p>
+<p><span class="math inline">\(LCL =
+\bar{\bar{x}}-\frac{3}{\sqrt{n}c_2}\bar{s}=\bar{\bar{x}}-A_1\bar{s}\)</span></p>
 <p><span class="math inline">\(CL = \bar{\bar{x}}\)</span></p>
-<p><span class="math inline">\(UCL = \bar{\bar{x}}+\frac{3}{\sqrt{n}c_2}\bar{s}=\bar{\bar{x}}+A_1\bar{s}\)</span></p>
+<p><span class="math inline">\(UCL =
+\bar{\bar{x}}+\frac{3}{\sqrt{n}c_2}\bar{s}=\bar{\bar{x}}+A_1\bar{s}\)</span></p>
 </li>
 </ul>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name <span class="op">=</span> <span class="st">"pistonrings"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-SD"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Gráfico de control para pistonrings:"</span>, <span class="fu"><a href="https://rdrr.io/r/grDevices/plotmath.html" class="external-link">bar</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>,<span class="st">" "</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name <span class="op">=</span> <span class="st">"pistonrings"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-SD"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Gráfico de control para pistonrings:"</span>, <span class="fu">bar</span><span class="op">(</span><span class="va">x</span><span class="op">)</span>,<span class="st">" "</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/xbars-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
 <h3 id="gráfico-s">Gráfico s<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-s"></a>
 </h3>
 <ul>
-<li>Dado <span class="math inline">\(n\)</span>, encontrar los valores <span class="math inline">\(B_3\)</span> y <span class="math inline">\(B_4\)</span> y calcular <span class="math inline">\(\bar{s}\)</span>. Con todo ello obtener los límites inferior <span class="math inline">\(B_3\bar{s}\)</span> y superior <span class="math inline">\(B_4\bar{s}\)</span> de control.</li>
-<li>Construir un gráfico que presente en abscisas y en ordenadas los valores <span class="math inline">\(s_i\)</span>. Trazar también la línea central (<span class="math inline">\(\bar{s}\)</span>) y los límites de control (<span class="math inline">\(B_3\bar{s}\)</span> y <span class="math inline">\(B_4\bar{s}\)</span>).</li>
-<li>Si alguna de las desviaciones típicas se sale de los límites de control, se admite que el proceso no está bajo control en ese instante.</li>
+<li>Dado <span class="math inline">\(n\)</span>, encontrar los valores
+<span class="math inline">\(B_3\)</span> y <span class="math inline">\(B_4\)</span> y calcular <span class="math inline">\(\bar{s}\)</span>. Con todo ello obtener los
+límites inferior <span class="math inline">\(B_3\bar{s}\)</span> y
+superior <span class="math inline">\(B_4\bar{s}\)</span> de
+control.</li>
+<li>Construir un gráfico que presente en abscisas y en ordenadas los
+valores <span class="math inline">\(s_i\)</span>. Trazar también la
+línea central (<span class="math inline">\(\bar{s}\)</span>) y los
+límites de control (<span class="math inline">\(B_3\bar{s}\)</span> y
+<span class="math inline">\(B_4\bar{s}\)</span>).</li>
+<li>Si alguna de las desviaciones típicas se sale de los límites de
+control, se admite que el proceso no está bajo control en ese
+instante.</li>
 </ul>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.S.html">qcs.S</a></span><span class="op">(</span><span class="va">x</span>, data.name <span class="op">=</span> <span class="st">"pistonrings"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-SD"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="st">"Gráfico de control para pistonrings: S"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.S.html">qcs.S</a></span><span class="op">(</span><span class="va">x</span>, data.name <span class="op">=</span> <span class="st">"pistonrings"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-SD"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>, title <span class="op">=</span> <span class="st">"Gráfico de control para pistonrings: S"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/S-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
 <h3 id="gráficos-p">Gráficos <span class="math inline">\(p\)</span><a class="anchor" aria-label="anchor" href="#gr%C3%A1ficos-p"></a>
 </h3>
 <ul>
-<li><p>Supóngase un artículo no está conforme con probabilidad <span class="math inline">\(p\)</span>, y que los artículos producidos sucesivamente son independientes; si seleccionamos <span class="math inline">\(k\)</span> muestras aleatorias de <span class="math inline">\(n\)</span> artículos, y representando por <span class="math inline">\(X_i\)</span> al número de artículos defectuosos, tendremos que <span class="math inline">\(X_i\sim B(n,p)\)</span>.</p></li>
+<li><p>Supóngase un artículo no está conforme con probabilidad <span class="math inline">\(p\)</span>, y que los artículos producidos
+sucesivamente son independientes; si seleccionamos <span class="math inline">\(k\)</span> muestras aleatorias de <span class="math inline">\(n\)</span> artículos, y representando por <span class="math inline">\(X_i\)</span> al número de artículos defectuosos,
+tendremos que <span class="math inline">\(X_i\sim
+B(n,p)\)</span>.</p></li>
 <li><p>Sabemos que <span class="math inline">\(\mu=np\)</span> y <span class="math inline">\(\sigma=\sqrt{np(1-p)}\)</span>.</p></li>
 <li>
-<p>Para cada muestra, definimos la variable aleatoria fracción disconforme muestral como <span class="math inline">\(\hat{p}_i=\frac{X_i}{n}\)</span>. Observar que <span class="math inline">\(\hat{p}_i\)</span> seguirá una distribución binomial con varianza:</p>
+<p>Para cada muestra, definimos la variable aleatoria fracción
+disconforme muestral como <span class="math inline">\(\hat{p}_i=\frac{X_i}{n}\)</span>. Observar que
+<span class="math inline">\(\hat{p}_i\)</span> seguirá una distribución
+binomial con varianza:</p>
 <p><span class="math inline">\(E(\hat{p}_i)=\frac{E(X_i)}{n}=p\)</span></p>
 <p><span class="math inline">\(Var(\hat{p}_i)=\frac{Var(X_i)}{n^2}=\frac{p(1-p)}{n}\)</span>.</p>
 </li>
-<li><p>Por tanto, <span class="math inline">\(\lim_{n\rightarrow \infty}\hat{p}_i=N\left( p,\sqrt{\frac{p(1-p)}{n}} \right)\)</span>.</p></li>
+<li><p>Por tanto, <span class="math inline">\(\lim_{n\rightarrow
+\infty}\hat{p}_i=N\left( p,\sqrt{\frac{p(1-p)}{n}}
+\right)\)</span>.</p></li>
 <li>
-<p>Si <span class="math inline">\(p\)</span> es desconocida, la podemos estimar:</p>
+<p>Si <span class="math inline">\(p\)</span> es desconocida, la
+podemos estimar:</p>
 <p><span class="math inline">\(\bar{p}=\frac{1}{k}\sum_{i=1}^{k}\hat{p}_i\)</span>.</p>
 </li>
 <li>
 <p>Según el modelo de Shewart tendremos que:</p>
-<p><span class="math inline">\(LCL = \bar{p}-3\sqrt{\frac{\bar{p}(1-\bar{p})}{n}}\)</span></p>
+<p><span class="math inline">\(LCL =
+\bar{p}-3\sqrt{\frac{\bar{p}(1-\bar{p})}{n}}\)</span></p>
 <p><span class="math inline">\(CL = \bar{p}\)</span></p>
-<p><span class="math inline">\(UCL = \bar{p}+3\sqrt{\frac{\bar{p}(1-\bar{p})}{n}}\)</span></p>
+<p><span class="math inline">\(UCL =
+\bar{p}+3\sqrt{\frac{\bar{p}(1-\bar{p})}{n}}\)</span></p>
 </li>
 <li>
 <p>En caso de que el tamaño muestral (<span class="math inline">\(n_i\)</span>) diferentes, el estimador para <span class="math inline">\(p\)</span> ser??a:</p>
@@ -261,8 +317,17 @@
 </li>
 </ul>
 <p><strong>Datos</strong></p>
-<p>Jugo de naranja (orangejuice): Es un data frame con 54 Observaciones y 4 variables. Donde se mide el jugo de naranja concentrado congelado que se envasa en latas de cartón de 6 oz. Estas latas se forman en una máquina de hilatura. Una lata es inspeccionado para determinar si, cuando se llena, el líquido puede derramarse ya sea en la costura lateral o alrededor de la articulación de la parte inferior. Si esto ocurre, una lata se considera no conforme.</p>
-<p>Se tomaron 30 muestras de 50 latas cada una en intervalos de media hora durante un período de tres turnos (la máquina estaba en funcionamiento continuo). A partir de la muestra 15 se utiliza un nuevo bacth de stock.</p>
+<p>Jugo de naranja (orangejuice): Es un data frame con 54 Observaciones
+y 4 variables. Donde se mide el jugo de naranja concentrado congelado
+que se envasa en latas de cartón de 6 oz. Estas latas se forman en una
+máquina de hilatura. Una lata es inspeccionado para determinar si,
+cuando se llena, el líquido puede derramarse ya sea en la costura
+lateral o alrededor de la articulación de la parte inferior. Si esto
+ocurre, una lata se considera no conforme.</p>
+<p>Se tomaron 30 muestras de 50 latas cada una en intervalos de media
+hora durante un período de tres turnos (la máquina estaba en
+funcionamiento continuo). A partir de la muestra 15 se utiliza un nuevo
+bacth de stock.</p>
 <p>Las variables del data frame son:</p>
 <ul>
 <li>sample (muestra): identificación de la muestra</li>
@@ -271,482 +336,540 @@
 <li>trial (ensayo): muestras de prueba (verdadero / falso)</li>
 </ul>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span>
-<span class="co">#&gt; 'data.frame':    54 obs. of  4 variables:</span>
-<span class="co">#&gt;  $ D     : int  12 15 8 10 4 7 16 9 14 10 ...</span>
-<span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span>
-<span class="co">#&gt;  $ size  : int  50 50 50 50 50 50 50 50 50 50 ...</span>
-<span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span>
-
-<span class="va">datos.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">orangejuice</span>, var.index <span class="op">=</span> <span class="fl">1</span>, sample.index <span class="op">=</span> <span class="fl">2</span>,
-                sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">$</span><span class="va">size</span>, type.data <span class="op">=</span> <span class="st">"atributte"</span><span class="op">)</span>
-
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.p.html">qcs.p</a></span><span class="op">(</span><span class="va">datos.qcd</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
-<span class="co">#&gt; p chart for orangejuice </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;        p         </span>
-<span class="co">#&gt;  Min.   :0.0400  </span>
-<span class="co">#&gt;  1st Qu.:0.1000  </span>
-<span class="co">#&gt;  Median :0.1400  </span>
-<span class="co">#&gt;  Mean   :0.1778  </span>
-<span class="co">#&gt;  3rd Qu.:0.2400  </span>
-<span class="co">#&gt;  Max.   :0.4800  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  50</span>
-<span class="co">#&gt; Number of groups:  54</span>
-<span class="co">#&gt; Center of group statistics:  0.1777778</span>
-<span class="co">#&gt; Standard deviation:  0.3823256 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt;         LCL       UCL</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt;  0.01557078 0.3399848</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Beyond limits of control: </span>
-<span class="co">#&gt; [1] 0.34 0.44 0.40 0.36 0.48</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Violationg runs: </span>
-<span class="co">#&gt;  [1] 0.18 0.24 0.12 0.04 0.08 0.06 0.12 0.10 0.08 0.16 0.10 0.12 0.14 0.10 0.12</span>
-<span class="co">#&gt; [16] 0.06 0.10</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 'data.frame':    54 obs. of  4 variables:</span></span>
+<span><span class="co">#&gt;  $ D     : int  12 15 8 10 4 7 16 9 14 10 ...</span></span>
+<span><span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span></span>
+<span><span class="co">#&gt;  $ size  : int  50 50 50 50 50 50 50 50 50 50 ...</span></span>
+<span><span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span></span>
+<span></span>
+<span><span class="va">datos.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">orangejuice</span>, var.index <span class="op">=</span> <span class="fl">1</span>, sample.index <span class="op">=</span> <span class="fl">2</span>,</span>
+<span>                sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">$</span><span class="va">size</span>, type.data <span class="op">=</span> <span class="st">"atributte"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.p.html">qcs.p</a></span><span class="op">(</span><span class="va">datos.qcd</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span><span class="co">#&gt; p chart for orangejuice </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;        p         </span></span>
+<span><span class="co">#&gt;  Min.   :0.0400  </span></span>
+<span><span class="co">#&gt;  1st Qu.:0.1000  </span></span>
+<span><span class="co">#&gt;  Median :0.1400  </span></span>
+<span><span class="co">#&gt;  Mean   :0.1778  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:0.2400  </span></span>
+<span><span class="co">#&gt;  Max.   :0.4800  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  50</span></span>
+<span><span class="co">#&gt; Number of groups:  54</span></span>
+<span><span class="co">#&gt; Center of group statistics:  0.1777778</span></span>
+<span><span class="co">#&gt; Standard deviation:  0.3823256 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt;         LCL       UCL</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt;  0.01557078 0.3399848</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Beyond limits of control: </span></span>
+<span><span class="co">#&gt; [1] 0.34 0.44 0.40 0.36 0.48</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Violationg runs: </span></span>
+<span><span class="co">#&gt;  [1] 0.18 0.24 0.12 0.04 0.08 0.06 0.12 0.10 0.08 0.16 0.10 0.12 0.14 0.10 0.12</span></span>
+<span><span class="co">#&gt; [16] 0.06 0.10</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/p-1.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="va">datos.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.p.html">qcs.p</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span><span class="op">]</span>, sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">datos.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="va">datos.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.p.html">qcs.p</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span><span class="op">]</span>, sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">datos.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/p-2.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
 <h3 id="gráfico-np">Gráfico np<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-np"></a>
 </h3>
 <ul>
-<li><p>En algunas ocasiones interesa analizar el número medio de disconformidades en lugar de su proporción; en este caso se utilizarón los llamados gráficos NP.</p></li>
+<li><p>En algunas ocasiones interesa analizar el número medio de
+disconformidades en lugar de su proporción; en este caso se utilizarón
+los llamados gráficos NP.</p></li>
 <li>
-<p>Para la construcción de este tipo de gráficos se estimarán las proporciones de la misma forma que en los gráficos P pero se construirán los gráficos basados en la media del proceso del siguiente modo:</p>
-<p><span class="math inline">\(LCL = n\bar{p}-3\sqrt{\frac{n\bar{p}(1-\bar{p})}{n}}\)</span></p>
+<p>Para la construcción de este tipo de gráficos se estimarán las
+proporciones de la misma forma que en los gráficos P pero se construirán
+los gráficos basados en la media del proceso del siguiente modo:</p>
+<p><span class="math inline">\(LCL =
+n\bar{p}-3\sqrt{\frac{n\bar{p}(1-\bar{p})}{n}}\)</span></p>
 <p><span class="math inline">\(CL = n\bar{p}\)</span></p>
-<p><span class="math inline">\(UCL = n\bar{p}+3\sqrt{\frac{n\bar{p}(1-\bar{p})}{n}}\)</span></p>
+<p><span class="math inline">\(UCL =
+n\bar{p}+3\sqrt{\frac{n\bar{p}(1-\bar{p})}{n}}\)</span></p>
 </li>
 </ul>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span>
-<span class="co">#&gt; 'data.frame':    54 obs. of  4 variables:</span>
-<span class="co">#&gt;  $ D     : int  12 15 8 10 4 7 16 9 14 10 ...</span>
-<span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span>
-<span class="co">#&gt;  $ size  : int  50 50 50 50 50 50 50 50 50 50 ...</span>
-<span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span>
-<span class="va">datos.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">orangejuice</span>, var.index <span class="op">=</span> <span class="fl">1</span>, sample.index <span class="op">=</span> <span class="fl">2</span>,
-                sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">$</span><span class="va">size</span>, type.data <span class="op">=</span> <span class="st">"atributte"</span><span class="op">)</span>
-
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.np.html">qcs.np</a></span><span class="op">(</span><span class="va">datos.qcd</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
-<span class="co">#&gt; np chart for orangejuice </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;        np        </span>
-<span class="co">#&gt;  Min.   : 2.000  </span>
-<span class="co">#&gt;  1st Qu.: 5.000  </span>
-<span class="co">#&gt;  Median : 7.000  </span>
-<span class="co">#&gt;  Mean   : 8.889  </span>
-<span class="co">#&gt;  3rd Qu.:12.000  </span>
-<span class="co">#&gt;  Max.   :24.000  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  50</span>
-<span class="co">#&gt; Number of groups:  54</span>
-<span class="co">#&gt; Center of group statistics:  8.888889</span>
-<span class="co">#&gt; Standard deviation:  2.70345 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt;        LCL      UCL</span>
-<span class="co">#&gt;  0.7785388 16.99924</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Beyond limits of control: </span>
-<span class="co">#&gt; [1] 17 22 20 18 24</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Violationg runs: </span>
-<span class="co">#&gt;  [1]  9 12  6  2  4  3  6  5  4  8  5  6  7  5  6  3  5</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 'data.frame':    54 obs. of  4 variables:</span></span>
+<span><span class="co">#&gt;  $ D     : int  12 15 8 10 4 7 16 9 14 10 ...</span></span>
+<span><span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span></span>
+<span><span class="co">#&gt;  $ size  : int  50 50 50 50 50 50 50 50 50 50 ...</span></span>
+<span><span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span></span>
+<span><span class="va">datos.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">orangejuice</span>, var.index <span class="op">=</span> <span class="fl">1</span>, sample.index <span class="op">=</span> <span class="fl">2</span>,</span>
+<span>                sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">$</span><span class="va">size</span>, type.data <span class="op">=</span> <span class="st">"atributte"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.np.html">qcs.np</a></span><span class="op">(</span><span class="va">datos.qcd</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span><span class="co">#&gt; np chart for orangejuice </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;        np        </span></span>
+<span><span class="co">#&gt;  Min.   : 2.000  </span></span>
+<span><span class="co">#&gt;  1st Qu.: 5.000  </span></span>
+<span><span class="co">#&gt;  Median : 7.000  </span></span>
+<span><span class="co">#&gt;  Mean   : 8.889  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:12.000  </span></span>
+<span><span class="co">#&gt;  Max.   :24.000  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  50</span></span>
+<span><span class="co">#&gt; Number of groups:  54</span></span>
+<span><span class="co">#&gt; Center of group statistics:  8.888889</span></span>
+<span><span class="co">#&gt; Standard deviation:  2.70345 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt;        LCL      UCL</span></span>
+<span><span class="co">#&gt;  0.7785388 16.99924</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Beyond limits of control: </span></span>
+<span><span class="co">#&gt; [1] 17 22 20 18 24</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Violationg runs: </span></span>
+<span><span class="co">#&gt;  [1]  9 12  6  2  4  3  6  5  4  8  5  6  7  5  6  3  5</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/np-1.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="va">datos.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.np.html">qcs.np</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span><span class="op">]</span>, sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">datos.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="va">datos.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.np.html">qcs.np</a></span><span class="op">(</span><span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span><span class="op">]</span>, sizes <span class="op">=</span> <span class="va">orangejuice</span><span class="op">[</span><span class="va">orangejuice</span><span class="op">$</span><span class="va">trial</span>,<span class="fl">3</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">datos.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/np-2.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
 <h3 id="gráfico-c">Gráfico c<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-c"></a>
 </h3>
 <ul>
-<li><p>Para construir el diagrama de control C empezamos por tomar <span class="math inline">\(k\)</span> muestras <span class="math inline">\(X1,X_2,\dots,X_k\)</span> , de <span class="math inline">\(n_i\)</span> unidades cada una, por ejemplo <span class="math inline">\(X_i=(X_{i1},\dots,X_{in_i})\)</span>. Sea <span class="math inline">\(u\)</span> el número esperado de unidades defectuosas en cada una de las muestras.</p></li>
+<li><p>Para construir el diagrama de control C empezamos por tomar <span class="math inline">\(k\)</span> muestras <span class="math inline">\(X1,X_2,\dots,X_k\)</span> , de <span class="math inline">\(n_i\)</span> unidades cada una, por ejemplo <span class="math inline">\(X_i=(X_{i1},\dots,X_{in_i})\)</span>. Sea <span class="math inline">\(u\)</span> el número esperado de unidades
+defectuosas en cada una de las muestras.</p></li>
 <li><p>Para cada muestra se calcula el número <span class="math inline">\(u_{ij}\)</span> de defectos de la unidad <span class="math inline">\(X_{ij}\)</span>, <span class="math inline">\(j=1,\dots,n_i\)</span>.</p></li>
-<li><p>Si denotamos por <span class="math inline">\(c_i\)</span> al número de defectos totales en la muestra <span class="math inline">\(i\)</span>-ésima, es claro que + Por otro lado, si denotamos por <span class="math inline">\(u_i\)</span> al valor esperado de defectos en la muestra <span class="math inline">\(i\)</span>-ésima, tendremos que <span class="math inline">\(u_i=\frac{1}{n_i}\sum_{j=1}^{n_i}u_{ij}\)</span>. Observar pues que <span class="math inline">\(u_i=\frac{1}{n_i}c_i\)</span>, es decir, <span class="math inline">\(c_i=u_in_i\)</span>.</p></li>
+<li><p>Si denotamos por <span class="math inline">\(c_i\)</span> al
+número de defectos totales en la muestra <span class="math inline">\(i\)</span>-ésima, es claro que + Por otro lado, si
+denotamos por <span class="math inline">\(u_i\)</span> al valor esperado
+de defectos en la muestra <span class="math inline">\(i\)</span>-ésima,
+tendremos que <span class="math inline">\(u_i=\frac{1}{n_i}\sum_{j=1}^{n_i}u_{ij}\)</span>.
+Observar pues que <span class="math inline">\(u_i=\frac{1}{n_i}c_i\)</span>, es decir, <span class="math inline">\(c_i=u_in_i\)</span>.</p></li>
 <li><p>Notar además que <span class="math inline">\(\mathbb{E}(c_i)=\mathbb{E}(u_in_i)=n_i\mathbb{E}(u_i)=n_iu\)</span>.}</p></li>
-<li><p>Es frecuente suponer que el número de defectos (sucesos no habituales) en una poblacion grande sigue una distribucion de Poisson: <span class="math inline">\(c_i\sim Poiss(n_iu)\)</span>.</p></li>
+<li><p>Es frecuente suponer que el número de defectos (sucesos no
+habituales) en una poblacion grande sigue una distribucion de Poisson:
+<span class="math inline">\(c_i\sim Poiss(n_iu)\)</span>.</p></li>
 <li><p>Se cumplirá que <span class="math inline">\(\lim_{n\rightarrow{\infty}}c_i=N(n_iu,\sqrt{n_iu})\)</span>.</p></li>
-<li><p>Si <span class="math inline">\(u=\mathbb{E}[u_i]\)</span> es desconocida, la podemos estimar: <span class="math display">\[
+<li><p>Si <span class="math inline">\(u=\mathbb{E}[u_i]\)</span> es
+desconocida, la podemos estimar: <span class="math display">\[
 \hat{u}=\frac{1}{k}\sum_{i=1}^{k}u_i.
 \]</span></p></li>
 <li>
 <p>Según el modelo de Shewart tendremos que:</p>
-<p><span class="math inline">\(LCL = n_i\hat{u}-3\sqrt{{\hat{u}}{n_i}}\)</span></p>
+<p><span class="math inline">\(LCL =
+n_i\hat{u}-3\sqrt{{\hat{u}}{n_i}}\)</span></p>
 <p><span class="math inline">\(CL = n_i\hat{u}\)</span></p>
-<p><span class="math inline">\(UCL = n_i\hat{u}+3\sqrt{{\hat{u}}{n_i}}\)</span></p>
+<p><span class="math inline">\(UCL =
+n_i\hat{u}+3\sqrt{{\hat{u}}{n_i}}\)</span></p>
 </li>
-<li><p>Como el tamaño muestral (<span class="math inline">\(n_i\)</span>) es diferente para cada subgrupo, para calcular los límites podemos optar por distintos métodos.</p></li>
+<li><p>Como el tamaño muestral (<span class="math inline">\(n_i\)</span>) es diferente para cada subgrupo,
+para calcular los límites podemos optar por distintos métodos.</p></li>
 </ul>
 <p><strong>Datos</strong></p>
-<p>Placas impresas (Circuit boards data): Número de no conformidades observadas en 26 muestras sucesivas de 100 placas de circuitos impresos. Muestra 6 y 20 están fuera de los límites de control. Muestra 6 fue examinado por un nuevo inspector que no había reconocido varios tipos de no conformidades.</p>
-<p>Además, el número inusualmente grande de las no conformidades en la muestra 20 se debío a un problema de control de la temperatura en la máquina de soldadura, que fue reparado subsequentemente. Los últimos 20 muestras son otras muestras recogidas en las unidades de inspección (cada una formada por 100 paneles). Las variables del data frame son:</p>
+<p>Placas impresas (Circuit boards data): Número de no conformidades
+observadas en 26 muestras sucesivas de 100 placas de circuitos impresos.
+Muestra 6 y 20 están fuera de los límites de control. Muestra 6 fue
+examinado por un nuevo inspector que no había reconocido varios tipos de
+no conformidades.</p>
+<p>Además, el número inusualmente grande de las no conformidades en la
+muestra 20 se debío a un problema de control de la temperatura en la
+máquina de soldadura, que fue reparado subsequentemente. Los últimos 20
+muestras son otras muestras recogidas en las unidades de inspección
+(cada una formada por 100 paneles). Las variables del data frame
+son:</p>
 <ul>
-<li>x : número de unidades defectuosas en 100 placas de circuito impreso (unidad de control)</li>
+<li>x : número de unidades defectuosas en 100 placas de circuito impreso
+(unidad de control)</li>
 <li>size (tamaño): tamaño de la muestra</li>
 <li>trial (ensayo) indicador muestra ensayo (verdadero / falso)</li>
 </ul>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">circuit</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">circuit</span><span class="op">)</span>
-<span class="co">#&gt; 'data.frame':    46 obs. of  4 variables:</span>
-<span class="co">#&gt;  $ x     : int  21 24 16 12 15 5 28 20 31 25 ...</span>
-<span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span>
-<span class="co">#&gt;  $ size  : int  100 100 100 100 100 100 100 100 100 100 ...</span>
-<span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span>
-<span class="va">datos</span> <span class="op">&lt;-</span> <span class="va">circuit</span>
-<span class="va">datos</span><span class="op">$</span><span class="va">sample</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">datos</span><span class="op">$</span><span class="va">x</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span>
-<span class="co">#&gt; 'data.frame':    46 obs. of  4 variables:</span>
-<span class="co">#&gt;  $ x     : int  21 24 16 12 15 5 28 20 31 25 ...</span>
-<span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span>
-<span class="co">#&gt;  $ size  : int  100 100 100 100 100 100 100 100 100 100 ...</span>
-<span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span>
-
-<span class="va">datos.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">datos</span>, var.index <span class="op">=</span> <span class="fl">1</span>,sample.index <span class="op">=</span> <span class="fl">2</span>,
-                sizes <span class="op">=</span> <span class="fl">100</span>, type.data <span class="op">=</span> <span class="st">"atributte"</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.c.html">qcs.c</a></span><span class="op">(</span><span class="va">datos.qcd</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
-<span class="co">#&gt; c chart for datos </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;        c        </span>
-<span class="co">#&gt;  Min.   : 5.00  </span>
-<span class="co">#&gt;  1st Qu.:16.00  </span>
-<span class="co">#&gt;  Median :19.00  </span>
-<span class="co">#&gt;  Mean   :19.17  </span>
-<span class="co">#&gt;  3rd Qu.:22.00  </span>
-<span class="co">#&gt;  Max.   :39.00  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  100</span>
-<span class="co">#&gt; Number of groups:  46</span>
-<span class="co">#&gt; Center of group statistics:  19.17391</span>
-<span class="co">#&gt; Standard deviation:  4.378803 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt;       LCL      UCL</span>
-<span class="co">#&gt;  6.037505 32.31032</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Beyond limits of control: </span>
-<span class="co">#&gt; [1] 39  5</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Violationg runs: </span>
-<span class="co">#&gt; [1] 12 15</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">circuit</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">circuit</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 'data.frame':    46 obs. of  4 variables:</span></span>
+<span><span class="co">#&gt;  $ x     : int  21 24 16 12 15 5 28 20 31 25 ...</span></span>
+<span><span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span></span>
+<span><span class="co">#&gt;  $ size  : int  100 100 100 100 100 100 100 100 100 100 ...</span></span>
+<span><span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span></span>
+<span><span class="va">datos</span> <span class="op">&lt;-</span> <span class="va">circuit</span></span>
+<span><span class="va">datos</span><span class="op">$</span><span class="va">sample</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">datos</span><span class="op">$</span><span class="va">x</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">datos</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 'data.frame':    46 obs. of  4 variables:</span></span>
+<span><span class="co">#&gt;  $ x     : int  21 24 16 12 15 5 28 20 31 25 ...</span></span>
+<span><span class="co">#&gt;  $ sample: int  1 2 3 4 5 6 7 8 9 10 ...</span></span>
+<span><span class="co">#&gt;  $ size  : int  100 100 100 100 100 100 100 100 100 100 ...</span></span>
+<span><span class="co">#&gt;  $ trial : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span></span>
+<span></span>
+<span><span class="va">datos.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">datos</span>, var.index <span class="op">=</span> <span class="fl">1</span>,sample.index <span class="op">=</span> <span class="fl">2</span>,</span>
+<span>                sizes <span class="op">=</span> <span class="fl">100</span>, type.data <span class="op">=</span> <span class="st">"atributte"</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.c.html">qcs.c</a></span><span class="op">(</span><span class="va">datos.qcd</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span><span class="co">#&gt; c chart for datos </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;        c        </span></span>
+<span><span class="co">#&gt;  Min.   : 5.00  </span></span>
+<span><span class="co">#&gt;  1st Qu.:16.00  </span></span>
+<span><span class="co">#&gt;  Median :19.00  </span></span>
+<span><span class="co">#&gt;  Mean   :19.17  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:22.00  </span></span>
+<span><span class="co">#&gt;  Max.   :39.00  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  100</span></span>
+<span><span class="co">#&gt; Number of groups:  46</span></span>
+<span><span class="co">#&gt; Center of group statistics:  19.17391</span></span>
+<span><span class="co">#&gt; Standard deviation:  4.378803 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt;       LCL      UCL</span></span>
+<span><span class="co">#&gt;  6.037505 32.31032</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Beyond limits of control: </span></span>
+<span><span class="co">#&gt; [1] 39  5</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Violationg runs: </span></span>
+<span><span class="co">#&gt; [1] 12 15</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/c-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
 <h3 id="gráfico-cusum">Gráfico Cusum<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-cusum"></a>
 </h3>
 <ul>
-<li><p>Los gráficos CUSUM se basan en la decisión de comprobar si el proceso está bajo control o no analizando toda o la mayor parte de la muestra. Para este fin se usará el estadístico <span class="math inline">\(s_r\)</span>: <span class="math display">\[
+<li><p>Los gráficos CUSUM se basan en la decisión de comprobar si el
+proceso está bajo control o no analizando toda o la mayor parte de la
+muestra. Para este fin se usará el estadístico <span class="math inline">\(s_r\)</span>: <span class="math display">\[
 s_r=\sum_{i=1}^{r}(\bar{x}_i-\mu_0).
 \]</span></p></li>
-<li><p>Bajo supuestos de normalidad es evidente deducir la distribución del estadístico <span class="math inline">\(s_r\)</span>: <span class="math display">\[
+<li><p>Bajo supuestos de normalidad es evidente deducir la distribución
+del estadístico <span class="math inline">\(s_r\)</span>: <span class="math display">\[
 s_r\in N\left( r(\mu-\mu_0), \frac{r\sigma_0^2}{n} \right).
 \]</span></p></li>
 </ul>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span>
-<span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span><span class="va">pistonrings</span>, type.data <span class="op">=</span> <span class="st">"dependence"</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.cusum.html">qcs.cusum</a></span><span class="op">(</span><span class="va">res.qcd</span>, type <span class="op">=</span> <span class="st">"cusum"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
-<span class="co">#&gt; cusum chart for pistonrings </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;      cusum      </span>
-<span class="co">#&gt;  Min.   :73.99  </span>
-<span class="co">#&gt;  1st Qu.:74.00  </span>
-<span class="co">#&gt;  Median :74.00  </span>
-<span class="co">#&gt;  Mean   :74.00  </span>
-<span class="co">#&gt;  3rd Qu.:74.01  </span>
-<span class="co">#&gt;  Max.   :74.02  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  5</span>
-<span class="co">#&gt; Number of groups:  40</span>
-<span class="co">#&gt; Center of group statistics:  74.0036</span>
-<span class="co">#&gt; Standard deviation:  0.01007094 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt; [1] -5  5</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Beyond limits of control: </span>
-<span class="co">#&gt;  [1] 73.9902 74.0060 73.9966 74.0008 74.0074 73.9982 74.0092 73.9998 74.0016</span>
-<span class="co">#&gt; [10] 74.0024 73.9982 73.9922 73.9974</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Violationg runs: </span>
-<span class="co">#&gt; [1] 74.0196 74.0234 74.0128</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span>
+<span><span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span><span class="va">pistonrings</span>, type.data <span class="op">=</span> <span class="st">"dependence"</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.cusum.html">qcs.cusum</a></span><span class="op">(</span><span class="va">res.qcd</span>, type <span class="op">=</span> <span class="st">"cusum"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span><span class="co">#&gt; cusum chart for pistonrings </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;      cusum      </span></span>
+<span><span class="co">#&gt;  Min.   :73.99  </span></span>
+<span><span class="co">#&gt;  1st Qu.:74.00  </span></span>
+<span><span class="co">#&gt;  Median :74.00  </span></span>
+<span><span class="co">#&gt;  Mean   :74.00  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:74.01  </span></span>
+<span><span class="co">#&gt;  Max.   :74.02  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  5</span></span>
+<span><span class="co">#&gt; Number of groups:  40</span></span>
+<span><span class="co">#&gt; Center of group statistics:  74.0036</span></span>
+<span><span class="co">#&gt; Standard deviation:  0.01007094 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt; [1] -5  5</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Beyond limits of control: </span></span>
+<span><span class="co">#&gt;  [1] 73.9902 74.0060 73.9966 74.0008 74.0074 73.9982 74.0092 73.9998 74.0016</span></span>
+<span><span class="co">#&gt; [10] 74.0024 73.9982 73.9922 73.9974</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Violationg runs: </span></span>
+<span><span class="co">#&gt; [1] 74.0196 74.0234 74.0128</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/cusum-1.png" width="60%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
 <h3 id="gráfico-ewma">Gráfico Ewma<a class="anchor" aria-label="anchor" href="#gr%C3%A1fico-ewma"></a>
 </h3>
 <ul>
-<li><p>En los gráficos EWMA se representan promedios de la observación contemporánea y las observaciones anteriores, donde se da más peso a las observaciones más recientes (medias móviles <span class="math inline">\(y_i\)</span>).</p></li>
+<li><p>En los gráficos EWMA se representan promedios de la observación
+contemporánea y las observaciones anteriores, donde se da más peso a las
+observaciones más recientes (medias móviles <span class="math inline">\(y_i\)</span>).</p></li>
 <li><p>Se define como: <span class="math display">\[
 y_i=\lambda x_i+(1-\lambda)y_{i-1}
 \]</span></p></li>
 <li>
-<p>Los límites de control y la línea central son entonces: <span class="math inline">\(LCL = \mu_0-3\sigma\sqrt{\frac{\lambda(1-(1-\lambda)^{2i})}{2-\lambda}}\)</span></p>
+<p>Los límites de control y la línea central son entonces: <span class="math inline">\(LCL =
+\mu_0-3\sigma\sqrt{\frac{\lambda(1-(1-\lambda)^{2i})}{2-\lambda}}\)</span></p>
 <p><span class="math inline">\(LCS = \mu_0\)</span></p>
-<p><span class="math inline">\(UCL = \mu_0+3\sigma\sqrt{\frac{\lambda(1-(1-\lambda)^{2i})}{2-\lambda}}\)</span></p>
+<p><span class="math inline">\(UCL =
+\mu_0+3\sigma\sqrt{\frac{\lambda(1-(1-\lambda)^{2i})}{2-\lambda}}\)</span></p>
 </li>
 <li>
-<p>Si <span class="math inline">\(i\)</span> es muy elevado se tiene que, aproximadamente,</p>
-<p><span class="math inline">\(LCL = \mu_0-3\sigma\sqrt{\frac{\lambda}{2-\lambda}}\)</span></p>
+<p>Si <span class="math inline">\(i\)</span> es muy elevado se tiene
+que, aproximadamente,</p>
+<p><span class="math inline">\(LCL =
+\mu_0-3\sigma\sqrt{\frac{\lambda}{2-\lambda}}\)</span></p>
 <p><span class="math inline">\(LCS = \mu_0\)</span></p>
-<p><span class="math inline">\(UCL = \mu_0+3\sigma\sqrt{\frac{\lambda}{2-\lambda}}\)</span></p>
+<p><span class="math inline">\(UCL =
+\mu_0+3\sigma\sqrt{\frac{\lambda}{2-\lambda}}\)</span></p>
 </li>
 </ul>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"> <span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span>
- <span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span><span class="va">pistonrings</span>, type.data <span class="op">=</span> <span class="st">"dependence"</span><span class="op">)</span>
- <span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.ewma.html">qcs.ewma</a></span><span class="op">(</span><span class="va">res.qcd</span>, type <span class="op">=</span> <span class="st">"ewma"</span><span class="op">)</span>
- <span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
- <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span> <span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span>
+<span> <span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span><span class="va">pistonrings</span>, type.data <span class="op">=</span> <span class="st">"dependence"</span><span class="op">)</span></span>
+<span> <span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.ewma.html">qcs.ewma</a></span><span class="op">(</span><span class="va">res.qcd</span>, type <span class="op">=</span> <span class="st">"ewma"</span><span class="op">)</span></span>
+<span> <span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span> <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="ejemplos-gráfico-para-la-media">Ejemplos Gráfico para la media<a class="anchor" aria-label="anchor" href="#ejemplos-gr%C3%A1fico-para-la-media"></a>
 </h3>
-<p>En la siguiente sección se presentan gráficos de control para monitorizar la tendencia central de la variable de calidad: diamétro de los aros de los pistones.</p>
+<p>En la siguiente sección se presentan gráficos de control para
+monitorizar la tendencia central de la variable de calidad: diamétro de
+los aros de los pistones.</p>
 <div class="section level5">
 <h5 id="estabilizando-el-proceso">Estabilizando el proceso<a class="anchor" aria-label="anchor" href="#estabilizando-el-proceso"></a>
 </h5>
-<p>Se realiza un gráfico de medias para monitorizar el diámetro de los piston rings:</p>
+<p>Se realiza un gráfico de medias para monitorizar el diámetro de los
+piston rings:</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span>
-<span class="co">#&gt; 'data.frame':    200 obs. of  3 variables:</span>
-<span class="co">#&gt;  $ diameter: num  74 74 74 74 74 ...</span>
-<span class="co">#&gt;  $ sample  : int  1 1 1 1 1 2 2 2 2 2 ...</span>
-<span class="co">#&gt;  $ trial   : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span>
-<span class="va">pistonrings.qcd</span><span class="op">&lt;-</span><span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">pistonrings.qcd</span><span class="op">)</span>
-<span class="co">#&gt; [1] "qcd"        "data.frame"</span>
-
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">pistonrings.qcd</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,title<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings I"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-R"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span>
+<span><span class="co">#&gt; 'data.frame':    200 obs. of  3 variables:</span></span>
+<span><span class="co">#&gt;  $ diameter: num  74 74 74 74 74 ...</span></span>
+<span><span class="co">#&gt;  $ sample  : int  1 1 1 1 1 2 2 2 2 2 ...</span></span>
+<span><span class="co">#&gt;  $ trial   : logi  TRUE TRUE TRUE TRUE TRUE TRUE ...</span></span>
+<span><span class="va">pistonrings.qcd</span><span class="op">&lt;-</span><span class="fu"><a href="../reference/qcd.html">qcd</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/class.html" class="external-link">class</a></span><span class="op">(</span><span class="va">pistonrings.qcd</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "qcd"        "data.frame"</span></span>
+<span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">pistonrings.qcd</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,title<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings I"</span>, std.dev <span class="op">=</span> <span class="st">"UWAVE-R"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/I-1.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>  
-<span class="co">#&gt; xbar chart for pistonrings </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;       xbar      </span>
-<span class="co">#&gt;  Min.   :73.99  </span>
-<span class="co">#&gt;  1st Qu.:74.00  </span>
-<span class="co">#&gt;  Median :74.00  </span>
-<span class="co">#&gt;  Mean   :74.00  </span>
-<span class="co">#&gt;  3rd Qu.:74.01  </span>
-<span class="co">#&gt;  Max.   :74.02  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  5</span>
-<span class="co">#&gt; Number of groups:  40</span>
-<span class="co">#&gt; Center of group statistics:  74.0036</span>
-<span class="co">#&gt; Standard deviation:  0.01007094 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt;       LCL      UCL</span>
-<span class="co">#&gt;  73.99009 74.01712</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Beyond limits of control: </span>
-<span class="co">#&gt; [1] 74.0196 74.0234</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Violationg runs: </span>
-<span class="co">#&gt; [1] 74.0128</span></code></pre></div>
-<p>Se crea el objeto qcd (Quality Control Data) y el objeto qcs (Quality Control Statistics) del tipo xbar.</p>
-<p>Con el comando summary se obtienen las estimaciones de la media y la varianza así como los límites de control y con el comando plot se realiza el correspondiente gráfico de control.</p>
-<p>Además para indicar que el tipo de estimación de la varianza es por medio de Rangos, en la opción std.dev = “UWAVE-R” (método de estimación por defecto).</p>
-<p>Se puede observar tres puntos que indican que el proceso está fuera de control. Dos de estos salen fuera de los límites de control y un punto que está dentro de los límites pero corresponde a una racha.</p>
-<p>Por tanto, el proceso no esta bajo control. Se utiliza la función state.control que permite eliminar los puntos fuera de control y adempás devuelve un objeto del tipo qcd que se utiliza para construir un nuevo gráfico de control.</p>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>  </span>
+<span><span class="co">#&gt; xbar chart for pistonrings </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;       xbar      </span></span>
+<span><span class="co">#&gt;  Min.   :73.99  </span></span>
+<span><span class="co">#&gt;  1st Qu.:74.00  </span></span>
+<span><span class="co">#&gt;  Median :74.00  </span></span>
+<span><span class="co">#&gt;  Mean   :74.00  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:74.01  </span></span>
+<span><span class="co">#&gt;  Max.   :74.02  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  5</span></span>
+<span><span class="co">#&gt; Number of groups:  40</span></span>
+<span><span class="co">#&gt; Center of group statistics:  74.0036</span></span>
+<span><span class="co">#&gt; Standard deviation:  0.01007094 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt;       LCL      UCL</span></span>
+<span><span class="co">#&gt;  73.99009 74.01712</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Beyond limits of control: </span></span>
+<span><span class="co">#&gt; [1] 74.0196 74.0234</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Violationg runs: </span></span>
+<span><span class="co">#&gt; [1] 74.0128</span></span></code></pre></div>
+<p>Se crea el objeto qcd (Quality Control Data) y el objeto qcs (Quality
+Control Statistics) del tipo xbar.</p>
+<p>Con el comando summary se obtienen las estimaciones de la media y la
+varianza así como los límites de control y con el comando plot se
+realiza el correspondiente gráfico de control.</p>
+<p>Además para indicar que el tipo de estimación de la varianza es por
+medio de Rangos, en la opción std.dev = “UWAVE-R” (método de estimación
+por defecto).</p>
+<p>Se puede observar tres puntos que indican que el proceso está fuera
+de control. Dos de estos salen fuera de los límites de control y un
+punto que está dentro de los límites pero corresponde a una racha.</p>
+<p>Por tanto, el proceso no esta bajo control. Se utiliza la función
+state.control que permite eliminar los puntos fuera de control y adempás
+devuelve un objeto del tipo qcd que se utiliza para construir un nuevo
+gráfico de control.</p>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/state.control.html">state.control</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">res.qcd</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,title<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings II"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/state.control.html">state.control</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">res.qcd</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,title<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings II"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/II-1.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>  
-<span class="co">#&gt; xbar chart for pistonrings </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;       xbar      </span>
-<span class="co">#&gt;  Min.   :73.99  </span>
-<span class="co">#&gt;  1st Qu.:74.00  </span>
-<span class="co">#&gt;  Median :74.00  </span>
-<span class="co">#&gt;  Mean   :74.00  </span>
-<span class="co">#&gt;  3rd Qu.:74.01  </span>
-<span class="co">#&gt;  Max.   :74.02  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  5</span>
-<span class="co">#&gt; Number of groups:  37</span>
-<span class="co">#&gt; Center of group statistics:  74.00239</span>
-<span class="co">#&gt; Standard deviation:  0.009992796 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt;       LCL     UCL</span>
-<span class="co">#&gt;  73.98898 74.0158</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Beyond limits of control: </span>
-<span class="co">#&gt; [1] 74.0166</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Number violationg runs: 0</span></code></pre></div>
-<p>Aún existe un punto fuera de los límites de control. Se utiliza la función state.control para la eliminación de puntos fuera de control y se estiman los límites de control hasta que el proceso este bajo control, es decir, no existan puntos fuera de los límites o rachas.</p>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>  </span>
+<span><span class="co">#&gt; xbar chart for pistonrings </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;       xbar      </span></span>
+<span><span class="co">#&gt;  Min.   :73.99  </span></span>
+<span><span class="co">#&gt;  1st Qu.:74.00  </span></span>
+<span><span class="co">#&gt;  Median :74.00  </span></span>
+<span><span class="co">#&gt;  Mean   :74.00  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:74.01  </span></span>
+<span><span class="co">#&gt;  Max.   :74.02  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  5</span></span>
+<span><span class="co">#&gt; Number of groups:  37</span></span>
+<span><span class="co">#&gt; Center of group statistics:  74.00239</span></span>
+<span><span class="co">#&gt; Standard deviation:  0.009992796 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt;       LCL     UCL</span></span>
+<span><span class="co">#&gt;  73.98898 74.0158</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Beyond limits of control: </span></span>
+<span><span class="co">#&gt; [1] 74.0166</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Number violationg runs: 0</span></span></code></pre></div>
+<p>Aún existe un punto fuera de los límites de control. Se utiliza la
+función state.control para la eliminación de puntos fuera de control y
+se estiman los límites de control hasta que el proceso este bajo
+control, es decir, no existan puntos fuera de los límites o rachas.</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/state.control.html">state.control</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">res.qcd</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,title<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings III"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">res.qcd</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/state.control.html">state.control</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">res.qcd</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,title<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings III"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/III-1.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>  
-<span class="co">#&gt; xbar chart for pistonrings </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;       xbar      </span>
-<span class="co">#&gt;  Min.   :73.99  </span>
-<span class="co">#&gt;  1st Qu.:74.00  </span>
-<span class="co">#&gt;  Median :74.00  </span>
-<span class="co">#&gt;  Mean   :74.00  </span>
-<span class="co">#&gt;  3rd Qu.:74.01  </span>
-<span class="co">#&gt;  Max.   :74.01  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  5</span>
-<span class="co">#&gt; Number of groups:  36</span>
-<span class="co">#&gt; Center of group statistics:  74.00199</span>
-<span class="co">#&gt; Standard deviation:  0.01004347 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt;       LCL      UCL</span>
-<span class="co">#&gt;  73.98852 74.01547</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Number beyond limits: 0 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Number violationg runs: 0</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>  </span>
+<span><span class="co">#&gt; xbar chart for pistonrings </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;       xbar      </span></span>
+<span><span class="co">#&gt;  Min.   :73.99  </span></span>
+<span><span class="co">#&gt;  1st Qu.:74.00  </span></span>
+<span><span class="co">#&gt;  Median :74.00  </span></span>
+<span><span class="co">#&gt;  Mean   :74.00  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:74.01  </span></span>
+<span><span class="co">#&gt;  Max.   :74.01  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  5</span></span>
+<span><span class="co">#&gt; Number of groups:  36</span></span>
+<span><span class="co">#&gt; Center of group statistics:  74.00199</span></span>
+<span><span class="co">#&gt; Standard deviation:  0.01004347 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt;       LCL      UCL</span></span>
+<span><span class="co">#&gt;  73.98852 74.01547</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Number beyond limits: 0 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Number violationg runs: 0</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level3">
 <h3 id="monitoriando-un-proceso">Monitoriando un proceso<a class="anchor" aria-label="anchor" href="#monitoriando-un-proceso"></a>
 </h3>
-<p>En este ejemplo se parte de un proceso bajo control (Fase I) y una vez calculado los límites se realiza la monitorización del proceso (Fase II). Para la Fase I se considera las primeras 25 muestras de los datos de piston rings y para la Fase II se utilizan el resto de las muestras.</p>
+<p>En este ejemplo se parte de un proceso bajo control (Fase I) y una
+vez calculado los límites se realiza la monitorización del proceso (Fase
+II). Para la Fase I se considera las primeras 25 muestras de los datos
+de piston rings y para la Fase II se utilizan el resto de las
+muestras.</p>
 <div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span>
-<span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">126</span><span class="op">:</span><span class="fl">200</span>,<span class="op">]</span><span class="op">)</span>
-
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">126</span><span class="op">:</span><span class="fl">200</span>,<span class="op">]</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/fase-1.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.add.html">qcs.add</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">res.qcs</span>, value <span class="op">=</span> <span class="va">y</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span><span class="op">]</span><span class="op">)</span> 
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.add.html">qcs.add</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">res.qcs</span>, value <span class="op">=</span> <span class="va">y</span><span class="op">[</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span><span class="op">]</span><span class="op">)</span> </span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/fase-2.png" width="60%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span>
-<span class="co">#&gt; xbar chart for Control Chart Xbar for pistonrings </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Summary of group statistics:</span>
-<span class="co">#&gt;       xbar      </span>
-<span class="co">#&gt;  Min.   :73.99  </span>
-<span class="co">#&gt;  1st Qu.:74.00  </span>
-<span class="co">#&gt;  Median :74.00  </span>
-<span class="co">#&gt;  Mean   :74.00  </span>
-<span class="co">#&gt;  3rd Qu.:74.01  </span>
-<span class="co">#&gt;  Max.   :74.02  </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Group sample size:  5</span>
-<span class="co">#&gt; Number of groups:  40</span>
-<span class="co">#&gt; Center of group statistics:  74.0036</span>
-<span class="co">#&gt; Standard deviation:  0.01007094 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Control limits: </span>
-<span class="co">#&gt;       LCL     UCL</span>
-<span class="co">#&gt;  73.98805 74.0143</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Beyond limits of control: </span>
-<span class="co">#&gt; [1] 74.0166 74.0196 74.0234</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Violationg runs: </span>
-<span class="co">#&gt; [1] 74.0128</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res.qcs</span><span class="op">)</span></span>
+<span><span class="co">#&gt; xbar chart for Control Chart Xbar for pistonrings </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Summary of group statistics:</span></span>
+<span><span class="co">#&gt;       xbar      </span></span>
+<span><span class="co">#&gt;  Min.   :73.99  </span></span>
+<span><span class="co">#&gt;  1st Qu.:74.00  </span></span>
+<span><span class="co">#&gt;  Median :74.00  </span></span>
+<span><span class="co">#&gt;  Mean   :74.00  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:74.01  </span></span>
+<span><span class="co">#&gt;  Max.   :74.02  </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Group sample size:  5</span></span>
+<span><span class="co">#&gt; Number of groups:  40</span></span>
+<span><span class="co">#&gt; Center of group statistics:  74.0036</span></span>
+<span><span class="co">#&gt; Standard deviation:  0.01007094 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Control limits: </span></span>
+<span><span class="co">#&gt;       LCL     UCL</span></span>
+<span><span class="co">#&gt;  73.98805 74.0143</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Beyond limits of control: </span></span>
+<span><span class="co">#&gt; [1] 74.0166 74.0196 74.0234</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Violationg runs: </span></span>
+<span><span class="co">#&gt; [1] 74.0128</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="límites-de-alerta">Límites de alerta<a class="anchor" aria-label="anchor" href="#l%C3%ADmites-de-alerta"></a>
 </h3>
 <div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span>
-<span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,conf.nsigma.alert<span class="op">=</span><span class="fl">2</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/droplevels.html" class="external-link">droplevels</a></span><span class="op">(</span><span class="va">pistonrings</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">125</span>,<span class="op">]</span><span class="op">)</span></span>
+<span><span class="va">res.qcs</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/qcs.xbar.html">qcs.xbar</a></span><span class="op">(</span><span class="va">x</span>, data.name<span class="op">=</span><span class="st">"Control Chart Xbar for pistonrings"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">res.qcs</span>,conf.nsigma.alert<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></code></pre></div>
 <p><img src="Uqcc_files/figure-html/2-1.png" width="60%" style="display: block; margin: auto;"></p>
 <!-- #### Explorando causas  -->
 <!-- pistonrings$trial   -->
@@ -778,7 +901,7 @@ y_i=\lambda x_i+(1-\lambda)y_{i-1}
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
     </footer>

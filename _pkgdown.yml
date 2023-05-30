@@ -98,6 +98,9 @@ reference:
 navbar:
   title: ~
   left:
+    - text: Authors
+      icon: fa-user
+      href: articles/Authors.html
     - text: Functions and Data
       href: reference/index.html
     - text: Material (Es)
@@ -116,5 +119,7 @@ navbar:
       menu:
       - text: Statisics with qcr package
         href: articles/en_material.html
+    - text: Conferences
+      href: articles/Conference.html
     - text: Changelog
       href: news/index.html

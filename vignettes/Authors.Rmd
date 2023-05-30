@@ -1,0 +1,158 @@
+---
+title: "About the authors"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{About the authors}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r include=FALSE}
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color,
+      x)
+  } else x
+}
+```
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+<p style="text-align:justify;"> The bibliography of the authors who contributed to the development of the package that performs interlaboratory studies (ILS), with univariate and functional data, is presented below.</p>
+
+<br>
+
+# `r colorize("Dr. Miguel Alfonso Flores","#2E2EFE")`
+
+<br>
+
+<center>![](../man/figures/MiguelFlores.PNG){width=300 height=450}</center>
+
+<br>
+
+$\rule{20.5cm}{0.1cm}$
+
+__Full-time Professor (EPN)__ 
+
+|   |   |
+|:------------|:----------------------------------|
+| __Department__  |    Mathematics| 
+| __Area__        | Statistics and operations research      |
+|__Research__  | Añadir |
+| __Lines of research__| Añadir |
+| __Contact__| <a href=https://math.epn.edu.ec/index.php/9-miembros/33-flores-sanchez-miguel-alfonso> EPN Directory </a> |
+      
+$\rule{20.5cm}{0.1cm}$
+
+## `r colorize("Biography","#2E2EFE")`
+
+<p style="text-align:justify;">Ph.D. in Statistics and Operations Research, Master in Statistical Techniques (University of La Coruña). He has experience in Education and Higher Vocational Training, university and business in the field of Statistics & Machine Learning. Professor of Probability and Statistics at the National Polytechnic School. Member of the Multidisciplinary Research Group in Information Systems, Technology Management and Innovation (SIGTI) of the National Polytechnic School and the Group of Modeling, Optimization and Statistical Inference (MODES) of the University of La Coruña.</p>
+
+<br>
+
+# `r colorize("Dr. Rubén Fernandez","#2E2EFE")`
+<br>
+
+<center>![](../man/figures/RubenFernandez.jpg){width=300 height=500}</center>
+<br>
+
+$\rule{20.5cm}{0.1cm}$
+
+__Associate Professor (PC-DR)__ 
+
+|   |   |
+|:------------|:----------------------------------|
+| __Department__  |    Mathematics| 
+| __Area__        | Statistics and operations research      |
+|__Research__  | <a href=https://investigacion.udc.es/es/Research/Details/G000199> Modeling Optimization and Statistical Inference Research Group</a> |
+| __Lines of research__| Spatial and spatio-temporal statistics, Non-parametric modeling, Computational statistics, Spectral methods.|
+| __Key words__| Geostatistics, Non-parametric Regression|
+| __Contact__| <a href=https://directorio.udc.es/persons/21734> UDC Directory</a> |
+
+|   |   |   |
+|:----------------|:----------------:|----------------:|
+| <a href=https://orcid.org/0000-0002-5785-3739>![](../man/figures/ORCIDRF.PNG){} </a>|<a href=https://publons.com/wos-op/a/S-6823-2016> ![](../man/figures/ResearchRF.PNG){}</a>|<a href=https://www.scopus.com/authid/detail.uri?authorId=55887272300> ![](../man/figures/ScopusRF.PNG){}</a>|       
+
+$\rule{20.5cm}{0.1cm}$
+
+## `r colorize("Biography","#2E2EFE")`
+
+<p style="text-align:justify;"> He is associate professor of [Statistics and Operations Research]( http://dm.udc.es/matematicas/es/node/41) in the Department of Mathematics at the [University of A Coruña](http://www.udc.gal) (Spain), member of the [MODES](http://dm.udc.es/modes) research group and of the Center for Research in Information and Communication Technologies ([CITIC]( https://citic.udc.es)). His main research line is nonparametric modeling of spatial and spatio-temporal data, a field in which he has co-directed two doctoral theses. Other of his research lines are Nonparametric Regression, Quality Control, Functional Data Analysis, Simulation, Bootstrap, Computational Statistics and Statistical Learning. He is co-author of 26 articles published in journals indexed in various databases (21 of which are in the Journal Citation Reports and 7 in the first quartile). He is committed to open source software and especially to the use of the R programming language. He is a member of the [RHispano](http://r-es.org) community, co-author of 6 R packages and of several open books on applied statistics (in Spanish), accessible through his [web page](https://rubenfcasal.github.io).</p>
+
+<br>
+
+# `r colorize("Dr. Salvador Naya","#2E2EFE")`
+
+<br>
+
+<center>![](../man/figures/SalvadorNaya.jpg){width=300 height=450}</center>
+
+<br>
+
+$\rule{20.5cm}{0.1cm}$
+
+__University Professor (CAT-UN)__ 
+
+|   |   |
+|:------------|:----------------------------------|
+| __Department__  |    Mathematics| 
+| __Area__        | Statistics and operations research      |
+|__Research__  | <a href=https://investigacion.udc.es/es/Research/Details/G000199> Modeling Optimization and Statistical Inference Research Group</a> |
+| __Lines of research__| Parametric and nonparametric curve estimation, design of experiments, sampling, industrial reliability, statistical quality control  |
+| __Key words__| Statistical Modeling, Design of Experiments, Reliability, Quality Control  |
+| __Contact__| <a href=https://directorio.udc.es/persons/20637> UDC Directory</a> |
+
+|   |   |   |
+|:----------------|:----------------:|----------------:|
+| <a href=https://orcid.org/0000-0003-4931-9859>![](../man/figures/ORCIDSN.PNG){} </a>|<a href=https://publons.com/wos-op/a/F-7405-2014> ![](../man/figures/ResearchSN.PNG){}</a>|<a href=https://www.scopus.com/authid/detail.uri?authorId=56262815700> ![](../man/figures/ScopusSN.PNG){}</a>|       
+
+$\rule{20.5cm}{0.1cm}$
+
+## `r colorize("Biography","#2E2EFE")`
+
+<p style="text-align:justify;">He is a professor in Statistics and Operations Research at the University of A Coruña since 1994.His research lines include Parametric and Nonparametric Statistics, Quality Control, Survival Analysis, Functional Data Analysis, Big Data Statistical Analysis and Statistical Methods in Materials Science. He is teaching in the Interuniversity Master in Statistical Techniques (coorganized by the three Galician universities), as well as in the Master in the Master in Complex Materials, Thermal Analysis and Rheology (double international degree with the Paris Diderot), as well as in the master Erasmus Mundus Joint Master Degree: Sustainable ship and shipping  4.0 (international degree with the University of Napoli Federico II and University of Zagreb) and in the Degree in Naval Architecture and Ocean Engineering. </p>
+
+<p style="text-align:justify;">He is a researcher of the MODES group and I am attached to the CITC research Center, both of the University of A Coruña. He is author of more than 130 papers. He has directed 7 doctoral theses and participated in more than 40 research and transfer projects with companies.</p> 
+
+<p style="text-align:justify;">He has been a delegate of the Student Advice and Promotion Service (SAPE) and Director of the Jorge Juan Catedra. He has been president and co-founder of the "Nerxus Quality Solutions" spin-off.</p>
+
+<p style="text-align:justify;">He is an associate editor of several scientific journals and an elected member of the International Statistical Institute (ISI). He is Prize "Educator of the Year 2013" for the JLM Project and in 2020, along with 3 other colleagues, he was the winner of the SEIO-FBBVA Award in the category of best applied contribution with an impact in the social field, innovation or knowledge transfer in the field of Statistics. Since March 2016, He is the Vice Chancellor for Scientific Policy, Research and Transfer of University of A Coruña.</p>
+
+<br>
+
+# `r colorize("Dr. Javier Tarrio-Saavedra","#2E2EFE")`
+
+<br>
+
+<center>![](../man/figures/JavierTarrio-Saavedra.jpg){width=300 height=450}</center>
+
+<br>
+
+$\rule{20.5cm}{0.1cm}$
+
+__Associate Professor (PC-DR)__ 
+
+|   |   |
+|:------------|:----------------------------------|
+| __Department__  |    Mathematics| 
+| __Area__        | Statistics and operations research      |
+|__Research__  | <a href=https://investigacion.udc.es/es/Research/Details/G000199> Modeling Optimization and Statistical Inference Research Group</a> |
+| __Lines of research__| Statistics, Industrial Statistics, Statistical Quality Control, Statistical Learning, Materials Science, Thermal Analysis and Rheology, Bibliometry, Naval and Oceanic Engineering, Industrial Engineering, Energy Efficiency, Epidemiology, Epidemiology  |
+| __Contact__| <a href=https://directorio.udc.es/persons/22853> UDC Directory</a> |
+
+|   |   |   |
+|:----------------|:----------------:|----------------:|
+| <a href=https://orcid.org/0000-0002-9584-127X>![](../man/figures/ORCIDJT.PNG){} </a>|<a href=https://publons.com/wos-op/a/K-9077-2017> ![](../man/figures/ResearchJT.PNG){}</a>|<a href=https://www.scopus.com/authid/detail.uri?authorId=25823518700> ![](../man/figures/ScopusJT.PNG){}</a>|       
+
+$\rule{20.5cm}{0.1cm}$
+
+## `r colorize("Biography","#2E2EFE")`
+
+<p style="text-align:justify;">Ph.D. in Statistics and Operations Research, Master in Statistical Techniques (University of La Coruña). He has experience in Statistics, Industrial Statistics, Statistical Quality Control, Statistical Learning, Materials Science, Thermal Analysis and Rheology, Bibliometry, Naval and Oceanic Engineering, Industrial Engineering, Energy Efficiency, Epidemiology, Epidemiology.</p>

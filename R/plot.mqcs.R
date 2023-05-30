@@ -59,18 +59,18 @@ plot.mqcs <- function(x, title, subtitle, xlab, ylab, ylim, ...)
   
   axis(1, at  =  sample, cex.axis  =  0.7)
   axis(2, cex.axis  =  0.7)
-  
+  axis(3)
   axis(4, at = c(max(x$limits)), 
        labels = c("UCL"), adj = 0, las = 1)
     
   
-  rect(par("usr")[1],
-       par("usr")[3],
-       par("usr")[2],
-       par("usr")[4],
-       col  =  "#CCCCCC")
-  box(col  =  "#CCCCCC")
-  grid(col  =  "#EEEEEE")
+  # rect(par("usr")[1],
+  #      par("usr")[3],
+  #      par("usr")[2],
+  #      par("usr")[4],
+  #      col  =  "#CCCCCC")
+  # box(col  =  "#CCCCCC")
+  # grid(col  =  "#EEEEEE")
   
   
       points(sample, x$statistics, pch = 3, cex = 0.8)
@@ -81,14 +81,14 @@ plot.mqcs <- function(x, title, subtitle, xlab, ylab, ylim, ...)
     ucl <- x$limits[2]
     
     #abline(h  =  lcl, lwd  =  2, col  =  "red", lty = 2)
-    abline(h  =  ucl, lwd  =  2, col  =  "red",lty = 2) 
+    abline(h  =  ucl, lwd  =  2, col  =  "black",lty = 2) 
       
   
     beyond.limits <- x$violations
 
     
     points(x$statistics[beyond.limits]~sample[beyond.limits],
-           col = "red",
+           col = "#7D7D7D",
            pch  =  19)
     
   par(oldpar)
