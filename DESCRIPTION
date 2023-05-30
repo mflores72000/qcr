@@ -10,8 +10,7 @@ Authors@R: c(
       comment = c(ORCID = "0000-0002-5785-3739")),
 			person("Salvador", "Naya", role="aut"),
 			person("Javier", "Tarrio-Saavedra", role="aut"),
-			person("Jorge", "Sosa Donoso", role = "ctb"),
-			person("Jonathan", "Pallasco", role = "ctb")
+			person("Jorge", "Sosa Donoso", role = "ctb")
       )      
 Maintainer: Miguel Flores <ma.flores@outlook.com>
 Depends: R (>= 2.10), qcc, fda.usc, mvtnorm, MASS
